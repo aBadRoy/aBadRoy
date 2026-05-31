@@ -16,7 +16,7 @@
 <br>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/red-team-terminal.svg" alt="Red Team Terminal" width="100%">
+  <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/red-team-terminal.svg" alt="Red Team Terminal" width="660">
 </div>
 
 ```ascii
@@ -179,11 +179,11 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 
 <div align="center">
 
-[![Stats](https://github-readme-stats.vercel.app/api?username=aBadRoy&show_icons=true&theme=dark&bg_color=0d1117&title_color=ff0000&icon_color=ff0000&text_color=c9d1d9&border_color=ff000033&hide_border=true&count_private=true&include_all_commits=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)]()
+[![Stats](https://gh-readme-stats.vercel.app/api?username=aBadRoy&show_icons=true&theme=dark&bg_color=0d1117&title_color=ff0000&icon_color=ff0000&text_color=c9d1d9&border_color=ff000033&hide_border=true&count_private=true&include_all_commits=true)]()
 
 [![Streak](https://streak-stats.demolab.com?user=aBadRoy&theme=dark&background=0d1117&ring=ff0000&fire=ff4444&currStreakLabel=ff0000&sideNums=c9d1d9&sideLabels=c9d1d9&dates=8b949e&hide_border=true&stroke=ff000033)]()
 
-[![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aBadRoy&layout=compact&theme=dark&bg_color=0d1117&title_color=ff0000&text_color=c9d1d9&border_color=ff000033&hide_border=true&langs_count=10)]()
+[![Languages](https://gh-readme-stats.vercel.app/api/top-langs/?username=aBadRoy&layout=compact&theme=dark&bg_color=0d1117&title_color=ff0000&text_color=c9d1d9&border_color=ff000033&hide_border=true&langs_count=10)]()
 
 </div>
 
@@ -197,7 +197,7 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 
 ## 🐍 Contribution Heatmap — Kill Chain Coverage
 
-![Snake](https://raw.githubusercontent.com/aBadRoy/aBadRoy/output/github-contribution-grid-snake-dark.svg)
+[![Snake](https://raw.githubusercontent.com/aBadRoy/aBadRoy/output/github-contribution-grid-snake-dark.svg)](https://github.com/aBadRoy)
 
 ---
 
