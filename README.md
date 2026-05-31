@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/red-team-operator.svg" alt="Red Team Operator Dashboard">
+    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/red-team-operator.svg?t=2" alt="Red Team Operator Dashboard">
   </a>
 </div>
 
