@@ -1,242 +1,246 @@
 <svg width="960" height="780" viewBox="0 0 960 780" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      :root {
+        --bg: #050505;
+        --fg: #c9d1d9;
+        --red: #ff4444;
+        --green: #44cc44;
+        --amber: #ffaa00;
+        --dim: #636d83;
+      }
+      /* === SCANLINE === */
+      @keyframes sweep {
+        from { transform: translateY(10px); }
+        to { transform: translateY(770px); }
+      }
+      .scanline {
+        animation: sweep 4s linear infinite;
+      }
+
+      /* === FADE IN (sequential reveal) === */
+      @keyframes fadeIn {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      .fi { opacity: 0; animation: fadeIn 0.4s both; }
+
+      /* === CURSOR BLINK === */
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .blink {
+        animation: blink 1s step-end infinite;
+      }
+
+      /* === TYPING TEXT (clip reveal) === */
+      @keyframes typeOut {
+        0%   { clip-path: inset(0 100% 0 0); }
+        100% { clip-path: inset(0 0% 0 0); }
+      }
+      .typing {
+        clip-path: inset(0 100% 0 0);
+        animation: typeOut 2s both;
+      }
+
+      /* === PROGRESS BAR PULSE === */
+      @keyframes pulseBar {
+        0%   { width: 20px; }
+        50%  { width: 82px; }
+        100% { width: 20px; }
+      }
+      .pulse-bar {
+        animation: pulseBar 4s ease-in-out infinite;
+      }
+
+      @keyframes pulseBar2 {
+        0%   { width: 30px; }
+        50%  { width: 110px; }
+        100% { width: 30px; }
+      }
+      .pulse-bar2 {
+        animation: pulseBar2 5s ease-in-out infinite;
+      }
+
+      /* === Individual delays === */
+      .d00 { animation-delay: 0s; }
+      .d25 { animation-delay: 2.5s; }
+      .d35 { animation-delay: 3.5s; }
+      .d45 { animation-delay: 4.5s; }
+      .d60 { animation-delay: 6s; }
+      .d80 { animation-delay: 8s; }
+      .d90 { animation-delay: 9s; }
+      .d10 { animation-delay: 10s; }
+      .d11 { animation-delay: 11s; }
+      .d12 { animation-delay: 12.5s; }
+      .d15 { animation-delay: 15s; }
+      .d16 { animation-delay: 16s; }
+      .d17 { animation-delay: 17.5s; }
+      .d19 { animation-delay: 19.5s; }
+      .d20 { animation-delay: 20.5s; }
+      .d22 { animation-delay: 22s; }
+      .d24 { animation-delay: 24s; }
+      .d25a { animation-delay: 25s; }
+      .d26 { animation-delay: 26.5s; }
+      .d28 { animation-delay: 28.5s; }
+      .d29 { animation-delay: 29.5s; }
+      .d31 { animation-delay: 31s; }
+      .d33 { animation-delay: 33s; }
+      .d34 { animation-delay: 34s; }
+      .d36 { animation-delay: 36s; }
+
+      /* typing delays */
+      .tp1 { animation-delay: 0s; }
+      .tp2 { animation-delay: 6s; }
+      .tp3 { animation-delay: 12.5s; }
+      .tp4 { animation-delay: 17.5s; }
+      .tp5 { animation-delay: 22s; }
+      .tp6 { animation-delay: 26.5s; }
+      .tp7 { animation-delay: 31s; }
+    </style>
+  </defs>
+
   <rect width="960" height="780" fill="#0a0a0a"/>
-  <rect x="20" y="10" width="920" height="760" rx="10" fill="#050505" stroke="#ff0000" stroke-width="1.5"/>
-  <rect x="20" y="10" width="920" height="34" rx="10" fill="#ff0000" fill-opacity="0.05"/>
-  <rect x="20" y="28" width="920" height="16" fill="#050505"/>
+  <rect x="20" y="10" width="920" height="760" rx="10" fill="var(--bg)" stroke="var(--red)" stroke-width="1.5"/>
+  <rect x="20" y="10" width="920" height="34" rx="10" fill="var(--red)" fill-opacity="0.05"/>
+  <rect x="20" y="28" width="920" height="16" fill="var(--bg)"/>
 
   <!-- Traffic lights -->
   <circle cx="46" cy="27" r="5.5" fill="#ff5555"/>
   <circle cx="68" cy="27" r="5.5" fill="#ffaa00"/>
   <circle cx="90" cy="27" r="5.5" fill="#00ff55"/>
 
-  <text x="480" y="32" font-family="monospace" font-size="12" fill="#636d83" text-anchor="middle">aBadRoy@red-team — red team console — TTY 0</text>
+  <text x="480" y="32" font-family="monospace" font-size="12" fill="var(--dim)" text-anchor="middle">aBadRoy@red-team — red team console — TTY 0</text>
 
-  <line x1="20" y1="44" x2="940" y2="44" stroke="#ff0000" stroke-opacity="0.12" stroke-width="0.5"/>
+  <line x1="20" y1="44" x2="940" y2="44" stroke="var(--red)" stroke-opacity="0.12" stroke-width="0.5"/>
 
   <!-- Scanline overlay -->
-  <rect x="20" y="10" width="920" height="2" fill="#ff0000" fill-opacity="0.04">
-    <animate attributeName="y" from="10" to="770" dur="4s" repeatCount="indefinite"/>
-  </rect>
+  <rect x="20" y="10" width="920" height="2" fill="var(--red)" fill-opacity="0.04" class="scanline"/>
 
   <!-- ============================================================ -->
   <!-- 1. initialize_operation -->
   <!-- ============================================================ -->
   <g font-family="monospace" font-size="13">
-    <text x="40" y="78" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="0s"/>
-      root@abadroy:~#
-    </text>
-    <text x="185" y="78" fill="#c9d1d9" visibility="hidden">
-      <tspan>
-        <set attributeName="visibility" to="visible" begin="0s"/>
-        <animate attributeName="textLength" from="0" to="195" dur="2s" fill="freeze"/>
-        initialize_operation --full-kill-chain
-      </tspan>
-    </text>
+    <text x="40" y="78" fill="var(--red)" class="fi d00">root@abadroy:~#</text>
+    <text x="185" y="78" fill="var(--fg)" class="typing tp1">initialize_operation --full-kill-chain</text>
   </g>
 
-  <text x="40" y="102" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.5s"/>
-    <tspan fill="#44cc44">[+]</tspan> Loading modules
+  <text x="40" y="102" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d25">
+    <tspan fill="var(--green)">[+]</tspan> Loading modules
   </text>
-  <rect x="195" y="95" width="100" height="10" rx="2" fill="#ff0000" fill-opacity="0.12" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.5s"/>
-  </rect>
-  <rect x="195" y="95" width="45" height="10" rx="2" fill="#44cc44" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="2.5s"/>
-    <animate attributeName="width" values="20;82;20" dur="4s" repeatCount="indefinite"/>
-  </rect>
+  <rect x="195" y="95" width="100" height="10" rx="2" fill="var(--red)" fill-opacity="0.12" class="fi d25"/>
+  <rect x="195" y="95" height="10" rx="2" fill="var(--green)" class="pulse-bar fi d25"/>
 
-  <text x="40" y="126" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="3.5s"/>
-    <tspan fill="#44cc44">[+]</tspan> OPSEC: ENABLED — all channels encrypted
+  <text x="40" y="126" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d35">
+    <tspan fill="var(--green)">[+]</tspan> OPSEC: ENABLED — all channels encrypted
   </text>
-  <text x="40" y="150" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="4.5s"/>
-    <tspan fill="#44cc44">[+]</tspan> C2 link: 192.168.1.105:4444 | RTT: 4ms | jitter: 15%
+  <text x="40" y="150" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d45">
+    <tspan fill="var(--green)">[+]</tspan> C2 link: 192.168.1.105:4444 | RTT: 4ms | jitter: 15%
   </text>
 
   <!-- ============================================================ -->
   <!-- 2. recon --deep -->
   <!-- ============================================================ -->
   <g font-family="monospace" font-size="13">
-    <text x="40" y="190" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="6s"/>
-      root@abadroy:~#
-    </text>
-    <text x="185" y="190" fill="#c9d1d9" visibility="hidden">
-      <tspan>
-        <set attributeName="visibility" to="visible" begin="6s"/>
-        <animate attributeName="textLength" from="0" to="82" dur="1.5s" fill="freeze" begin="6s"/>
-        recon --deep
-      </tspan>
-    </text>
+    <text x="40" y="190" fill="var(--red)" class="fi d60">root@abadroy:~#</text>
+    <text x="185" y="190" fill="var(--fg)" class="typing tp2">recon --deep</text>
   </g>
 
-  <text x="40" y="214" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="8s"/>
-    <tspan fill="#44cc44">[✓]</tspan> Subnet enumeration: 24 subnets / 1,247 hosts identified
+  <text x="40" y="214" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d80">
+    <tspan fill="var(--green)">[✓]</tspan> Subnet enumeration: 24 subnets / 1,247 hosts identified
   </text>
-  <text x="40" y="238" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="9s"/>
-    <tspan fill="#44cc44">[✓]</tspan> Credential harvesting: 142 password hashes captured
+  <text x="40" y="238" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d90">
+    <tspan fill="var(--green)">[✓]</tspan> Credential harvesting: 142 password hashes captured
   </text>
-  <text x="40" y="262" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="10s"/>
-    <tspan fill="#44cc44">[✓]</tspan> Service fingerprinting: 47 open ports across 12 hosts
+  <text x="40" y="262" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d10">
+    <tspan fill="var(--green)">[✓]</tspan> Service fingerprinting: 47 open ports across 12 hosts
   </text>
-  <text x="40" y="286" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="11s"/>
-    <tspan fill="#44cc44">[✓]</tspan> Attack surface: 12 CVEs matched → 3 exploitation vectors ready
+  <text x="40" y="286" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d11">
+    <tspan fill="var(--green)">[✓]</tspan> Attack surface: 12 CVEs matched → 3 exploitation vectors ready
   </text>
 
   <!-- ============================================================ -->
   <!-- 3. exploit --vector LFI -->
   <!-- ============================================================ -->
   <g font-family="monospace" font-size="13">
-    <text x="40" y="326" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="12.5s"/>
-      root@abadroy:~#
-    </text>
-    <text x="185" y="326" fill="#c9d1d9" visibility="hidden">
-      <tspan>
-        <set attributeName="visibility" to="visible" begin="12.5s"/>
-        <animate attributeName="textLength" from="0" to="200" dur="2s" fill="freeze" begin="12.5s"/>
-        exploit --vector LFI --target 10.10.20.100
-      </tspan>
-    </text>
+    <text x="40" y="326" fill="var(--red)" class="fi d12">root@abadroy:~#</text>
+    <text x="185" y="326" fill="var(--fg)" class="typing tp3">exploit --vector LFI --target 10.10.20.100</text>
   </g>
 
-  <text x="40" y="350" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="15s"/>
-    <tspan fill="#44cc44">[✓]</tspan> CVE-2024-XXXX — WordPress LFI /wp-content/.. exploit
+  <text x="40" y="350" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d15">
+    <tspan fill="var(--green)">[✓]</tspan> CVE-2024-XXXX — WordPress LFI /wp-content/.. exploit
   </text>
-  <text x="40" y="374" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="16s"/>
-    <tspan fill="#44cc44">[✓]</tspan> Remote shell: www-data@10.10.20.100:443 — beacon B-03 deployed
+  <text x="40" y="374" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d16">
+    <tspan fill="var(--green)">[✓]</tspan> Remote shell: www-data@10.10.20.100:443 — beacon B-03 deployed
   </text>
 
   <!-- ============================================================ -->
   <!-- 4. privesc -->
   <!-- ============================================================ -->
   <g font-family="monospace" font-size="13">
-    <text x="40" y="414" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="17.5s"/>
-      root@abadroy:~#
-    </text>
-    <text x="185" y="414" fill="#c9d1d9" visibility="hidden">
-      <tspan>
-        <set attributeName="visibility" to="visible" begin="17.5s"/>
-        <animate attributeName="textLength" from="0" to="62" dur="1.5s" fill="freeze" begin="17.5s"/>
-        privesc
-      </tspan>
-    </text>
+    <text x="40" y="414" fill="var(--red)" class="fi d17">root@abadroy:~#</text>
+    <text x="185" y="414" fill="var(--fg)" class="typing tp4">privesc</text>
   </g>
 
-  <text x="40" y="438" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="19.5s"/>
-    <tspan fill="#44cc44">[✓]</tspan> SUID vector: /usr/bin/pkexec (CVE-2021-4034) — vulnerable
+  <text x="40" y="438" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d19">
+    <tspan fill="var(--green)">[✓]</tspan> SUID vector: /usr/bin/pkexec (CVE-2021-4034) — vulnerable
   </text>
-  <text x="40" y="462" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="20.5s"/>
-    <tspan fill="#44cc44">[✓]</tspan> ROOT: 10.10.20.100 — full administrative access obtained
+  <text x="40" y="462" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d20">
+    <tspan fill="var(--green)">[✓]</tspan> ROOT: 10.10.20.100 — full administrative access obtained
   </text>
 
   <!-- ============================================================ -->
   <!-- 5. lateral -->
   <!-- ============================================================ -->
   <g font-family="monospace" font-size="13">
-    <text x="40" y="502" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="22s"/>
-      root@abadroy:~#
-    </text>
-    <text x="185" y="502" fill="#c9d1d9" visibility="hidden">
-      <tspan>
-        <set attributeName="visibility" to="visible" begin="22s"/>
-        <animate attributeName="textLength" from="0" to="60" dur="1.5s" fill="freeze" begin="22s"/>
-        lateral
-      </tspan>
-    </text>
+    <text x="40" y="502" fill="var(--red)" class="fi d22">root@abadroy:~#</text>
+    <text x="185" y="502" fill="var(--fg)" class="typing tp5">lateral</text>
   </g>
 
-  <text x="40" y="526" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="24s"/>
-    <tspan fill="#44cc44">[✓]</tspan> Pivot: 10.10.20.100 → 10.10.30.200 (SMB + WMI)
+  <text x="40" y="526" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d24">
+    <tspan fill="var(--green)">[✓]</tspan> Pivot: 10.10.20.100 → 10.10.30.200 (SMB + WMI)
   </text>
-  <text x="40" y="550" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="25s"/>
-    <tspan fill="#44cc44">[✓]</tspan> Beacon B-05: WIN-2019 (svc-sql) — lateral movement successful
+  <text x="40" y="550" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d25a">
+    <tspan fill="var(--green)">[✓]</tspan> Beacon B-05: WIN-2019 (svc-sql) — lateral movement successful
   </text>
 
   <!-- ============================================================ -->
   <!-- 6. persistence -->
   <!-- ============================================================ -->
   <g font-family="monospace" font-size="13">
-    <text x="40" y="590" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="26.5s"/>
-      root@abadroy:~#
-    </text>
-    <text x="185" y="590" fill="#c9d1d9" visibility="hidden">
-      <tspan>
-        <set attributeName="visibility" to="visible" begin="26.5s"/>
-        <animate attributeName="textLength" from="0" to="115" dur="1.5s" fill="freeze" begin="26.5s"/>
-        persistence
-      </tspan>
-    </text>
+    <text x="40" y="590" fill="var(--red)" class="fi d26">root@abadroy:~#</text>
+    <text x="185" y="590" fill="var(--fg)" class="typing tp6">persistence</text>
   </g>
 
-  <text x="40" y="614" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="28.5s"/>
-    <tspan fill="#44cc44">[✓]</tspan> Beacon B-05 deployed — check-in every 15s (jitter: 20%)
+  <text x="40" y="614" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d28">
+    <tspan fill="var(--green)">[✓]</tspan> Beacon B-05 deployed — check-in every 15s (jitter: 20%)
   </text>
-  <text x="40" y="638" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="29.5s"/>
-    <tspan fill="#44cc44">[✓]</tspan> Persistence: scheduled task (HKLM\Run) — reboot safe
+  <text x="40" y="638" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d29">
+    <tspan fill="var(--green)">[✓]</tspan> Persistence: scheduled task (HKLM\Run) — reboot safe
   </text>
 
   <!-- ============================================================ -->
   <!-- 7. exfil -->
   <!-- ============================================================ -->
   <g font-family="monospace" font-size="13">
-    <text x="40" y="678" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="31s"/>
-      root@abadroy:~#
-    </text>
-    <text x="185" y="678" fill="#c9d1d9" visibility="hidden">
-      <tspan>
-        <set attributeName="visibility" to="visible" begin="31s"/>
-        <animate attributeName="textLength" from="0" to="135" dur="1.5s" fill="freeze" begin="31s"/>
-        exfil --target DC01
-      </tspan>
-    </text>
+    <text x="40" y="678" fill="var(--red)" class="fi d31">root@abadroy:~#</text>
+    <text x="185" y="678" fill="var(--fg)" class="typing tp7">exfil --target DC01</text>
   </g>
 
-  <text x="40" y="702" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="33s"/>
-    <tspan fill="#44cc44">[✓]</tspan> Tunnel: AES-256 encrypted — endpoint: 192.168.1.105:8443
+  <text x="40" y="702" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d33">
+    <tspan fill="var(--green)">[✓]</tspan> Tunnel: AES-256 encrypted — endpoint: 192.168.1.105:8443
   </text>
-  <text x="40" y="726" font-family="monospace" font-size="13" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="34s"/>
-    <tspan fill="#ffaa00">[→]</tspan> Exfiltrating 2.4 GB
+  <text x="40" y="726" font-family="monospace" font-size="13" fill="var(--fg)" class="fi d34">
+    <tspan fill="var(--amber)">[→]</tspan> Exfiltrating 2.4 GB
   </text>
-  <rect x="205" y="719" width="120" height="10" rx="2" fill="#ff0000" fill-opacity="0.12" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="34s"/>
-  </rect>
-  <rect x="205" y="719" width="98" height="10" rx="2" fill="#ffaa00" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="34s"/>
-    <animate attributeName="width" values="30;110;30" dur="5s" repeatCount="indefinite"/>
-  </rect>
+  <rect x="205" y="719" width="120" height="10" rx="2" fill="var(--red)" fill-opacity="0.12" class="fi d34"/>
+  <rect x="205" y="719" height="10" rx="2" fill="var(--amber)" class="pulse-bar2 fi d34"/>
 
   <!-- ============================================================ -->
   <!-- FINAL PROMPT + CURSOR -->
   <!-- ============================================================ -->
-  <text x="40" y="758" font-family="monospace" font-size="13" fill="#ff4444" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="36s"/>
-    root@abadroy:~#
-  </text>
+  <text x="40" y="758" font-family="monospace" font-size="13" fill="var(--red)" class="fi d36">root@abadroy:~#</text>
 
-  <rect x="185" y="746" width="9" height="16" fill="#ff0000" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="36s"/>
-    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-  </rect>
+  <rect x="185" y="746" width="9" height="16" fill="var(--red)" class="fi d36 blink"/>
 </svg>
