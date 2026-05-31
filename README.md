@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=5000&color=FF0000&background=0D1117&center=true&vCenter=true&width=900&repeat=false&lines=aBadRoy+%2F%2F+RED+TEAMER+%2F%2F+OFFENSIVE+SECURITY+DIVISION" alt="Identity">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=2000&color=FF0000&background=0D1117&center=true&vCenter=true&width=900&repeat=true&lines=aBadRoy+%2F%2F+RED+TEAMER+%2F%2F+OFFENSIVE+SECURITY+DIVISION" alt="Identity">
 </div>
 
 <div align="center">
