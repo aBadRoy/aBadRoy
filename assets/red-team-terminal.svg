@@ -1,0 +1,45 @@
+<svg width="660" height="180" viewBox="0 0 660 180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="180" fill="#0d1117" rx="8"/>
+  <rect x="1" y="1" width="658" height="28" fill="#161b22" rx="8"/>
+  <rect x="1" y="15" width="658" height="14" fill="#161b22"/>
+  <circle cx="20" cy="15" r="6" fill="#ff5555">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="38" cy="15" r="6" fill="#ffaa33">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="56" cy="15" r="6" fill="#44cc44">
+    <animate attributeName="opacity" values="0.3;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="80" y="20" fill="#8b949e" font-family="monospace" font-size="11">red-team-terminal — root@aBadRoy</text>
+  <text x="630" y="20" fill="#505050" font-family="monospace" font-size="10">— □ ×</text>
+  <text x="25" y="55" fill="#ff0000" font-family="monospace" font-size="13" font-weight="bold">root@aBadRoy:~$</text>
+  <text x="195" y="55" fill="#c9d1d9" font-family="monospace" font-size="13">
+    ./deploy --target 0.0.0.0/0 --payload reverse_shell
+    <animate attributeName="opacity" values="1;1;0;0" dur="4s" repeatCount="indefinite"/>
+  </text>
+  <text x="25" y="80" fill="#ff4444" font-family="monospace" font-size="13">
+    <animate attributeName="opacity" values="0;0;1;1;1;0;0" dur="6s" repeatCount="indefinite"/>
+    <tspan fill="#44cc44">[✓]</tspan> C2 Beacon Established — 192.168.1.105:4444
+  </text>
+  <text x="25" y="105" fill="#ff4444" font-family="monospace" font-size="13">
+    <animate attributeName="opacity" values="0;0;0;0;1;1;1;0" dur="8s" repeatCount="indefinite"/>
+    <tspan fill="#44cc44">[✓]</tspan> Payload Delivered — target compromised
+  </text>
+  <text x="25" y="130" fill="#ff4444" font-family="monospace" font-size="13">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;1;1" dur="10s" repeatCount="indefinite"/>
+    <tspan fill="#44cc44">[✓]</tspan> Privilege Escalation — NT AUTHORITY\SYSTEM acquired
+  </text>
+  <text x="25" y="160" fill="#ff0000" font-family="monospace" font-size="13" font-weight="bold">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1" dur="12s" repeatCount="indefinite"/>
+    root@aBadRoy:~$ 
+    <tspan fill="#44cc44">cat /root/flag.txt</tspan>
+  </text>
+  <text x="195" y="160" fill="#ff4444" font-family="monospace" font-size="13" font-weight="bold">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;1" dur="14s" repeatCount="indefinite"/>
+    FLAG{RED_TEAM_ACCESS_GRANTED}
+  </text>
+  <rect x="552" y="148" width="8" height="14" fill="#ff0000">
+    <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
