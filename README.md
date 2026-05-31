@@ -6,18 +6,12 @@
 [![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-ff4444?style=for-the-badge&labelColor=%230d1117)](https://attack.mitre.org)
 
 </div>
-
 <br>
-
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=1800&pause=600&color=FF0000&background=0D1117&center=true&vCenter=true&width=700&lines=Access+is+the+only+law.;Trust+none.+Verify+everything.+Pivot+everywhere.;The+best+defense+is+a+good+offense.+;Leave+no+log+uncleared.;Emulate.+Evade.+Exploit.+Exfil.+Report.;I+don't+break+walls...+I+bypass+them." alt="Quotes">
-</div>
-
 <br>
 
 <div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=2500&pause=1200&color=FF0000&background=0D1117&center=true&vCenter=true&width=700&lines=root%40aBadRoy%3A~%23+nmap+-sV+target.local;root%40aBadRoy%3A~%23+sqlmap+-r+req.txt+--dbs;root%40aBadRoy%3A~%23+responder+-I+eth0+-wrf;root%40aBadRoy%3A~%23+msfvenom+-p+linux%2Fx64%2Fshell_rev;root%40aBadRoy%3A~%23+cat+%2Fetc%2Fred-team%2Fmotto;root%40aBadRoy%3A~%23+cat+/proc/payloads" alt="Terminal">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=5000&color=FF0000&background=0D1117&center=true&vCenter=true&width=800&repeat=false&lines=root%40aBadRoy%3A~%23+cat+/etc/red-team/motto" alt="Terminal">
   </a>
 </div>
 
