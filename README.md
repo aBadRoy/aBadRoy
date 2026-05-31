@@ -16,7 +16,9 @@
 <br>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/red-team-terminal.svg" alt="Red Team Terminal" width="660">
+  <a href="https://github.com/aBadRoy">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=2500&pause=1200&color=FF0000&background=0D1117&center=true&vCenter=true&width=700&lines=root%40aBadRoy%3A~%23+nmap+-sV+target.local;root%40aBadRoy%3A~%23+sqlmap+-r+req.txt+--dbs;root%40aBadRoy%3A~%23+responder+-I+eth0+-wrf;root%40aBadRoy%3A~%23+msfvenom+-p+linux%2Fx64%2Fshell_rev;root%40aBadRoy%3A~%23+cat+%2Fetc%2Fred-team%2Fmotto;root%40aBadRoy%3A~%23+cat+/proc/payloads" alt="Terminal">
+  </a>
 </div>
 
 ```ascii
@@ -59,6 +61,24 @@ STATUS      : [ACTIVE] — Simulating sophisticated adversary campaigns
 TOOLSET     : 50+ offensive security tools in active rotation
 MOTTO       : "Access is the only law. Everything else is just a firewall."
 ```
+
+---
+
+## 📡 Active Campaign — Real-Time Status
+
+<div align="center">
+
+| Parameter | Value |
+|-----------|-------|
+| 🎯 **Mission** | `Adversary Emulation — Enterprise Network Penetration Test` |
+| 🔴 **Status** | `ACTIVE` — C2 beacon established |
+| 🖥️ **C2 Server** | `Sliver` — 192.168.1.105:4444 |
+| 💣 **Payloads** | `1,247` warheads in active rotation |
+| 🗺️ **Coverage** | `9` repositories spanning full kill chain |
+| ⚡ **Last Op** | `2026-05-31` — Web exploitation & LFI chain |
+| 🛡️ **OPSEC** | `ENABLED` — All channels encrypted |
+
+</div>
 
 ---
 
@@ -175,6 +195,23 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 
 ---
 
+## 📦 Featured Operations — Active Repositories
+
+<div align="center">
+
+[![Nessus-project](https://img.shields.io/badge/Nessus--project-Vulnerability_Scanner-ff0000?style=for-the-badge&logo=kalilinux&labelColor=0d1117)](https://github.com/aBadRoy/Nessus-project)
+[![SilentStrike-XSS](https://img.shields.io/badge/SilentStrike--XSS-XSS_Detection-ff4444?style=for-the-badge&logo=python&labelColor=0d1117)](https://github.com/aBadRoy/SilentStrike-XSS)
+[![Web_Exploitation_CTF](https://img.shields.io/badge/Web_CTF-LFI_Exploit_Chain-ff0000?style=for-the-badge&logo=hackthebox&labelColor=0d1117)](https://github.com/aBadRoy/Web_exploitation_CTF)
+[![cyart-vapt-team](https://img.shields.io/badge/VAPT_Team-Red_Team_Ops-ff4444?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/aBadRoy/cyart-vapt-team)
+[![Splunk-SIEM-Lab](https://img.shields.io/badge/SIEM_Lab-SOC_Analytics-ff0000?style=for-the-badge&logo=splunk&labelColor=0d1117)](https://github.com/aBadRoy/Splunk-SIEM-Home-Lab)
+[![nsoql-ctf](https://img.shields.io/badge/NoSQL_CTF-Injection_Exfil-ff4444?style=for-the-badge&logo=mongodb&labelColor=0d1117)](https://github.com/aBadRoy/nsoql-ctf)
+[![Wi-Fi-Stealer](https://img.shields.io/badge/WiFi_Stealer-Hardware_Pwn-ff0000?style=for-the-badge&logo=raspberrypi&labelColor=0d1117)](https://github.com/aBadRoy/Wi-fi-password-stealer-using-Attiny85)
+[![owl-book-shop](https://img.shields.io/badge/OWL_Shop-CTF_Challenge-ff4444?style=for-the-badge&logo=bookstack&labelColor=0d1117)](https://github.com/aBadRoy/owl-book-shop)
+
+</div>
+
+---
+
 ## 📊 Telemetry Dashboard
 
 <div align="center">
@@ -260,19 +297,37 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 ```bash
 root@aBadRoy:~# cat /etc/red-team/motd
 
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                ║
-║   "Access is the only law.                                     ║
-║    Everything else is just a firewall                          ║
-║    waiting to be breached."                                    ║
-║                                                                ║
-║   ░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█░  ║
-║                                                                ║
-║   🔴 RED TEAMER — SIMULATE. EVADE. EXPLOIT. EXFIL. REPORT. 🔴║
-║   Operator: aBadRoy | Offensive Security Division              ║
-║   "Trust none. Verify everything. Pivot everywhere."           ║
-║                                                                ║
-╚══════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║   ██████╗ ███████╗██████╗     ████████╗███████╗ █████╗ ███╗   ███╗         ║
+║   ██╔══██╗██╔════╝██╔══██╗    ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║         ║
+║   ██████╔╝█████╗  ██║  ██║       ██║   █████╗  ███████║██╔████╔██║         ║
+║   ██╔══██╗██╔══╝  ██║  ██║       ██║   ██╔══╝  ██╔══██║██║╚██╔╝██║         ║
+║   ██║  ██║███████╗██████╔╝       ██║   ███████╗██║  ██║██║ ╚═╝ ██║         ║
+║   ╚═╝  ╚═╝╚══════╝╚═════╝        ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝         ║
+║                                                                              ║
+║   ════════════════════════════════════════════════════════════════════════   ║
+║                                                                              ║
+║   SYSTEM INFORMATION                                                         ║
+║   ─────────────────                                                          ║
+║   Operator     : aBadRoy                                                     ║
+║   Division     : Offensive Security                                          ║
+║   Role         : Red Teamer                                                  ║
+║   C2 Status    : [ACTIVE] — 9 beacons online                                 ║
+║   Payloads     : 1,247 warheads                                              ║
+║   Methodology  : MITRE ATT&CK v14 / Kill Chain / OWASP                       ║
+║   Uptime       : 7,502 hours of continuous operations                        ║
+║                                                                              ║
+║   ════════════════════════════════════════════════════════════════════════   ║
+║                                                                              ║
+║   "Access is the only law.                                                   ║
+║    Everything else is just a firewall                                        ║
+║    waiting to be breached."                                                  ║
+║                                                                              ║
+║   🔴 RED TEAMER — SIMULATE. EVADE. EXPLOIT. EXFIL. REPORT. 🔴              ║
+║   "Trust none. Verify everything. Pivot everywhere."                         ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
 
 root@aBadRoy:~# █
 ```
