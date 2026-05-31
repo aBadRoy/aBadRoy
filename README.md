@@ -28,6 +28,38 @@
   </a>
 </div>
 
+<br>
+
+<div align="center">
+  <a href="https://github.com/aBadRoy">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1800&pause=600&color=FF6666&background=0D1117&center=true&vCenter=true&width=780&lines=PORT+22+-+ssh+-+OpenSSH+8.9p1;PORT+80+-+http+-+Apache+2.4.57;PORT+443+-+https+-+Apache+httpd;PORT+445+-+smb+-+Samba+4.15.13;PORT+3306+-+mysql+-+MySQL+8.0;PORT+8080+-+http+-+Tomcat+9.0" alt="Ports">
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <a href="https://github.com/aBadRoy">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1800&pause=600&color=FF8888&background=0D1117&center=true&vCenter=true&width=780&lines=TASK+whoami+-+www-data;TASK+keylog+-+142+chars;TASK+screenshot+-+2.4+MB;TASK+hashdump+-+142+hashes;TASK+shell+-+bash+session;TASK+proxy+-+tunnel+active" alt="C2">
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <a href="https://github.com/aBadRoy">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1800&pause=600&color=CC3333&background=0D1117&center=true&vCenter=true&width=780&lines=CVE-2021-4034+-+pkexec+-+PWNED;CVE-2023-2640+-+Ubuntu+-+PWNED;CVE-2022-0847+-+Dirty+Pipe+-+PWNED;CVE-2021-44228+-+Log4j+-+PWNED;CVE-2023-46604+-+ActiveMQ+-+PWNED;CVE-2024-3094+-+xz+backdoor+-+PWNED" alt="CVEs">
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <a href="https://github.com/aBadRoy">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1800&pause=600&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&lines=HASH+NTLM+-+P%40ssw0rd+-+75s;HASH+SHA256+-+Welcome1+-+120s;HASH+bcrypt+-+letmein+-+360s;HASH+MD5+-+5f4dcc3b5a+-+QUEUED;HASH+LM+-+Admin123+-+15s;HASH+NTLMv2+-+Passw0rd+-+90s" alt="Hashes">
+  </a>
+</div>
+
 ---
 
 ## ☠️ Operator Dossier
