@@ -32,31 +32,7 @@
 
 <div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1800&pause=600&color=FF6666&background=0D1117&center=true&vCenter=true&width=780&lines=PORT+22+-+ssh+-+OpenSSH+8.9p1;PORT+80+-+http+-+Apache+2.4.57;PORT+443+-+https+-+Apache+httpd;PORT+445+-+smb+-+Samba+4.15.13;PORT+3306+-+mysql+-+MySQL+8.0;PORT+8080+-+http+-+Tomcat+9.0" alt="Ports">
-  </a>
-</div>
-
-<br>
-
-<div align="center">
-  <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1800&pause=600&color=FF8888&background=0D1117&center=true&vCenter=true&width=780&lines=TASK+whoami+-+www-data;TASK+keylog+-+142+chars;TASK+screenshot+-+2.4+MB;TASK+hashdump+-+142+hashes;TASK+shell+-+bash+session;TASK+proxy+-+tunnel+active" alt="C2">
-  </a>
-</div>
-
-<br>
-
-<div align="center">
-  <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1800&pause=600&color=CC3333&background=0D1117&center=true&vCenter=true&width=780&lines=CVE-2021-4034+-+pkexec+-+PWNED;CVE-2023-2640+-+Ubuntu+-+PWNED;CVE-2022-0847+-+Dirty+Pipe+-+PWNED;CVE-2021-44228+-+Log4j+-+PWNED;CVE-2023-46604+-+ActiveMQ+-+PWNED;CVE-2024-3094+-+xz+backdoor+-+PWNED" alt="CVEs">
-  </a>
-</div>
-
-<br>
-
-<div align="center">
-  <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1800&pause=600&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&lines=HASH+NTLM+-+P%40ssw0rd+-+75s;HASH+SHA256+-+Welcome1+-+120s;HASH+bcrypt+-+letmein+-+360s;HASH+MD5+-+5f4dcc3b5a+-+QUEUED;HASH+LM+-+Admin123+-+15s;HASH+NTLMv2+-+Passw0rd+-+90s" alt="Hashes">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=2000&pause=800&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&lines=%5BRT-CONSOLE%5D+aBadRoy+%7C+C2+192.168.1.105+%7C+3+beacons;%5BRT-CONSOLE%5D+target+10.10.10.0%2F24+%7C+6+ports+open;%5BRT-CONSOLE%5D+exploit+CVE-2023-xxxx+%7C+DEPLOYED;%5BRT-CONSOLE%5D+142+hashes+%7C+89+cracked+(62%25);%5BRT-CONSOLE%5D+1,247+payloads+%7C+2.4+GB+exfil;%5BRT-CONSOLE%5D+mission+ACTIVE+%7C+opsec+ENABLED" alt="Toolkit">
   </a>
 </div>
 
