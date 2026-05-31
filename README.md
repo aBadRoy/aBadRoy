@@ -1,38 +1,6 @@
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=2000&color=FF0000&background=0D1117&center=true&vCenter=true&width=900&repeat=true&lines=aBadRoy+%2F%2F+RED+TEAMER+%2F%2F+OFFENSIVE+SECURITY+DIVISION" alt="Identity">
-</div>
-
-<br>
-
-<div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2000&pause=800&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&lines=%24+nmap+-sV+-p-+10.10.10.0%2F24;%24+sqlmap+-r+req.txt+--dbs+--batch;%24+msfvenom+-p+linux%2Fx64%2Fshell_rev_tcp;%24+responder+-I+eth0+-wrf+--lm;%24+impacket-secretsdump+-just-dc+DOMAIN%2Fadmin;%24+cat+%2Fetc%2Fred-team%2Fmotto" alt="Terminal">
-  </a>
-</div>
-
-<br>
-
-<div align="center">
-  <a href="https://github.com/aBadRoy?tab=followers"><img src="https://img.shields.io/github/followers/aBadRoy?style=flat-square&color=0d1117&labelColor=ff0000&logo=github&logoColor=white" alt="Followers"></a>
-  <a href="https://github.com/aBadRoy?tab=repositories"><img src="https://img.shields.io/github/stars/aBadRoy?style=flat-square&color=0d1117&labelColor=ff0000&logo=star&logoColor=white" alt="Stars"></a>
-  <a href="https://github.com/aBadRoy/aBadRoy"><img src="https://img.shields.io/github/last-commit/aBadRoy/aBadRoy?style=flat-square&color=0d1117&labelColor=ff0000&logo=github&logoColor=white" alt="Updated"></a>
-  <img src="https://img.shields.io/badge/MISSION-ACTIVE-ff0000?style=flat-square&labelColor=0d1117" alt="Mission">
-  <img src="https://img.shields.io/badge/OPSEC-ENABLED-ff4444?style=flat-square&labelColor=0d1117" alt="OpSec">
-</div>
-
-<br>
-
-<div align="center">
-  <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=1800&pause=600&color=FF6666&background=0D1117&center=true&vCenter=true&width=780&lines=TARGET+ACQUIRED+-+scanning+10.10.10.0%2F24;VULNERABILITY+FOUND+-+CVE-2023-xxxx+detected;PAYLOAD+DEPLOYED+-+reverse+shell+inbound;BEACON+ACTIVE+-+C2+channel+4444+established;CREDENTIALS+HARVESTED+-+142+hashes+captured;DATA+EXFILTRATED+-+2.4+GB+encrypted+archive;MISSION+COMPLETE+-+access+is+the+only+law" alt="Campaign">
-  </a>
-</div>
-
-<br>
-
-<div align="center">
-  <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=2000&pause=800&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&lines=%5BRT-CONSOLE%5D+aBadRoy+%7C+C2+192.168.1.105+%7C+3+beacons;%5BRT-CONSOLE%5D+target+10.10.10.0%2F24+%7C+6+ports+open;%5BRT-CONSOLE%5D+exploit+CVE-2023-xxxx+%7C+DEPLOYED;%5BRT-CONSOLE%5D+142+hashes+%7C+89+cracked+(62%25);%5BRT-CONSOLE%5D+1,247+payloads+%7C+2.4+GB+exfil;%5BRT-CONSOLE%5D+mission+ACTIVE+%7C+opsec+ENABLED" alt="Toolkit">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=1200&pause=3000&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&multiline=true&repeat=true&lines=.--%5BC2+v3.0%5D--%5BaBadRoy%5D--%5BACTIVE%5D-----------.;%7C+C2%3A+192.168.1.105%3A4444++%7C+CONNECTED+++++++++%7C;%7C+Beacons%3A+3+%7C+Tasks%3A+12+%7C+Payloads%3A+1,247+++%7C;%7C+Target%3A+10.10.10.0%2F24+%7C+Ports%3A+6+%7C+PWNED+++%7C;%7C+Exploit%3A+CVE-2023-xxxx++%7C+DEPLOYED++++++++++%7C;%7C+Hashes%3A+142+%7C+89+Cracked+%7C+Exfil%3A+2.4+GB+++%7C;'-------------------------------------------'" alt="C2 Tool">
   </a>
 </div>
 
