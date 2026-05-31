@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1000&pause=3000&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&multiline=true&repeat=true&lines=.--%5BC2+CONSOLE%5D--%5BaBadRoy%5D--%5BACTIVE%5D--------.;%7C+12%3A04%3A32++beacon+192.168.1.105++checkin++++%7C;%7C+12%3A04%3A35++beacon+10.10.10.50+++checkin+++++%7C;%7C+12%3A04%3A38++task+whoami++++++-%3E+root+++++++++%7C;%7C+12%3A04%3A41++task+hashdump++++-%3E+142+hashes+++%7C;%7C+12%3A04%3A44++task+screenshot++-%3E+2.4+MB+saved+%7C;%7C+12%3A04%3A47++task+keylog++++++-%3E+142+chars++++%7C;%7C+12%3A04%3A50++exfil+2.4+GB++++-%3E+tunnel+active+%7C;'-------------------------------------------'" alt="C2 Console">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1000&pause=3000&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&multiline=true&repeat=true&lines=.--%5BCHESS+ENGINE%5D--%5BaBadRoy%5D--%5BOFFENSIVE%5D------.;%7C+Move+1%3A++e4+++++++RECON++++++scanning+net++++%7C;%7C+Move+2%3A++Nf3++++++SCAN+++++++ports%3A+6+open+++%7C;%7C+Move+3%3A++Bc4++++++EXPLOIT++++breach%3A+CVE-x+++%7C;%7C+Move+4%3A++O-O++++++PERSIST++++beacon+steady+++%7C;%7C+Move+5%3A++Qh7++++++C2+++++++++tunnel+active+++%7C;%7C+Move+6%3A++Qxg7%23++++EXFIL++++++data%3A+2.4+GB++++%7C;%7C+Result%3A++1-0++++++CHECKMATE++MISSION+DONE+++++%7C;'---------------------------------------------'" alt="Chess Engine">
   </a>
 </div>
 
