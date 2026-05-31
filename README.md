@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=1200&pause=3000&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&multiline=true&repeat=true&lines=.--%5BC2+v3.0%5D--%5BaBadRoy%5D--%5BACTIVE%5D-----------.;%7C+C2%3A+192.168.1.105%3A4444++%7C+CONNECTED+++++++++%7C;%7C+Beacons%3A+3+%7C+Tasks%3A+12+%7C+Payloads%3A+1,247+++%7C;%7C+Target%3A+10.10.10.0%2F24+%7C+Ports%3A+6+%7C+PWNED+++%7C;%7C+Exploit%3A+CVE-2023-xxxx++%7C+DEPLOYED++++++++++%7C;%7C+Hashes%3A+142+%7C+89+Cracked+%7C+Exfil%3A+2.4+GB+++%7C;'-------------------------------------------'" alt="C2 Tool">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=1000&pause=3000&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&multiline=true&repeat=true&lines=.--%5BC2+CONSOLE%5D--%5BaBadRoy%5D--%5BACTIVE%5D--------.;%7C+12%3A04%3A32++beacon+192.168.1.105++checkin++++%7C;%7C+12%3A04%3A35++beacon+10.10.10.50+++checkin+++++%7C;%7C+12%3A04%3A38++task+whoami++++++-%3E+root+++++++++%7C;%7C+12%3A04%3A41++task+hashdump++++-%3E+142+hashes+++%7C;%7C+12%3A04%3A44++task+screenshot++-%3E+2.4+MB+saved+%7C;%7C+12%3A04%3A47++task+keylog++++++-%3E+142+chars++++%7C;%7C+12%3A04%3A50++exfil+2.4+GB++++-%3E+tunnel+active+%7C;'-------------------------------------------'" alt="C2 Console">
   </a>
 </div>
 
