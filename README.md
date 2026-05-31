@@ -2,6 +2,16 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=2000&color=FF0000&background=0D1117&center=true&vCenter=true&width=900&repeat=true&lines=aBadRoy+%2F%2F+RED+TEAMER+%2F%2F+OFFENSIVE+SECURITY+DIVISION" alt="Identity">
 </div>
 
+<br>
+
+<div align="center">
+  <a href="https://github.com/aBadRoy">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2000&pause=800&color=FF4444&background=0D1117&center=true&vCenter=true&width=780&lines=%24+nmap+-sV+-p-+10.10.10.0%2F24;%24+sqlmap+-r+req.txt+--dbs+--batch;%24+msfvenom+-p+linux%2Fx64%2Fshell_rev_tcp;%24+responder+-I+eth0+-wrf+--lm;%24+impacket-secretsdump+-just-dc+DOMAIN%2Fadmin;%24+cat+%2Fetc%2Fred-team%2Fmotto" alt="Terminal">
+  </a>
+</div>
+
+<br>
+
 <div align="center">
   <a href="https://github.com/aBadRoy?tab=followers"><img src="https://img.shields.io/github/followers/aBadRoy?style=flat-square&color=0d1117&labelColor=ff0000&logo=github&logoColor=white" alt="Followers"></a>
   <a href="https://github.com/aBadRoy?tab=repositories"><img src="https://img.shields.io/github/stars/aBadRoy?style=flat-square&color=0d1117&labelColor=ff0000&logo=star&logoColor=white" alt="Stars"></a>
