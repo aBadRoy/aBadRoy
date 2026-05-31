@@ -1,691 +1,310 @@
-<svg width="960" height="400" viewBox="0 0 960 400" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glow-strong" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glitch-r" x="-5%" y="-5%" width="110%" height="110%">
-      <feOffset dx="0" dy="0">
-        <animate attributeName="dx" values="0;2;0;-1;3;0;0;-2;0" dur="4s" repeatCount="indefinite"/>
-        <animate attributeName="dy" values="0;0;0;0.5;0;0;0;0;0" dur="4s" repeatCount="indefinite"/>
-      </feOffset>
-    </filter>
-    <radialGradient id="node-pulse" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff0000" stop-opacity="0.5"/>
-      <stop offset="60%" stop-color="#ff0000" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#ff0000" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="radar-fill" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff0000" stop-opacity="0.2"/>
-      <stop offset="80%" stop-color="#ff0000" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#ff0000" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="bar-red" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#cc0000"/>
-      <stop offset="100%" stop-color="#ff4444"/>
-    </linearGradient>
-    <linearGradient id="bar-green" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#006600"/>
-      <stop offset="100%" stop-color="#44cc44"/>
-    </linearGradient>
-    <linearGradient id="bar-yellow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#cc8800"/>
-      <stop offset="100%" stop-color="#ffaa00"/>
-    </linearGradient>
-    <linearGradient id="header-fade" x1="0" y1="0" x2="960" y2="0">
-      <stop offset="0%" stop-color="#ff0000" stop-opacity="0.12"/>
-      <stop offset="50%" stop-color="#ff0000" stop-opacity="0.02"/>
-      <stop offset="100%" stop-color="#ff0000" stop-opacity="0.12"/>
-    </linearGradient>
-    <clipPath id="typing-clip">
-      <rect x="525" y="255" width="0" height="80">
-        <animate attributeName="width" values="0;400;400;0" dur="12s" repeatCount="indefinite" keyTimes="0;0.4;0.75;1"/>
-      </rect>
-    </clipPath>
-  </defs>
+<svg width="960" height="550" viewBox="0 0 960 550" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="500" fill="#0a0a0a"/>
 
-  <!-- Background -->
-  <rect width="960" height="400" fill="#0a0e14"/>
-  <rect width="960" height="28" fill="url(#header-fade)"/>
+  <!-- TERMINAL WINDOW -->
+  <rect x="20" y="10" width="920" height="480" rx="10" fill="#050505" stroke="#ff0000" stroke-width="1.5"/>
 
-  <!-- Subtle grid pattern -->
-  <g stroke="#ff0000" stroke-opacity="0.025" stroke-width="0.5">
-    <line x1="0" y1="28" x2="960" y2="28"/>
-    <line x1="0" y1="70" x2="960" y2="70"/>
-    <line x1="0" y1="105" x2="960" y2="105"/>
-    <line x1="0" y1="245" x2="960" y2="245"/>
-    <line x1="0" y1="320" x2="960" y2="320"/>
-    <line x1="0" y1="375" x2="960" y2="375"/>
-    <line x1="480" y1="0" x2="480" y2="400"/>
-  </g>
+  <!-- Title bar -->
+  <rect x="20" y="10" width="920" height="34" rx="10" fill="#ff0000" fill-opacity="0.05"/>
+  <rect x="20" y="28" width="920" height="16" fill="#050505"/>
 
-  <!-- Scanlines: 3 layers for CRT effect -->
-  <rect x="0" y="0" width="960" height="2" fill="#ff0000" fill-opacity="0.05">
-    <animate attributeName="y" from="0" to="400" dur="3s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="0" y="0" width="960" height="1" fill="#ff0000" fill-opacity="0.03">
-    <animate attributeName="y" from="0" to="400" dur="5s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="0" y="0" width="960" height="3" fill="#ffffff" fill-opacity="0.02">
-    <animate attributeName="y" from="0" to="400" dur="7s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- ============================================================ -->
-  <!-- HEADER BAR -->
-  <!-- ============================================================ -->
-  <circle cx="14" cy="14" r="4" fill="#ff3333">
-    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  <!-- Traffic light dots with animations -->
+  <circle cx="48" cy="27" r="6" fill="#ff5555">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="28" cy="14" r="4" fill="#ff6633">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+  <circle cx="72" cy="27" r="6" fill="#ffaa00">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="42" cy="14" r="4" fill="#33cc33">
+  <circle cx="96" cy="27" r="6" fill="#00ff55">
     <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
   </circle>
 
-  <text x="58" y="18" font-family="'Courier New',monospace" font-size="11" fill="#636d83">aBadRoy@c2-operator:~$</text>
-  <text x="230" y="18" font-family="'Courier New',monospace" font-size="11" fill="#8b949e">/opt/c2/dashboard --mode=red-team</text>
+  <!-- Window title -->
+  <text x="480" y="32" font-family="monospace" font-size="12" fill="#636d83" text-anchor="middle">aBadRoy@c2-console — red-team-operation — TTY 0</text>
 
-  <text x="720" y="18" font-family="'Courier New',monospace" font-size="10" fill="#636d83" text-anchor="end">2026-05-31T14:32:07Z</text>
-  <circle cx="945" cy="14" r="4" fill="none" stroke="#ff0000" stroke-width="1" stroke-opacity="0.4">
-    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-opacity" values="0.5;0.1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="945" cy="14" r="2" fill="#ff0000">
-    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-  </circle>
+  <line x1="20" y1="44" x2="940" y2="44" stroke="#ff0000" stroke-opacity="0.12" stroke-width="0.5"/>
 
   <!-- ============================================================ -->
-  <!-- TITLE: C2 OPERATOR CONSOLE -->
+  <!-- CMD 1: initialize_recon -->
   <!-- ============================================================ -->
-  <text x="30" y="52" font-family="'Courier New',monospace" font-size="22" fill="#ff0000" font-weight="bold" filter="url(#glow)">
-    C2 OPERATOR CONSOLE
-    <animate attributeName="opacity" values="1;0.85;1;0.4;1;0.9;1" dur="5s" repeatCount="indefinite"/>
+  <g font-family="monospace" font-size="14">
+    <text x="45" y="82" fill="#ff4444" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="0s"/>
+      root@abadroy:~$
+    </text>
+    <text x="195" y="82" fill="#c9d1d9" visibility="hidden">
+      <tspan>
+        <set attributeName="visibility" to="visible" begin="0s"/>
+        <animate attributeName="textLength" from="0" to="195" dur="2s" fill="freeze"/>
+        initialize_recon --target 10.10.0.0/16
+      </tspan>
+    </text>
+  </g>
+
+  <!-- Output lines appearing sequentially -->
+  <text x="45" y="112" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="2.5s"/>
+    [✓] Enumerating hosts — 24 subnets discovered
+  </text>
+  <text x="45" y="140" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="3.5s"/>
+    [✓] Cataloguing services — 47 open ports identified
+  </text>
+  <text x="45" y="168" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="4.5s"/>
+    [✓] Vulnerability assessment — 12 CVEs matched to target
+  </text>
+  <text x="45" y="196" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="5.5s"/>
+    [✓] Access vectors — 3 exploitation paths available
   </text>
 
-  <!-- Glitch ghost layers -->
-  <text x="32" y="52" font-family="'Courier New',monospace" font-size="22" fill="#00ff00" font-weight="bold" opacity="0">
-    C2 OPERATOR CONSOLE
-    <animate attributeName="opacity" values="0;0;0;0;0.12;0;0;0;0" dur="5s" repeatCount="indefinite"/>
+  <!-- ============================================================ -->
+  <!-- CMD 2: launch_c2 -->
+  <!-- ============================================================ -->
+  <g font-family="monospace" font-size="14">
+    <text x="45" y="240" fill="#ff4444" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="7s"/>
+      root@abadroy:~$
+    </text>
+    <text x="195" y="240" fill="#c9d1d9" visibility="hidden">
+      <tspan>
+        <set attributeName="visibility" to="visible" begin="7s"/>
+        <animate attributeName="textLength" from="0" to="238" dur="2s" fill="freeze" begin="7s"/>
+        launch_c2 --framework sliver --host 192.168.1.105:4444
+      </tspan>
+    </text>
+  </g>
+
+  <text x="45" y="270" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="9.5s"/>
+    [✓] C2 beacon active — 192.168.1.105:4444 | link: 98% | jitter: 15%
   </text>
-  <text x="29" y="51" font-family="'Courier New',monospace" font-size="22" fill="#0044ff" font-weight="bold" opacity="0">
-    C2 OPERATOR CONSOLE
-    <animate attributeName="opacity" values="0;0;0;0.08;0;0;0;0;0" dur="5s" repeatCount="indefinite"/>
+  <text x="45" y="298" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="10.5s"/>
+    [✓] Beacons online: B-01 B-02 B-03 B-04 — 4 agents reporting
   </text>
 
-  <text x="30" y="67" font-family="'Courier New',monospace" font-size="10" fill="#636d83">operator: aBadRoy // division: offensive security // c2: 192.168.1.105:4444</text>
+  <!-- Alert line -->
+  <text x="45" y="340" font-family="monospace" font-size="14" fill="#ffaa00" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="12s"/>
+    [!] WARNING: beacon B-03 overdue — 58s since last check-in
+  </text>
 
-  <!-- Status badge -->
-  <g transform="translate(760, 40)">
-    <circle cx="0" cy="0" r="18" fill="none" stroke="#ff0000" stroke-opacity="0.15">
-      <animate attributeName="r" values="16;22;16" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-opacity" values="0.2;0;0.2" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="12" fill="url(#node-pulse)" stroke="none"/>
-    <circle cx="0" cy="0" r="8" fill="none" stroke="#ff0000" stroke-width="1" stroke-dasharray="15 25">
-      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="4" fill="#00ff00">
+  <!-- ============================================================ -->
+  <!-- CMD 3: session --list with session table -->
+  <!-- ============================================================ -->
+  <g font-family="monospace" font-size="14">
+    <text x="45" y="382" fill="#ff4444" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="14s"/>
+      root@abadroy:~$
+    </text>
+    <text x="195" y="382" fill="#c9d1d9" visibility="hidden">
+      <tspan>
+        <set attributeName="visibility" to="visible" begin="14s"/>
+        <animate attributeName="textLength" from="0" to="115" dur="1.5s" fill="freeze" begin="14s"/>
+        session --list --beacons
+      </tspan>
+    </text>
+  </g>
+
+  <!-- Session table header -->
+  <text x="45" y="420" font-family="monospace" font-size="13" fill="#ff4444" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="16s"/>
+    ─── ACTIVE BEACONS ─────────────────────────────────────────────────
+  </text>
+
+  <g font-family="monospace" font-size="13">
+    <text x="55" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="17s"/>ID</text>
+    <text x="95" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="17.2s"/>ADDRESS</text>
+    <text x="240" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="17.4s"/>USER</text>
+    <text x="340" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="17.6s"/>PLATFORM</text>
+    <text x="430" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="17.8s"/>STATUS</text>
+    <text x="510" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="18s"/>LAST_IN</text>
+  </g>
+
+  <!-- B-01 row -->
+  <g font-family="monospace" font-size="13">
+    <circle cx="57" cy="442" r="3" fill="#00ff00" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="18.2s"/>
       <animate attributeName="opacity" values="1;0.15;1" dur="1.2s" repeatCount="indefinite"/>
     </circle>
-    <text x="15" y="5" font-family="'Courier New',monospace" font-size="11" fill="#ff0000" filter="url(#glow)">MISSION ACTIVE</text>
-    <text x="15" y="18" font-family="'Courier New',monospace" font-size="9" fill="#44cc44">4 beacons online</text>
-  </g>
-
-  <!-- ============================================================ -->
-  <!-- QUICK METRICS ROW -->
-  <!-- ============================================================ -->
-  <g transform="translate(0, 80)">
-    <!-- Beacon count -->
-    <rect x="30" y="0" width="105" height="22" rx="2" fill="#ff0000" fill-opacity="0.04" stroke="#ff0000" stroke-opacity="0.12" stroke-width="0.5"/>
-    <text x="38" y="9" font-family="'Courier New',monospace" font-size="8" fill="#636d83">BEACONS</text>
-    <text x="38" y="20" font-family="'Courier New',monospace" font-size="11" fill="#ff0000">4 / 9 active
-      <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
-    </text>
-    <circle cx="125" cy="6" r="2.5" fill="#00ff00">
+    <text x="70" y="446" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="18.2s"/>B-01</text>
+    <text x="95" y="446" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="18.4s"/>192.168.1.105</text>
+    <text x="240" y="446" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="18.6s"/>root</text>
+    <text x="340" y="446" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="18.8s"/>linux-x64</text>
+    <circle cx="438" cy="442" r="3" fill="#00ff00" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="19s"/>
       <animate attributeName="opacity" values="1;0.15;1" dur="1s" repeatCount="indefinite"/>
     </circle>
-
-    <!-- Tasks queued -->
-    <rect x="148" y="0" width="105" height="22" rx="2" fill="#ff0000" fill-opacity="0.04" stroke="#ff0000" stroke-opacity="0.12" stroke-width="0.5"/>
-    <text x="156" y="9" font-family="'Courier New',monospace" font-size="8" fill="#636d83">TASKS</text>
-    <text x="156" y="20" font-family="'Courier New',monospace" font-size="11" fill="#ff4444">8 queued / 12 done</text>
-
-    <!-- Payloads loaded -->
-    <rect x="266" y="0" width="105" height="22" rx="2" fill="#ff0000" fill-opacity="0.04" stroke="#ff0000" stroke-opacity="0.12" stroke-width="0.5"/>
-    <text x="274" y="9" font-family="'Courier New',monospace" font-size="8" fill="#636d83">PAYLOADS</text>
-    <text x="274" y="20" font-family="'Courier New',monospace" font-size="11" fill="#ff4444">1,247 loaded</text>
-    <rect x="342" y="15" width="20" height="4" rx="1" fill="#ff4444">
-      <animate attributeName="width" values="15;22;15" dur="3s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- Creds harvested -->
-    <rect x="384" y="0" width="105" height="22" rx="2" fill="#ff0000" fill-opacity="0.04" stroke="#ff0000" stroke-opacity="0.12" stroke-width="0.5"/>
-    <text x="392" y="9" font-family="'Courier New',monospace" font-size="8" fill="#636d83">CREDS</text>
-    <text x="392" y="20" font-family="'Courier New',monospace" font-size="11" fill="#ffaa00">89 / 142 cracked</text>
-
-    <!-- Uptime -->
-    <rect x="502" y="0" width="105" height="22" rx="2" fill="#ff0000" fill-opacity="0.04" stroke="#ff0000" stroke-opacity="0.12" stroke-width="0.5"/>
-    <text x="510" y="9" font-family="'Courier New',monospace" font-size="8" fill="#636d83">UPTIME</text>
-    <text x="510" y="20" font-family="'Courier New',monospace" font-size="11" fill="#44cc44">72h:14m:32s
-      <animate attributeName="opacity" values="1;0.7;1" dur="4s" repeatCount="indefinite"/>
-    </text>
-
-    <!-- OPSEC -->
-    <rect x="620" y="0" width="105" height="22" rx="2" fill="#ff0000" fill-opacity="0.04" stroke="#ff0000" stroke-opacity="0.12" stroke-width="0.5"/>
-    <text x="628" y="9" font-family="'Courier New',monospace" font-size="8" fill="#636d83">OPSEC</text>
-    <circle cx="636" cy="17" r="3" fill="#00ff00">
-      <animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite"/>
-    </circle>
-    <text x="646" y="20" font-family="'Courier New',monospace" font-size="11" fill="#44cc44">ENABLED</text>
+    <text x="448" y="446" fill="#44cc44" visibility="hidden"><set attributeName="visibility" to="visible" begin="19s"/>active</text>
+    <text x="510" y="446" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="19.2s"/>0.4s ago</text>
   </g>
 
-  <!-- ============================================================ -->
-  <!-- SESSION TABLE (LEFT) -->
-  <!-- ============================================================ -->
-  <rect x="30" y="115" width="450" height="125" rx="3" fill="#0a0e14" stroke="#ff0000" stroke-opacity="0.1" stroke-width="0.5"/>
-
-  <text x="42" y="132" font-family="'Courier New',monospace" font-size="10" fill="#636d83">SESSION TABLE</text>
-  <text x="180" y="132" font-family="'Courier New',monospace" font-size="10" fill="#ff0000">4 active beacons</text>
-  <line x1="42" y1="137" x2="465" y2="137" stroke="#ff0000" stroke-opacity="0.08" stroke-width="0.5"/>
-
-  <!-- Header -->
-  <g font-family="'Courier New',monospace" font-size="9" fill="#ff4444">
-    <text x="42" y="150">BEACON</text>
-    <text x="95" y="150">ADDRESS</text>
-    <text x="195" y="150">USER</text>
-    <text x="255" y="150">PLATFORM</text>
-    <text x="315" y="150">LAST_IN</text>
-    <text x="385" y="150">STATUS</text>
-    <text x="440" y="150">TASKS</text>
-  </g>
-
-  <!-- Row 1 -->
-  <g font-family="'Courier New',monospace" font-size="9">
-    <rect x="42" y="153" width="423" height="16" fill="#ff0000" fill-opacity="0.03"/>
-    <circle cx="52" cy="161" r="2" fill="#00ff00">
-      <animate attributeName="opacity" values="1;0.15;1" dur="1.2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="60" y="164" fill="#c9d1d9">B-01</text>
-    <text x="95" y="164" fill="#c9d1d9">192.168.1.105</text>
-    <text x="195" y="164" fill="#c9d1d9">root/Administrator</text>
-    <text x="255" y="164" fill="#8b949e">linux-x64</text>
-    <text x="315" y="164" fill="#8b949e">0.4s ago</text>
-    <circle cx="393" cy="161" r="2.5" fill="#00ff00">
-      <animate attributeName="opacity" values="1;0.15;1" dur="1s" repeatCount="indefinite"/>
-    </circle>
-    <text x="400" y="164" fill="#44cc44">active</text>
-    <text x="440" y="164" fill="#c9d1d9">4</text>
-  </g>
-
-  <!-- Row 2 -->
-  <g font-family="'Courier New',monospace" font-size="9">
-    <circle cx="52" cy="177" r="2" fill="#00ff00">
+  <!-- B-02 row -->
+  <g font-family="monospace" font-size="13">
+    <circle cx="57" cy="466" r="3" fill="#00ff00" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="19.4s"/>
       <animate attributeName="opacity" values="0.15;1;0.15" dur="1.5s" repeatCount="indefinite"/>
     </circle>
-    <text x="60" y="180" fill="#c9d1d9">B-02</text>
-    <text x="95" y="180" fill="#c9d1d9">10.10.10.50</text>
-    <text x="195" y="180" fill="#c9d1d9">admin/DC01</text>
-    <text x="255" y="180" fill="#8b949e">win10-x64</text>
-    <text x="315" y="180" fill="#8b949e">1.2s ago</text>
-    <circle cx="393" cy="177" r="2.5" fill="#00ff00">
+    <text x="70" y="470" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="19.4s"/>B-02</text>
+    <text x="95" y="470" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="19.6s"/>10.10.10.50</text>
+    <text x="240" y="470" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="19.8s"/>admin</text>
+    <text x="340" y="470" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="20s"/>win10-x64</text>
+    <circle cx="438" cy="466" r="3" fill="#00ff00" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="20.2s"/>
       <animate attributeName="opacity" values="0.15;1;0.15" dur="1.3s" repeatCount="indefinite"/>
     </circle>
-    <text x="400" y="180" fill="#44cc44">active</text>
-    <text x="440" y="180" fill="#c9d1d9">7</text>
+    <text x="448" y="470" fill="#44cc44" visibility="hidden"><set attributeName="visibility" to="visible" begin="20.2s"/>active</text>
+    <text x="510" y="470" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="20.4s"/>1.2s ago</text>
   </g>
 
-  <!-- Row 3 -->
-  <g font-family="'Courier New',monospace" font-size="9">
-    <rect x="42" y="185" width="423" height="16" fill="#ff0000" fill-opacity="0.03"/>
-    <circle cx="52" cy="193" r="2" fill="#ffaa00">
+  <!-- B-03 row -->
+  <g font-family="monospace" font-size="13">
+    <circle cx="57" cy="490" r="3" fill="#ffaa00" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="20.6s"/>
       <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/>
     </circle>
-    <text x="60" y="196" fill="#c9d1d9">B-03</text>
-    <text x="95" y="196" fill="#c9d1d9">10.10.20.100</text>
-    <text x="195" y="196" fill="#c9d1d9">www-data</text>
-    <text x="255" y="196" fill="#8b949e">linux-x64</text>
-    <text x="315" y="196" fill="#8b949e">58.3s ago</text>
-    <circle cx="393" cy="193" r="2.5" fill="#ffaa00"/>
-    <text x="400" y="196" fill="#ffaa00">sleep(60)</text>
-    <text x="440" y="196" fill="#636d83">0</text>
+    <text x="70" y="494" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="20.6s"/>B-03</text>
+    <text x="95" y="494" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="20.8s"/>10.10.20.100</text>
+    <text x="240" y="494" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="21s"/>www-data</text>
+    <text x="340" y="494" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="21.2s"/>linux-x64</text>
+    <circle cx="438" cy="490" r="3" fill="#ffaa00" visibility="hidden"><set attributeName="visibility" to="visible" begin="21.4s"/></circle>
+    <text x="448" y="494" fill="#ffaa00" visibility="hidden"><set attributeName="visibility" to="visible" begin="21.4s"/>sleep(60)</text>
+    <text x="510" y="494" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="21.6s"/>58.3s ago</text>
   </g>
 
-  <!-- Row 4 -->
-  <g font-family="'Courier New',monospace" font-size="9">
-    <circle cx="52" cy="209" r="2" fill="#ff4444">
+  <!-- B-04 row -->
+  <g font-family="monospace" font-size="13">
+    <circle cx="57" cy="514" r="3" fill="#ff4444" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="21.8s"/>
       <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
     </circle>
-    <text x="60" y="212" fill="#c9d1d9">B-04</text>
-    <text x="95" y="212" fill="#c9d1d9">10.10.30.200</text>
-    <text x="195" y="212" fill="#c9d1d9">svc-sql</text>
-    <text x="255" y="212" fill="#8b949e">win2019-x64</text>
-    <text x="315" y="212" fill="#8b949e">4m:12s</text>
-    <circle cx="393" cy="209" r="2.5" fill="#ff4444"/>
-    <text x="400" y="212" fill="#ff4444">dormant</text>
-    <text x="440" y="212" fill="#636d83">2</text>
+    <text x="70" y="518" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="21.8s"/>B-04</text>
+    <text x="95" y="518" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="22s"/>10.10.30.200</text>
+    <text x="240" y="518" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="22.2s"/>svc-sql</text>
+    <text x="340" y="518" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="22.4s"/>win2019-x64</text>
+    <circle cx="438" cy="514" r="3" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="22.6s"/></circle>
+    <text x="448" y="518" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="22.6s"/>dormant</text>
+    <text x="510" y="518" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="22.8s"/>4m:12s</text>
   </g>
 
-  <!-- Row 5 - staggered appearance -->
-  <g font-family="'Courier New',monospace" font-size="9">
-    <rect x="42" y="217" width="423" height="16" fill="#ff0000" fill-opacity="0"/>
-    <circle cx="52" cy="225" r="2" fill="#00ff00" fill-opacity="0">
-      <animate attributeName="fill-opacity" values="0;0;0.8" dur="12s" repeatCount="indefinite" keyTimes="0;0.7;0.75"/>
-    </circle>
-    <text x="60" y="228" fill="#c9d1d9" fill-opacity="0">
-      B-05
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.8"/>
+  <!-- Table summary -->
+  <text x="45" y="540" font-family="monospace" font-size="13" fill="#636d83" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="23.5s"/>
+    4 of 9 beacons · 2 active · 1 sleep · 1 dormant
+  </text>
+
+  <!-- ============================================================ -->
+  <!-- RIGHT PANEL: CMD 4 — deploy_payload -->
+  <!-- ============================================================ -->
+  <g font-family="monospace" font-size="14">
+    <text x="530" y="82" fill="#ff4444" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="25s"/>
+      root@abadroy:~$
     </text>
-    <text x="95" y="228" fill="#c9d1d9" fill-opacity="0">
-      10.10.40.15
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.82"/>
-    </text>
-    <text x="195" y="228" fill="#c9d1d9" fill-opacity="0">
-      backup_user
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.85"/>
-    </text>
-    <text x="255" y="228" fill="#8b949e" fill-opacity="0">
-      linux-arm64
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.88"/>
-    </text>
-    <text x="315" y="228" fill="#8b949e" fill-opacity="0">
-      just now
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.9"/>
-    </text>
-    <circle cx="393" cy="225" r="2.5" fill="#00ff00" fill-opacity="0">
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.92"/>
-    </circle>
-    <text x="400" y="228" fill="#44cc44" fill-opacity="0">
-      active
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.94"/>
-    </text>
-    <text x="440" y="228" fill="#c9d1d9" fill-opacity="0">
-      1
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.96"/>
+    <text x="680" y="82" fill="#c9d1d9" visibility="hidden">
+      <tspan>
+        <set attributeName="visibility" to="visible" begin="25s"/>
+        <animate attributeName="textLength" from="0" to="125" dur="1.5s" fill="freeze" begin="25s"/>
+        deploy_payload B-01
+      </tspan>
     </text>
   </g>
 
-  <!-- Staggered row highlight sweep -->
-  <rect x="42" y="217" width="423" height="16" rx="1" fill="#ff0000" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="0;0;0.08;0.04;0" dur="12s" repeatCount="indefinite" keyTimes="0;0.7;0.75;0.85;1"/>
+  <text x="530" y="112" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="27s"/>
+    [✓] warhead: reverse_shell_64 — loaded (4.2 KB)
+  </text>
+  <text x="530" y="140" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="28s"/>
+    [✓] warhead: keylogger_x64 — loaded (12.8 KB)
+  </text>
+  <text x="530" y="168" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="29s"/>
+    [✓] warhead: Mimikatz_trunk — loaded (1.2 MB)
+  </text>
+  <text x="530" y="206" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="30.5s"/>
+    [→] Deployment: 3/3 warheads delivered to B-01
+  </text>
+
+  <!-- ============================================================ -->
+  <!-- CMD 5: exfil -->
+  <!-- ============================================================ -->
+  <g font-family="monospace" font-size="14">
+    <text x="530" y="250" fill="#ff4444" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="32s"/>
+      root@abadroy:~$
+    </text>
+    <text x="680" y="250" fill="#c9d1d9" visibility="hidden">
+      <tspan>
+        <set attributeName="visibility" to="visible" begin="32s"/>
+        <animate attributeName="textLength" from="0" to="190" dur="2s" fill="freeze" begin="32s"/>
+        exfil --channel tunnel --target 10.10.0.0/16
+      </tspan>
+    </text>
+  </g>
+
+  <text x="530" y="280" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="34.5s"/>
+    [+] Exfil channel open — AES-256 encrypted tunnel active
+  </text>
+  <text x="530" y="308" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="36s"/>
+    [→] 2.4 GB staged — estimated exfil time: 4m:12s
+  </text>
+
+  <!-- ============================================================ -->
+  <!-- MISSION METRICS PANEL -->
+  <!-- ============================================================ -->
+  <text x="530" y="350" font-family="monospace" font-size="14" fill="#ff4444" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="37.5s"/>
+    ─── MISSION METRICS ──────────────────────────────────
+  </text>
+
+  <g font-family="monospace" font-size="13">
+    <text x="540" y="382" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="38s"/>BEACONS:</text>
+    <text x="660" y="382" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="38s"/>4/9 active</text>
+
+    <text x="540" y="406" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="38.5s"/>TASKS:</text>
+    <text x="660" y="406" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="38.5s"/>8 queued / 12 done</text>
+
+    <text x="540" y="430" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="39s"/>CREDS:</text>
+    <text x="660" y="430" fill="#ffaa00" visibility="hidden"><set attributeName="visibility" to="visible" begin="39s"/>89 / 142 cracked (62%)</text>
+
+    <text x="540" y="454" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="39.5s"/>EXFIL:</text>
+    <text x="660" y="454" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="39.5s"/>2.4 GB · tunnel active</text>
+
+    <text x="540" y="478" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="40s"/>OPSEC:</text>
+    <text x="660" y="478" fill="#44cc44" visibility="hidden"><set attributeName="visibility" to="visible" begin="40s"/>ENABLED · 3 tunnels</text>
+  </g>
+
+  <text x="530" y="490" font-family="monospace" font-size="13" fill="#ff4444" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="40.5s"/>
+    ─────────────────────────────────────────────────────────
+  </text>
+
+  <!-- ============================================================ -->
+  <!-- FINAL PROMPT + BLINKING CURSOR -->
+  <!-- ============================================================ -->
+  <text x="45" y="540" font-family="monospace" font-size="14" fill="#ff4444" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="42s"/>
+    root@abadroy:~$
+  </text>
+
+  <rect x="195" y="528" width="9" height="18" fill="#ff0000" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="42s"/>
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Row counter -->
-  <text x="255" y="234" font-family="'Courier New',monospace" font-size="8" fill="#636d83" text-anchor="middle">5 of 9 beacons · 4 active · 1 sleep · 1 dormant <!-- +1 new beacon every 12s --></text>
-
-  <!-- ============================================================ -->
-  <!-- NETWORK TOPOLOGY (RIGHT) -->
-  <!-- ============================================================ -->
-  <rect x="490" y="115" width="440" height="125" rx="3" fill="#0a0e14" stroke="#ff0000" stroke-opacity="0.1" stroke-width="0.5"/>
-
-  <text x="502" y="132" font-family="'Courier New',monospace" font-size="10" fill="#636d83">NETWORK TOPOLOGY</text>
-  <text x="660" y="132" font-family="'Courier New',monospace" font-size="10" fill="#ff0000">live · 5 nodes</text>
-  <line x1="502" y1="137" x2="915" y2="137" stroke="#ff0000" stroke-opacity="0.08" stroke-width="0.5"/>
-
-  <!-- Subnet labels -->
-  <text x="502" y="148" font-family="'Courier New',monospace" font-size="7" fill="#636d83">DMZ: 10.10.10.0/24</text>
-  <text x="640" y="148" font-family="'Courier New',monospace" font-size="7" fill="#636d83">INT: 192.168.1.0/24</text>
-  <text x="780" y="148" font-family="'Courier New',monospace" font-size="7" fill="#636d83">TGT: 10.10.0.0/16</text>
-
-  <!-- Connection lines with flow animation -->
-  <g stroke-width="1.5" stroke-linecap="round">
-    <!-- C2 → B1 -->
-    <line x1="560" y1="200" x2="650" y2="190" stroke="#ff0000" stroke-opacity="0.08" stroke-width="3"/>
-    <line x1="560" y1="200" x2="650" y2="190" stroke="#ff0000" stroke-opacity="0.35" stroke-width="1">
-      <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="1.5s" repeatCount="indefinite" stroke-dasharray="3 8"/>
-    </line>
-
-    <!-- C2 → B2 -->
-    <line x1="560" y1="200" x2="780" y2="175" stroke="#ff0000" stroke-opacity="0.08" stroke-width="3"/>
-    <line x1="560" y1="200" x2="780" y2="175" stroke="#ff0000" stroke-opacity="0.3" stroke-width="1">
-      <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="2s" repeatCount="indefinite" stroke-dasharray="3 8"/>
-    </line>
-
-    <!-- C2 → B3 -->
-    <line x1="560" y1="200" x2="700" y2="230" stroke="#ff0000" stroke-opacity="0.08" stroke-width="3"/>
-    <line x1="560" y1="200" x2="700" y2="230" stroke="#ff0000" stroke-opacity="0.25" stroke-width="1">
-      <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="2.5s" repeatCount="indefinite" stroke-dasharray="3 8"/>
-    </line>
-
-    <!-- C2 → B4 (dormant - slower, dimmer) -->
-    <line x1="560" y1="200" x2="730" y2="215" stroke="#ff0000" stroke-opacity="0.03" stroke-width="3"/>
-    <line x1="560" y1="200" x2="730" y2="215" stroke="#ff0000" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="2 10">
-      <animate attributeName="stroke-dashoffset" from="0" to="-120" dur="5s" repeatCount="indefinite"/>
-    </line>
-
-    <!-- C2 → New B5 -->
-    <line x1="560" y1="200" x2="670" y2="218" stroke="#00ff00" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.25" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.82"/>
-    </line>
-    <line x1="560" y1="200" x2="670" y2="218" stroke="#00ff00" stroke-opacity="0" stroke-width="1" stroke-dasharray="3 8">
-      <animate attributeName="stroke-opacity" values="0;0;0.4" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.85"/>
-      <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="2s" repeatCount="indefinite" begin="9s"/>
-    </line>
-
-    <!-- B2 → Target -->
-    <line x1="780" y1="175" x2="870" y2="210" stroke="#ff0000" stroke-opacity="0.06" stroke-width="3"/>
-    <line x1="780" y1="175" x2="870" y2="210" stroke="#ff0000" stroke-opacity="0.25" stroke-width="1">
-      <animate attributeName="stroke-dashoffset" from="0" to="-80" dur="2s" repeatCount="indefinite" stroke-dasharray="3 8"/>
-    </line>
-
-    <!-- B1 → Internal -->
-    <line x1="650" y1="190" x2="670" y2="218" stroke="#ff0000" stroke-opacity="0.15" stroke-width="1">
-      <animate attributeName="stroke-dashoffset" from="0" to="-60" dur="3s" repeatCount="indefinite" stroke-dasharray="2 6"/>
-    </line>
-  </g>
-
-  <!-- C2 HUB NODE -->
-  <g transform="translate(560, 200)">
-    <!-- Radar sweep cone -->
-    <path d="M0 0 L35 -35 A50 50 0 0 1 35 35 Z" fill="url(#radar-fill)" stroke="none">
-      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
-    </path>
-
-    <!-- Pulse rings -->
-    <circle cx="0" cy="0" r="5" fill="none" stroke="#ff0000" stroke-width="1" stroke-opacity="0.4">
-      <animate attributeName="r" values="10;30;10" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="5" fill="none" stroke="#ff0000" stroke-width="0.8" stroke-opacity="0">
-      <animate attributeName="r" values="10;25;10" dur="3s" repeatCount="indefinite" begin="1.5s"/>
-      <animate attributeName="stroke-opacity" values="0;0.3;0" dur="3s" repeatCount="indefinite" begin="1.5s"/>
-    </circle>
-
-    <!-- Core -->
-    <circle cx="0" cy="0" r="10" fill="url(#node-pulse)" stroke="none"/>
-    <circle cx="0" cy="0" r="6" fill="#ff0000" stroke="#ff4444" stroke-width="1.5">
-      <animate attributeName="r" values="5;7;5" dur="1.2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="0" y="-18" font-family="'Courier New',monospace" font-size="9" fill="#ff4444" text-anchor="middle" filter="url(#glow)">C2-HUB</text>
-    <text x="0" y="20" font-family="'Courier New',monospace" font-size="7" fill="#636d83" text-anchor="middle">sliver :4444</text>
-  </g>
-
-  <!-- BEACON NODES -->
-  <!-- B1: Active -->
-  <g transform="translate(650, 190)">
-    <circle cx="0" cy="0" r="8" fill="url(#node-pulse)" stroke="none"/>
-    <circle cx="0" cy="0" r="4" fill="#00cc00" stroke="#44cc44" stroke-width="1">
-      <animate attributeName="r" values="3.5;5;3.5" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="0" y="-12" font-family="'Courier New',monospace" font-size="8" fill="#c9d1d9" text-anchor="middle">B-01</text>
-    <text x="0" y="16" font-family="'Courier New',monospace" font-size="7" fill="#44cc44" text-anchor="middle">active</text>
-  </g>
-
-  <!-- B2: Active -->
-  <g transform="translate(780, 175)">
-    <circle cx="0" cy="0" r="8" fill="url(#node-pulse)" stroke="none"/>
-    <circle cx="0" cy="0" r="4" fill="#00cc00" stroke="#44cc44" stroke-width="1">
-      <animate attributeName="r" values="4;3;4" dur="2.5s" repeatCount="indefinite"/>
-    </circle>
-    <text x="0" y="-12" font-family="'Courier New',monospace" font-size="8" fill="#c9d1d9" text-anchor="middle">B-02</text>
-    <text x="0" y="16" font-family="'Courier New',monospace" font-size="7" fill="#44cc44" text-anchor="middle">active</text>
-  </g>
-
-  <!-- B3: Sleep -->
-  <g transform="translate(700, 230)">
-    <circle cx="0" cy="0" r="8" fill="url(#node-pulse)" stroke="none"/>
-    <circle cx="0" cy="0" r="4" fill="#cc8800" stroke="#ffaa00" stroke-width="1">
-      <animate attributeName="r" values="3;4.5;3" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <text x="0" y="-12" font-family="'Courier New',monospace" font-size="8" fill="#c9d1d9" text-anchor="middle">B-03</text>
-    <text x="0" y="16" font-family="'Courier New',monospace" font-size="7" fill="#ffaa00" text-anchor="middle">sleep(60)</text>
-  </g>
-
-  <!-- B4: Dormant -->
-  <g transform="translate(730, 215)">
-    <circle cx="0" cy="0" r="6" fill="url(#node-pulse)" stroke="none"/>
-    <circle cx="0" cy="0" r="3" fill="#cc0000" stroke="#ff4444" stroke-width="1">
-      <animate attributeName="r" values="2.5;4;2.5" dur="4s" repeatCount="indefinite"/>
-    </circle>
-    <text x="0" y="-11" font-family="'Courier New',monospace" font-size="8" fill="#c9d1d9" text-anchor="middle">B-04</text>
-    <text x="0" y="15" font-family="'Courier New',monospace" font-size="7" fill="#ff4444" text-anchor="middle">dormant</text>
-  </g>
-
-  <!-- B5: New (appears staggered) -->
-  <g transform="translate(670, 218)">
-    <circle cx="0" cy="0" r="8" fill="url(#node-pulse)" fill-opacity="0" stroke="none">
-      <animate attributeName="fill-opacity" values="0;0;0.6" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.8"/>
-    </circle>
-    <circle cx="0" cy="0" r="4" fill="#00cc00" fill-opacity="0" stroke="#44cc44" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.78;0.85"/>
-      <animate attributeName="r" values="3;5;3" dur="1.8s" repeatCount="indefinite" begin="9s"/>
-    </circle>
-    <text x="0" y="-12" font-family="'Courier New',monospace" font-size="8" fill="#c9d1d9" fill-opacity="0" text-anchor="middle">
-      B-05
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.78;0.85"/>
-    </text>
-    <text x="0" y="16" font-family="'Courier New',monospace" font-size="7" fill="#44cc44" fill-opacity="0" text-anchor="middle">
-      active
-      <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.8;0.88"/>
-    </text>
-  </g>
-
-  <!-- TARGET NODE -->
-  <g transform="translate(870, 210)">
-    <circle cx="0" cy="0" r="10" fill="url(#node-pulse)" stroke="none"/>
-    <circle cx="0" cy="0" r="5" fill="#ff2222" stroke="#ff6666" stroke-width="2">
-      <animate attributeName="r" values="4.5;6.5;4.5" dur="1.5s" repeatCount="indefinite"/>
-    </circle>
-    <text x="0" y="-16" font-family="'Courier New',monospace" font-size="9" fill="#ff4444" text-anchor="middle" filter="url(#glow)">TARGET</text>
-    <text x="0" y="18" font-family="'Courier New',monospace" font-size="7" fill="#636d83" text-anchor="middle">10.10.0.0/16</text>
-    <text x="-35" y="3" font-family="'Courier New',monospace" font-size="7" fill="#ff4444" fill-opacity="0.6">◉ LOCKED</text>
-  </g>
-
-  <!-- DATA PACKET PARTICLES -->
-  <circle r="2.5" fill="#ffffff" filter="url(#glow)">
-    <animateMotion dur="1.8s" repeatCount="indefinite" path="M560 200 L650 190"/>
-  </circle>
-  <circle r="1.5" fill="#ff6666">
-    <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.9s" path="M560 200 L650 190"/>
-  </circle>
-
-  <circle r="2" fill="#ffffff" filter="url(#glow)">
-    <animateMotion dur="2.5s" repeatCount="indefinite" path="M560 200 L780 175"/>
-  </circle>
-  <circle r="1.5" fill="#ff6666">
-    <animateMotion dur="2.5s" repeatCount="indefinite" begin="1.25s" path="M560 200 L780 175"/>
-  </circle>
-
-  <circle r="2" fill="#ffffff">
-    <animateMotion dur="3s" repeatCount="indefinite" path="M560 200 L700 230"/>
-  </circle>
-
-  <circle r="1.5" fill="#ff4444">
-    <animateMotion dur="4s" repeatCount="indefinite" path="M780 175 L870 210"/>
-  </circle>
-  <circle r="1.5" fill="#ff6666">
-    <animateMotion dur="5s" repeatCount="indefinite" path="M870 210 L780 175 L560 200"/>
-  </circle>
-
-  <!-- New B5 packet -->
-  <circle r="2" fill="#44cc44" fill-opacity="0">
-    <animate attributeName="fill-opacity" values="0;0;1" dur="12s" repeatCount="indefinite" keyTimes="0;0.78;0.85"/>
-    <animateMotion dur="2s" repeatCount="indefinite" begin="9.5s" path="M560 200 L670 218"/>
-  </circle>
-
-  <!-- Matrix rain (right edge) -->
-  <g font-family="'Courier New',monospace" font-size="7" fill="#ff0000" fill-opacity="0.12">
-    <text x="928" y="-10">1<tspan> <animate attributeName="y" from="-20" to="400" dur="4s" repeatCount="indefinite"/></tspan></text>
-    <text x="936" y="-30">A<tspan> <animate attributeName="y" from="-30" to="400" dur="4.5s" repeatCount="indefinite"/></tspan></text>
-    <text x="944" y="-50">0<tspan> <animate attributeName="y" from="-40" to="400" dur="3.5s" repeatCount="indefinite"/></tspan></text>
-    <text x="952" y="-15">F<tspan> <animate attributeName="y" from="-25" to="400" dur="5s" repeatCount="indefinite"/></tspan></text>
-    <text x="928" y="-60">7<tspan> <animate attributeName="y" from="-50" to="400" dur="3s" repeatCount="indefinite"/></tspan></text>
-    <text x="936" y="-80">C<tspan> <animate attributeName="y" from="-60" to="400" dur="5.5s" repeatCount="indefinite"/></tspan></text>
-    <text x="944" y="-10">3<tspan> <animate attributeName="y" from="-15" to="400" dur="3.8s" repeatCount="indefinite"/></tspan></text>
-    <text x="952" y="-45">9<tspan> <animate attributeName="y" from="-35" to="400" dur="4.2s" repeatCount="indefinite"/></tspan></text>
-    <text x="928" y="-90">B<tspan> <animate attributeName="y" from="-70" to="400" dur="4.8s" repeatCount="indefinite"/></tspan></text>
-    <text x="936" y="-5">2<tspan> <animate attributeName="y" from="-10" to="400" dur="6s" repeatCount="indefinite"/></tspan></text>
-    <text x="944" y="-70">5<tspan> <animate attributeName="y" from="-55" to="400" dur="4s" repeatCount="indefinite"/></tspan></text>
-    <text x="952" y="-25">D<tspan> <animate attributeName="y" from="-20" to="400" dur="3.2s" repeatCount="indefinite"/></tspan></text>
-  </g>
-
-  <!-- ============================================================ -->
-  <!-- BOTTOM: LIVE TERMINAL (LEFT) + KILL CHAIN (RIGHT) -->
-  <!-- ============================================================ -->
-  <rect x="30" y="250" width="450" height="65" rx="3" fill="#0a0e14" stroke="#ff0000" stroke-opacity="0.1" stroke-width="0.5"/>
-
-  <text x="42" y="265" font-family="'Courier New',monospace" font-size="10" fill="#636d83">LIVE TERMINAL</text>
-  <text x="200" y="265" font-family="'Courier New',monospace" font-size="10" fill="#8b949e">/var/log/c2/operator.log</text>
-  <line x1="42" y1="270" x2="465" y2="270" stroke="#ff0000" stroke-opacity="0.08" stroke-width="0.5"/>
-
-  <!-- Terminal output with sequential reveal -->
-  <g font-family="'Courier New',monospace" font-size="9">
-    <!-- Line 1: Prompt -->
-    <text x="45" y="282" fill="#ff4444">
-      root@C2-HUB:~#
-      <animate attributeName="opacity" values="0;0;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.05;0.1;1"/>
-    </text>
-    <text x="138" y="282" fill="#c9d1d9">
-      ./status --check
-      <animate attributeName="opacity" values="0;0;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.05;0.1;1"/>
-    </text>
-
-    <!-- Line 2: Status output -->
-    <text x="45" y="294" fill="#44cc44">
-      [✓] C2 beacon: 192.168.1.105:4444 — link established (RTT: 4ms)
-      <animate attributeName="opacity" values="0;0;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.18;0.25;1"/>
-    </text>
-
-    <!-- Line 3: Second status -->
-    <text x="45" y="306" fill="#44cc44">
-      [✓] Payload validation: 1,247/1,247 warheads ready (100%)
-      <animate attributeName="opacity" values="0;0;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.35;0.42;1"/>
-    </text>
-
-    <!-- Line 4: Third status -->
-    <text x="45" y="306" fill="#ffaa00">
-      [!] beacon B-03: check-in overdue (58s since last heartbeat)
-      <animate attributeName="opacity" values="0;0;0;0;1;1;0;0" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;0.5;0.55;0.58;0.72;0.78;1"/>
-    </text>
-
-    <!-- Line 5: New beacon alert -->
-    <text x="45" y="306" fill="#44cc44">
-      [+] New beacon registered: B-05 — 10.10.40.15 (linux-arm64)
-      <animate attributeName="opacity" values="0;0;0;0;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.7;0.75;0.82;0.85;1"/>
-    </text>
-
-    <!-- Blinking prompt at end -->
-    <text x="45" y="282" fill="#ff4444" fill-opacity="0">
-      root@C2-HUB:~#
-      <animate attributeName="fill-opacity" values="0;0;0;0;0;0;1;1" dur="10s" repeatCount="indefinite" keyTimes="0;0.65;0.8;0.82;0.95;0.97;0.98;1"/>
-    </text>
-    <rect x="138" y="275" width="6" height="11" fill="#ff0000" fill-opacity="0">
-      <animate attributeName="fill-opacity" values="0;0;0;1;1;0" dur="10s" repeatCount="indefinite" keyTimes="0;0.9;0.97;0.98;0.99;1"/>
-    </rect>
-  </g>
-
-  <!-- KILL CHAIN PROGRESS (RIGHT BOTTOM) -->
-  <rect x="490" y="250" width="440" height="65" rx="3" fill="#0a0e14" stroke="#ff0000" stroke-opacity="0.1" stroke-width="0.5"/>
-
-  <text x="502" y="265" font-family="'Courier New',monospace" font-size="10" fill="#636d83">KILL CHAIN — MITRE ATT&amp;CK v14</text>
-  <text x="760" y="265" font-family="'Courier New',monospace" font-size="10" fill="#ff0000">active operation</text>
-  <line x1="502" y1="270" x2="915" y2="270" stroke="#ff0000" stroke-opacity="0.08" stroke-width="0.5"/>
-
-  <!-- Kill chain phase blocks -->
-  <!-- Phase 1: Recon - completed -->
-  <g transform="translate(502, 278)">
-    <rect x="0" y="0" width="58" height="18" rx="2" fill="#ff0000" fill-opacity="0.15" stroke="#ff0000" stroke-opacity="0.3" stroke-width="0.5"/>
-    <text x="29" y="12" font-family="'Courier New',monospace" font-size="7" fill="#ff4444" text-anchor="middle">RECON</text>
-    <text x="29" y="22" font-family="'Courier New',monospace" font-size="6" fill="#44cc44" text-anchor="middle">T1595 ✓</text>
-  </g>
-
-  <!-- Phase 2: Resource Dev - completed -->
-  <g transform="translate(565, 278)">
-    <rect x="0" y="0" width="58" height="18" rx="2" fill="#ff0000" fill-opacity="0.15" stroke="#ff0000" stroke-opacity="0.3" stroke-width="0.5"/>
-    <text x="29" y="12" font-family="'Courier New',monospace" font-size="7" fill="#ff4444" text-anchor="middle">DEV</text>
-    <text x="29" y="22" font-family="'Courier New',monospace" font-size="6" fill="#44cc44" text-anchor="middle">T1587 ✓</text>
-  </g>
-
-  <!-- Phase 3: Initial Access - active -->
-  <g transform="translate(628, 278)">
-    <rect x="0" y="0" width="58" height="18" rx="2" fill="#ff0000" fill-opacity="0">
-      <animate attributeName="fill-opacity" values="0;0.2;0" dur="2s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="0" y="0" width="58" height="18" rx="2" fill="none" stroke="#ff0000" stroke-opacity="0.5" stroke-width="0.5"/>
-    <text x="29" y="12" font-family="'Courier New',monospace" font-size="7" fill="#ff0000" text-anchor="middle">ACCESS</text>
-    <circle cx="50" cy="4" r="2.5" fill="#00ff00">
-      <animate attributeName="opacity" values="1;0.1;1" dur="0.8s" repeatCount="indefinite"/>
-    </circle>
-    <text x="29" y="22" font-family="'Courier New',monospace" font-size="6" fill="#ff4444" text-anchor="middle">T1190 ►</text>
-  </g>
-
-  <!-- Phase 4: Execution - pending -->
-  <g transform="translate(691, 278)">
-    <rect x="0" y="0" width="58" height="18" rx="2" fill="none" stroke="#ff0000" stroke-opacity="0.15" stroke-width="0.5"/>
-    <text x="29" y="12" font-family="'Courier New',monospace" font-size="7" fill="#636d83" text-anchor="middle">EXEC</text>
-    <text x="29" y="22" font-family="'Courier New',monospace" font-size="6" fill="#636d83" text-anchor="middle">T1204</text>
-  </g>
-
-  <!-- Phase 5: Persistence - pending -->
-  <g transform="translate(754, 278)">
-    <rect x="0" y="0" width="58" height="18" rx="2" fill="none" stroke="#ff0000" stroke-opacity="0.15" stroke-width="0.5"/>
-    <text x="29" y="12" font-family="'Courier New',monospace" font-size="7" fill="#636d83" text-anchor="middle">PERSIST</text>
-    <text x="29" y="22" font-family="'Courier New',monospace" font-size="6" fill="#636d83" text-anchor="middle">T1509</text>
-  </g>
-
-  <!-- Phase 6: Exfil - pending -->
-  <g transform="translate(817, 278)">
-    <rect x="0" y="0" width="58" height="18" rx="2" fill="none" stroke="#ff0000" stroke-opacity="0.15" stroke-width="0.5"/>
-    <text x="29" y="12" font-family="'Courier New',monospace" font-size="7" fill="#636d83" text-anchor="middle">EXFIL</text>
-    <text x="29" y="22" font-family="'Courier New',monospace" font-size="6" fill="#636d83" text-anchor="middle">T1641</text>
-  </g>
-
-  <!-- Connecting arrows between phases -->
-  <g stroke="#ff0000" stroke-width="0.5" stroke-opacity="0.2">
-    <line x1="560" y1="287" x2="565" y2="287"/>
-    <line x1="623" y1="287" x2="628" y2="287"/>
-    <line x1="686" y1="287" x2="691" y2="287"/>
-    <line x1="749" y1="287" x2="754" y2="287"/>
-    <line x1="812" y1="287" x2="817" y2="287"/>
-  </g>
-
-  <!-- Progress arrow from active phase -->
-  <polyline points="628,305 658,305 658,287 686,287" fill="none" stroke="#ff0000" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="2 3">
-    <animate attributeName="stroke-dashoffset" from="0" to="-30" dur="2s" repeatCount="indefinite"/>
-  </polyline>
-
-  <!-- ============================================================ -->
-  <!-- BOTTOM STATUS BAR -->
-  <!-- ============================================================ -->
-  <rect x="0" y="385" width="960" height="15" fill="#ff0000" fill-opacity="0.04"/>
-
-  <!-- Animated heartbeat / waveform -->
-  <path d="M0 393 Q40 388 80 393 Q120 398 160 393 Q200 388 240 393 Q280 398 320 393 Q360 388 400 393 Q440 398 480 393 Q520 388 560 393 Q600 398 640 393 Q680 388 720 393 Q760 398 800 393 Q840 388 880 393 Q920 398 960 393" fill="none" stroke="#ff0000" stroke-width="1" stroke-opacity="0.25">
-    <animate attributeName="d" values="
-      M0 393 Q40 388 80 393 Q120 398 160 393 Q200 388 240 393 Q280 398 320 393 Q360 388 400 393 Q440 398 480 393 Q520 388 560 393 Q600 398 640 393 Q680 388 720 393 Q760 398 800 393 Q840 388 880 393 Q920 398 960 393;
-      M0 393 Q40 398 80 393 Q120 388 160 393 Q200 398 240 393 Q280 388 320 393 Q360 398 400 393 Q440 388 480 393 Q520 398 560 393 Q600 388 640 393 Q680 398 720 393 Q760 388 800 393 Q840 398 880 393 Q920 388 960 393;
-      M0 393 Q40 388 80 393 Q120 398 160 393 Q200 388 240 393 Q280 398 320 393 Q360 388 400 393 Q440 398 480 393 Q520 388 560 393 Q600 398 640 393 Q680 388 720 393 Q760 398 800 393 Q840 388 880 393 Q920 398 960 393"
-      dur="2s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- Status indicators -->
-  <circle cx="20" cy="393" r="2" fill="#00ff00">
-    <animate attributeName="opacity" values="1;0.1;1" dur="1s" repeatCount="indefinite"/>
-  </circle>
-  <text x="30" y="397" font-family="'Courier New',monospace" font-size="8" fill="#636d83">OP: ACTIVE</text>
-  <text x="110" y="397" font-family="'Courier New',monospace" font-size="8" fill="#636d83">UPTIME: 72h:14m:32s</text>
-  <text x="230" y="397" font-family="'Courier New',monospace" font-size="8" fill="#636d83">BEACONS: 4/9</text>
-  <text x="340" y="397" font-family="'Courier New',monospace" font-size="8" fill="#636d83">TASKS: 12</text>
-
-  <text x="700" y="397" font-family="'Courier New',monospace" font-size="8" fill="#44cc44" text-anchor="end">SYSTEM: NOMINAL</text>
-  <circle cx="705" cy="393" r="2" fill="#00ff00">
-    <animate attributeName="opacity" values="1;0.1;1" dur="1s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Spinner -->
-  <g transform="translate(940, 393)">
-    <circle cx="0" cy="0" r="4" fill="none" stroke="#ff0000" stroke-width="1" stroke-opacity="0.4"/>
-    <line x1="0" y1="-4" x2="0" y2="0" stroke="#ff0000" stroke-width="1">
-      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="1.5s" repeatCount="indefinite"/>
-    </line>
-  </g>
-
-  <!-- Bottom glow -->
-  <rect x="0" y="398" width="960" height="2" fill="#ff0000" fill-opacity="0.08">
-    <animate attributeName="fill-opacity" values="0.08;0.02;0.08" dur="2s" repeatCount="indefinite"/>
+  <!-- Bottom status bar -->
+  <rect x="530" y="490" width="390" height="18" rx="2" fill="#ff0000" fill-opacity="0" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="42s"/>
+    <animate attributeName="fill-opacity" values="0;0.05;0" dur="3s" repeatCount="indefinite"/>
   </rect>
+  <text x="725" y="504" font-family="monospace" font-size="10" fill="#636d83" text-anchor="middle" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="42s"/>
+    ▲ OP: ACTIVE — aBadRoy — RED TEAM OPERATION — ALL CHANNELS NOMINAL ▲
+  </text>
 </svg>

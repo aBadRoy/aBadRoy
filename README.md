@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/c2-console-dashboard.svg" alt="C2 Console Dashboard">
+    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/c2-console-dashboard.svg" alt="C2 Console Terminal" width="100%">
   </a>
 </div>
 
