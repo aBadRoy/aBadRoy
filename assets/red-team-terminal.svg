@@ -1,54 +1,175 @@
-<svg width="660" height="200" viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="820" height="580" viewBox="0 0 820 580" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a0a0a"/>
-      <stop offset="100%" style="stop-color:#1a0000"/>
-    </linearGradient>
-    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:0.15"/>
-      <stop offset="50%" style="stop-color:#ff0000;stop-opacity:0.05"/>
-      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0.15"/>
-    </linearGradient>
-    <filter id="glow-text">
-      <feGaussianBlur stdDeviation="1" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <style>
+      :root {
+        --bg: #0d1117;
+        --fg: #c9d1d9;
+        --red: #ff4444;
+        --green: #44cc44;
+        --amber: #ffaa00;
+        --dim: #636d83;
+      }
+      @keyframes fadeIn {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      @keyframes typeOut {
+        0%   { clip-path: inset(0 100% 0 0); }
+        100% { clip-path: inset(0 0% 0 0); }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes scanMove {
+        0%   { transform: translateY(0); }
+        100% { transform: translateY(580px); }
+      }
+      @keyframes loadPulse {
+        0%   { width: 30px; }
+        50%  { width: 140px; }
+        100% { width: 30px; }
+      }
+      @keyframes exfilPulse {
+        0%   { width: 0; }
+        50%  { width: 200px; }
+        100% { width: 0; }
+      }
+      .fi  { opacity: 0; animation: fadeIn 0.35s both; }
+      .ty  { clip-path: inset(0 100% 0 0); animation: typeOut 2s both; }
+      .bl  { animation: blink 0.8s step-end infinite; }
+      .sc  { animation: scanMove 6s linear infinite; }
+      .lp  { animation: loadPulse 2.5s ease-in-out infinite; }
+      .ep  { animation: exfilPulse 3s ease-in-out infinite; }
+      .d25  { animation-delay: 2.5s; }
+      .d35  { animation-delay: 3.5s; }
+      .d45  { animation-delay: 4.5s; }
+      .d80  { animation-delay: 8.0s; }
+      .d85  { animation-delay: 8.5s; }
+      .d90  { animation-delay: 9.0s; }
+      .d12  { animation-delay: 12.5s; }
+      .d13  { animation-delay: 13.0s; }
+      .d16  { animation-delay: 16.5s; }
+      .d17  { animation-delay: 17.0s; }
+      .d20  { animation-delay: 20.5s; }
+      .d21  { animation-delay: 21.0s; }
+      .d22  { animation-delay: 22.0s; }
+      .tp2 { animation-delay: 5.0s; }
+      .tp3 { animation-delay: 9.5s; }
+      .tp4 { animation-delay: 14.0s; }
+      .tp5 { animation-delay: 18.0s; }
+    </style>
   </defs>
-  <!-- Background -->
-  <rect width="660" height="200" fill="url(#bg-grad)" rx="6"/>
-  <!-- Header bar -->
-  <rect width="660" height="30" fill="url(#header-grad)"/>
-  <rect x="0" y="28" width="660" height="2" fill="#ff0000" opacity="0.3"/>
-  <!-- Title bar dots -->
-  <circle cx="16" cy="15" r="4" fill="#ff3333"/>
-  <circle cx="30" cy="15" r="4" fill="#ff6633"/>
-  <circle cx="44" cy="15" r="4" fill="#33cc33"/>
-  <text x="60" y="20" fill="#8b949e" font-family="monospace" font-size="11">aBadRoy@red-team:~$</text>
-  <text x="210" y="20" fill="#c9d1d9" font-family="monospace" font-size="11">/home/operator/profiles/README.md</text>
-  <!-- Line 1: Matrix rain style -->
-  <text x="25" y="60" fill="#ff0000" font-family="monospace" font-size="13" font-weight="bold">root@red-team:~#</text>
-  <text x="165" y="60" fill="#c9d1d9" font-family="monospace" font-size="13">init —setup red_team_operator —profile aBadRoy</text>
-  <!-- Line 2 -->
-  <text x="25" y="85" fill="#44cc44" font-family="monospace" font-size="12"> [OK]</text>
-  <text x="65" y="85" fill="#c9d1d9" font-family="monospace" font-size="12">Loading operator profile…</text>
-  <!-- Line 3 -->
-  <text x="25" y="108" fill="#44cc44" font-family="monospace" font-size="12"> [OK]</text>
-  <text x="65" y="108" fill="#c9d1d9" font-family="monospace" font-size="12">C2 beacon established — 192.168.1.105:4444</text>
-  <!-- Line 4 -->
-  <text x="25" y="131" fill="#44cc44" font-family="monospace" font-size="12"> [OK]</text>
-  <text x="65" y="131" fill="#c9d1d9" font-family="monospace" font-size="12">Payload arsenal loaded — 1,247 warheads ready</text>
-  <!-- Line 5 -->
-  <text x="25" y="154" fill="#44cc44" font-family="monospace" font-size="12"> [OK]</text>
-  <text x="65" y="154" fill="#c9d1d9" font-family="monospace" font-size="12">MITRE ATT&CK framework synchronized — v14.1</text>
-  <!-- Separator -->
-  <rect x="25" y="165" width="610" height="1" fill="#ff0000" opacity="0.2"/>
-  <!-- Line 6: prompt -->
-  <text x="25" y="185" fill="#ff0000" font-family="monospace" font-size="13" font-weight="bold">root@red-team:~#</text>
-  <text x="165" y="185" fill="#c9d1d9" font-family="monospace" font-size="13">cat /etc/operator/motto</text>
-  <!-- Cursor -->
-  <rect x="335" y="172" width="10" height="14" fill="#ff0000"/>
-  <!-- Motto quote -->
-  <text x="25" y="220" fill="#ff4444" font-family="monospace" font-size="11">"Access is the only law. Everything else is just a firewall."</text>
-  <!-- Bottom glow line -->
-  <rect x="0" y="238" width="660" height="2" fill="#ff0000" opacity="0.15"/>
+
+  <rect width="820" height="580" fill="#050505"/>
+  <rect x="10" y="10" width="800" height="560" rx="8" fill="var(--bg)" stroke="var(--red)" stroke-opacity="0.15" stroke-width="1.5"/>
+  <rect x="10" y="10" width="800" height="32" rx="8" fill="var(--red)" fill-opacity="0.04"/>
+  <rect x="10" y="26" width="800" height="16" fill="var(--bg)"/>
+  <circle cx="36" cy="26" r="5" fill="#ff5555"/>
+  <circle cx="56" cy="26" r="5" fill="#ffaa00"/>
+  <circle cx="76" cy="26" r="5" fill="#00cc55"/>
+  <text x="410" y="31" font-family="monospace" font-size="11" fill="var(--dim)" text-anchor="middle">aBadRoy@red-team: ~ — RED TEAM CONSOLE — TTY 0</text>
+  <line x1="10" y1="42" x2="810" y2="42" stroke="var(--red)" stroke-opacity="0.08" stroke-width="0.5"/>
+  <rect x="10" y="10" width="800" height="2" fill="var(--red)" fill-opacity="0.04" class="sc"/>
+
+  <!-- Phase 1: initialize_operation -->
+  <g font-family="monospace" font-size="13">
+    <text x="30" y="70" fill="var(--red)" class="fi d00">root@aBadRoy:~#</text>
+    <text x="180" y="70" fill="var(--fg)" class="ty tp1">initialize_operation --full-kill-chain</text>
+  </g>
+
+  <text x="30" y="94" font-family="monospace" font-size="13" class="fi d25">
+    <tspan fill="var(--green)">[+]</tspan>
+    <tspan fill="var(--fg)"> Loading modules...</tspan>
+  </text>
+  <rect x="190" y="88" width="140" height="8" rx="2" fill="var(--red)" fill-opacity="0.12" class="fi d25"/>
+  <rect x="190" y="88" height="8" rx="2" fill="var(--green)" class="lp fi d25"/>
+
+  <text x="30" y="118" font-family="monospace" font-size="13" class="fi d35">
+    <tspan fill="var(--green)">[+]</tspan>
+    <tspan fill="var(--fg)"> OPSEC: ENABLED — all channels encrypted</tspan>
+  </text>
+
+  <text x="30" y="142" font-family="monospace" font-size="13" class="fi d45">
+    <tspan fill="var(--green)">[+]</tspan>
+    <tspan fill="var(--fg)"> C2 link: </tspan>
+    <tspan fill="var(--amber)">192.168.1.105:4444</tspan>
+    <tspan fill="var(--fg)"> | RTT: 4ms | jitter: 15%</tspan>
+  </text>
+
+  <!-- Phase 2: recon -->
+  <g font-family="monospace" font-size="13">
+    <text x="30" y="175" fill="var(--red)" class="fi d55">root@aBadRoy:~#</text>
+    <text x="180" y="175" fill="var(--fg)" class="ty tp2">recon --deep</text>
+  </g>
+
+  <text x="30" y="199" font-family="monospace" font-size="13" class="fi d80">
+    <tspan fill="var(--green)">[✓]</tspan>
+    <tspan fill="var(--fg)"> Subnet enumeration: 24 subnets / 1,247 hosts identified</tspan>
+  </text>
+
+  <text x="30" y="223" font-family="monospace" font-size="13" class="fi d85">
+    <tspan fill="var(--green)">[✓]</tspan>
+    <tspan fill="var(--fg)"> Credential harvesting: 142 password hashes captured</tspan>
+  </text>
+
+  <text x="30" y="247" font-family="monospace" font-size="13" class="fi d90">
+    <tspan fill="var(--green)">[✓]</tspan>
+    <tspan fill="var(--fg)"> Service fingerprinting: 47 open ports across 12 hosts</tspan>
+  </text>
+
+  <!-- Phase 3: exploit -->
+  <g font-family="monospace" font-size="13">
+    <text x="30" y="280" fill="var(--red)" class="fi d10">root@aBadRoy:~#</text>
+    <text x="180" y="280" fill="var(--fg)" class="ty tp3">exploit --vector LFI --target 10.10.20.100</text>
+  </g>
+
+  <text x="30" y="304" font-family="monospace" font-size="13" class="fi d12">
+    <tspan fill="var(--green)">[✓]</tspan>
+    <tspan fill="var(--fg)"> CVE-2024-XXXX — WordPress LFI via /wp-content/..</tspan>
+  </text>
+
+  <text x="30" y="328" font-family="monospace" font-size="13" class="fi d13">
+    <tspan fill="var(--green)">[✓]</tspan>
+    <tspan fill="var(--fg)"> Remote shell: </tspan>
+    <tspan fill="var(--amber)">www-data@10.10.20.100:443</tspan>
+    <tspan fill="var(--fg)"> — beacon B-03 deployed</tspan>
+  </text>
+
+  <!-- Phase 4: privesc -->
+  <g font-family="monospace" font-size="13">
+    <text x="30" y="361" fill="var(--red)" class="fi d14">root@aBadRoy:~#</text>
+    <text x="180" y="361" fill="var(--fg)" class="ty tp4">privesc</text>
+  </g>
+
+  <text x="30" y="385" font-family="monospace" font-size="13" class="fi d16">
+    <tspan fill="var(--green)">[✓]</tspan>
+    <tspan fill="var(--fg)"> SUID vector: /usr/bin/pkexec (CVE-2021-4034) — vulnerable</tspan>
+  </text>
+
+  <text x="30" y="409" font-family="monospace" font-size="13" class="fi d17">
+    <tspan fill="var(--green)">[✓]</tspan>
+    <tspan fill="var(--fg)"> ROOT: 10.10.20.100 — full administrative access obtained</tspan>
+  </text>
+
+  <!-- Phase 5: exfil -->
+  <g font-family="monospace" font-size="13">
+    <text x="30" y="442" fill="var(--red)" class="fi d18">root@aBadRoy:~#</text>
+    <text x="180" y="442" fill="var(--fg)" class="ty tp5">exfil --target DC01</text>
+  </g>
+
+  <text x="30" y="466" font-family="monospace" font-size="13" class="fi d20">
+    <tspan fill="var(--green)">[✓]</tspan>
+    <tspan fill="var(--fg)"> Tunnel: AES-256 encrypted — endpoint: 192.168.1.105:8443</tspan>
+  </text>
+
+  <text x="30" y="490" font-family="monospace" font-size="13" class="fi d21">
+    <tspan fill="var(--amber)">[→]</tspan>
+    <tspan fill="var(--fg)"> Exfiltrating 2.4 GB of sensitive data</tspan>
+  </text>
+  <rect x="280" y="484" width="200" height="8" rx="2" fill="var(--red)" fill-opacity="0.12" class="fi d21"/>
+  <rect x="280" y="484" height="8" rx="2" fill="var(--amber)" class="ep fi d21"/>
+
+  <text x="30" y="530" font-family="monospace" font-size="13" fill="var(--red)" class="fi d22">root@aBadRoy:~#</text>
+  <rect x="180" y="518" width="9" height="16" fill="var(--red)" class="fi d22 bl"/>
 </svg>
