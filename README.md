@@ -20,6 +20,14 @@
   <img src="https://img.shields.io/badge/OPSEC-ENABLED-ff4444?style=flat-square&labelColor=0d1117" alt="OpSec">
 </div>
 
+<br>
+
+<div align="center">
+  <a href="https://github.com/aBadRoy">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=1800&pause=600&color=FF6666&background=0D1117&center=true&vCenter=true&width=780&lines=TARGET+ACQUIRED+-+scanning+10.10.10.0%2F24;VULNERABILITY+FOUND+-+CVE-2023-xxxx+detected;PAYLOAD+DEPLOYED+-+reverse+shell+inbound;BEACON+ACTIVE+-+C2+channel+4444+established;CREDENTIALS+HARVESTED+-+142+hashes+captured;DATA+EXFILTRATED+-+2.4+GB+encrypted+archive;MISSION+COMPLETE+-+access+is+the+only+law" alt="Campaign">
+  </a>
+</div>
+
 ---
 
 ## ☠️ Operator Dossier
