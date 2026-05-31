@@ -197,7 +197,7 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 
 ## 🐍 Contribution Heatmap — Kill Chain Coverage
 
-[![Snake](https://raw.githubusercontent.com/aBadRoy/aBadRoy/output/github-contribution-grid-snake-dark.svg)](https://github.com/aBadRoy)
+[![Snake](https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/dist/github-contribution-grid-snake-dark.svg)](https://github.com/aBadRoy)
 
 ---
 
