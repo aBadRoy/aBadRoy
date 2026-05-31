@@ -1,310 +1,170 @@
-<svg width="960" height="550" viewBox="0 0 960 550" xmlns="http://www.w3.org/2000/svg">
-  <rect width="960" height="500" fill="#0a0a0a"/>
+<svg width="960" height="650" viewBox="0 0 960 650" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="650" fill="#0a0a0a"/>
 
   <!-- TERMINAL WINDOW -->
-  <rect x="20" y="10" width="920" height="480" rx="10" fill="#050505" stroke="#ff0000" stroke-width="1.5"/>
+  <rect x="20" y="10" width="920" height="630" rx="10" fill="#050505" stroke="#ff0000" stroke-width="1.5"/>
 
   <!-- Title bar -->
   <rect x="20" y="10" width="920" height="34" rx="10" fill="#ff0000" fill-opacity="0.05"/>
   <rect x="20" y="28" width="920" height="16" fill="#050505"/>
 
-  <!-- Traffic light dots with animations -->
-  <circle cx="48" cy="27" r="6" fill="#ff5555">
-    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="72" cy="27" r="6" fill="#ffaa00">
-    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="96" cy="27" r="6" fill="#00ff55">
-    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
-  </circle>
+  <!-- Traffic lights -->
+  <circle cx="46" cy="27" r="5.5" fill="#ff5555"/>
+  <circle cx="68" cy="27" r="5.5" fill="#ffaa00"/>
+  <circle cx="90" cy="27" r="5.5" fill="#00ff55"/>
 
-  <!-- Window title -->
-  <text x="480" y="32" font-family="monospace" font-size="12" fill="#636d83" text-anchor="middle">aBadRoy@c2-console — red-team-operation — TTY 0</text>
+  <text x="480" y="32" font-family="monospace" font-size="12" fill="#636d83" text-anchor="middle">aBadRoy@red-team — terminal — TTY 0</text>
 
   <line x1="20" y1="44" x2="940" y2="44" stroke="#ff0000" stroke-opacity="0.12" stroke-width="0.5"/>
 
   <!-- ============================================================ -->
-  <!-- CMD 1: initialize_recon -->
+  <!-- initialize_operation -->
   <!-- ============================================================ -->
   <g font-family="monospace" font-size="14">
-    <text x="45" y="82" fill="#ff4444" visibility="hidden">
+    <text x="40" y="82" fill="#ff4444" visibility="hidden">
       <set attributeName="visibility" to="visible" begin="0s"/>
-      root@abadroy:~$
+      root@abadroy:~#
     </text>
-    <text x="195" y="82" fill="#c9d1d9" visibility="hidden">
+    <text x="190" y="82" fill="#c9d1d9" visibility="hidden">
       <tspan>
         <set attributeName="visibility" to="visible" begin="0s"/>
-        <animate attributeName="textLength" from="0" to="195" dur="2s" fill="freeze"/>
-        initialize_recon --target 10.10.0.0/16
+        <animate attributeName="textLength" from="0" to="188" dur="2s" fill="freeze"/>
+        initialize_operation
       </tspan>
     </text>
   </g>
 
-  <!-- Output lines appearing sequentially -->
-  <text x="45" y="112" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+  <text x="40" y="112" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
     <set attributeName="visibility" to="visible" begin="2.5s"/>
-    [✓] Enumerating hosts — 24 subnets discovered
+    <tspan fill="#44cc44">[+]</tspan> Loading modules...
   </text>
-  <text x="45" y="140" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+  <text x="40" y="140" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
     <set attributeName="visibility" to="visible" begin="3.5s"/>
-    [✓] Cataloguing services — 47 open ports identified
+    <tspan fill="#44cc44">[+]</tspan> OPSEC enabled
   </text>
-  <text x="45" y="168" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
+  <text x="40" y="168" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
     <set attributeName="visibility" to="visible" begin="4.5s"/>
-    [✓] Vulnerability assessment — 12 CVEs matched to target
-  </text>
-  <text x="45" y="196" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="5.5s"/>
-    [✓] Access vectors — 3 exploitation paths available
+    <tspan fill="#44cc44">[+]</tspan> C2 channel established
   </text>
 
   <!-- ============================================================ -->
-  <!-- CMD 2: launch_c2 -->
+  <!-- recon -->
   <!-- ============================================================ -->
   <g font-family="monospace" font-size="14">
-    <text x="45" y="240" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="7s"/>
-      root@abadroy:~$
+    <text x="40" y="212" fill="#ff4444" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="6s"/>
+      root@abadroy:~#
     </text>
-    <text x="195" y="240" fill="#c9d1d9" visibility="hidden">
+    <text x="190" y="212" fill="#c9d1d9" visibility="hidden">
       <tspan>
-        <set attributeName="visibility" to="visible" begin="7s"/>
-        <animate attributeName="textLength" from="0" to="238" dur="2s" fill="freeze" begin="7s"/>
-        launch_c2 --framework sliver --host 192.168.1.105:4444
+        <set attributeName="visibility" to="visible" begin="6s"/>
+        <animate attributeName="textLength" from="0" to="50" dur="1.5s" fill="freeze" begin="6s"/>
+        recon
       </tspan>
     </text>
   </g>
 
-  <text x="45" y="270" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="9.5s"/>
-    [✓] C2 beacon active — 192.168.1.105:4444 | link: 98% | jitter: 15%
+  <text x="40" y="242" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="8s"/>
+    <tspan fill="#44cc44">[✓]</tspan> Enumerating subdomains
   </text>
-  <text x="45" y="298" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="10.5s"/>
-    [✓] Beacons online: B-01 B-02 B-03 B-04 — 4 agents reporting
+  <text x="40" y="270" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="9s"/>
+    <tspan fill="#44cc44">[✓]</tspan> Harvesting emails
   </text>
-
-  <!-- Alert line -->
-  <text x="45" y="340" font-family="monospace" font-size="14" fill="#ffaa00" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="12s"/>
-    [!] WARNING: beacon B-03 overdue — 58s since last check-in
+  <text x="40" y="298" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="10s"/>
+    <tspan fill="#44cc44">[✓]</tspan> Fingerprinting services
+  </text>
+  <text x="40" y="326" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="11s"/>
+    <tspan fill="#44cc44">[✓]</tspan> Mapping attack surface
   </text>
 
   <!-- ============================================================ -->
-  <!-- CMD 3: session --list with session table -->
+  <!-- exploit -->
   <!-- ============================================================ -->
   <g font-family="monospace" font-size="14">
-    <text x="45" y="382" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="14s"/>
-      root@abadroy:~$
+    <text x="40" y="370" fill="#ff4444" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="12.5s"/>
+      root@abadroy:~#
     </text>
-    <text x="195" y="382" fill="#c9d1d9" visibility="hidden">
+    <text x="190" y="370" fill="#c9d1d9" visibility="hidden">
       <tspan>
-        <set attributeName="visibility" to="visible" begin="14s"/>
-        <animate attributeName="textLength" from="0" to="115" dur="1.5s" fill="freeze" begin="14s"/>
-        session --list --beacons
+        <set attributeName="visibility" to="visible" begin="12.5s"/>
+        <animate attributeName="textLength" from="0" to="67" dur="1.5s" fill="freeze" begin="12.5s"/>
+        exploit
       </tspan>
     </text>
   </g>
 
-  <!-- Session table header -->
-  <text x="45" y="420" font-family="monospace" font-size="13" fill="#ff4444" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="16s"/>
-    ─── ACTIVE BEACONS ─────────────────────────────────────────────────
+  <text x="40" y="400" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="14.5s"/>
+    <tspan fill="#44cc44">[✓]</tspan> Vulnerability identified
+  </text>
+  <text x="40" y="428" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="15.5s"/>
+    <tspan fill="#44cc44">[✓]</tspan> Initial access obtained
   </text>
 
-  <g font-family="monospace" font-size="13">
-    <text x="55" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="17s"/>ID</text>
-    <text x="95" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="17.2s"/>ADDRESS</text>
-    <text x="240" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="17.4s"/>USER</text>
-    <text x="340" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="17.6s"/>PLATFORM</text>
-    <text x="430" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="17.8s"/>STATUS</text>
-    <text x="510" y="420" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="18s"/>LAST_IN</text>
+  <!-- ============================================================ -->
+  <!-- privesc -->
+  <!-- ============================================================ -->
+  <g font-family="monospace" font-size="14">
+    <text x="40" y="472" fill="#ff4444" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="17s"/>
+      root@abadroy:~#
+    </text>
+    <text x="190" y="472" fill="#c9d1d9" visibility="hidden">
+      <tspan>
+        <set attributeName="visibility" to="visible" begin="17s"/>
+        <animate attributeName="textLength" from="0" to="62" dur="1.5s" fill="freeze" begin="17s"/>
+        privesc
+      </tspan>
+    </text>
   </g>
 
-  <!-- B-01 row -->
-  <g font-family="monospace" font-size="13">
-    <circle cx="57" cy="442" r="3" fill="#00ff00" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="18.2s"/>
-      <animate attributeName="opacity" values="1;0.15;1" dur="1.2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="70" y="446" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="18.2s"/>B-01</text>
-    <text x="95" y="446" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="18.4s"/>192.168.1.105</text>
-    <text x="240" y="446" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="18.6s"/>root</text>
-    <text x="340" y="446" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="18.8s"/>linux-x64</text>
-    <circle cx="438" cy="442" r="3" fill="#00ff00" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="19s"/>
-      <animate attributeName="opacity" values="1;0.15;1" dur="1s" repeatCount="indefinite"/>
-    </circle>
-    <text x="448" y="446" fill="#44cc44" visibility="hidden"><set attributeName="visibility" to="visible" begin="19s"/>active</text>
-    <text x="510" y="446" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="19.2s"/>0.4s ago</text>
+  <text x="40" y="502" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="19s"/>
+    <tspan fill="#44cc44">[✓]</tspan> Privilege escalation successful
+  </text>
+
+  <!-- ============================================================ -->
+  <!-- persistence -->
+  <!-- ============================================================ -->
+  <g font-family="monospace" font-size="14">
+    <text x="40" y="546" fill="#ff4444" visibility="hidden">
+      <set attributeName="visibility" to="visible" begin="20.5s"/>
+      root@abadroy:~#
+    </text>
+    <text x="190" y="546" fill="#c9d1d9" visibility="hidden">
+      <tspan>
+        <set attributeName="visibility" to="visible" begin="20.5s"/>
+        <animate attributeName="textLength" from="0" to="115" dur="1.5s" fill="freeze" begin="20.5s"/>
+        persistence
+      </tspan>
+    </text>
   </g>
 
-  <!-- B-02 row -->
-  <g font-family="monospace" font-size="13">
-    <circle cx="57" cy="466" r="3" fill="#00ff00" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="19.4s"/>
-      <animate attributeName="opacity" values="0.15;1;0.15" dur="1.5s" repeatCount="indefinite"/>
-    </circle>
-    <text x="70" y="470" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="19.4s"/>B-02</text>
-    <text x="95" y="470" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="19.6s"/>10.10.10.50</text>
-    <text x="240" y="470" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="19.8s"/>admin</text>
-    <text x="340" y="470" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="20s"/>win10-x64</text>
-    <circle cx="438" cy="466" r="3" fill="#00ff00" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="20.2s"/>
-      <animate attributeName="opacity" values="0.15;1;0.15" dur="1.3s" repeatCount="indefinite"/>
-    </circle>
-    <text x="448" y="470" fill="#44cc44" visibility="hidden"><set attributeName="visibility" to="visible" begin="20.2s"/>active</text>
-    <text x="510" y="470" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="20.4s"/>1.2s ago</text>
-  </g>
-
-  <!-- B-03 row -->
-  <g font-family="monospace" font-size="13">
-    <circle cx="57" cy="490" r="3" fill="#ffaa00" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="20.6s"/>
-      <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <text x="70" y="494" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="20.6s"/>B-03</text>
-    <text x="95" y="494" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="20.8s"/>10.10.20.100</text>
-    <text x="240" y="494" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="21s"/>www-data</text>
-    <text x="340" y="494" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="21.2s"/>linux-x64</text>
-    <circle cx="438" cy="490" r="3" fill="#ffaa00" visibility="hidden"><set attributeName="visibility" to="visible" begin="21.4s"/></circle>
-    <text x="448" y="494" fill="#ffaa00" visibility="hidden"><set attributeName="visibility" to="visible" begin="21.4s"/>sleep(60)</text>
-    <text x="510" y="494" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="21.6s"/>58.3s ago</text>
-  </g>
-
-  <!-- B-04 row -->
-  <g font-family="monospace" font-size="13">
-    <circle cx="57" cy="514" r="3" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="21.8s"/>
-      <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
-    </circle>
-    <text x="70" y="518" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="21.8s"/>B-04</text>
-    <text x="95" y="518" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="22s"/>10.10.30.200</text>
-    <text x="240" y="518" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="22.2s"/>svc-sql</text>
-    <text x="340" y="518" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="22.4s"/>win2019-x64</text>
-    <circle cx="438" cy="514" r="3" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="22.6s"/></circle>
-    <text x="448" y="518" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="22.6s"/>dormant</text>
-    <text x="510" y="518" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="22.8s"/>4m:12s</text>
-  </g>
-
-  <!-- Table summary -->
-  <text x="45" y="540" font-family="monospace" font-size="13" fill="#636d83" visibility="hidden">
+  <text x="40" y="576" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="22.5s"/>
+    <tspan fill="#44cc44">[✓]</tspan> Beacon deployed
+  </text>
+  <text x="40" y="604" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
     <set attributeName="visibility" to="visible" begin="23.5s"/>
-    4 of 9 beacons · 2 active · 1 sleep · 1 dormant
-  </text>
-
-  <!-- ============================================================ -->
-  <!-- RIGHT PANEL: CMD 4 — deploy_payload -->
-  <!-- ============================================================ -->
-  <g font-family="monospace" font-size="14">
-    <text x="530" y="82" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="25s"/>
-      root@abadroy:~$
-    </text>
-    <text x="680" y="82" fill="#c9d1d9" visibility="hidden">
-      <tspan>
-        <set attributeName="visibility" to="visible" begin="25s"/>
-        <animate attributeName="textLength" from="0" to="125" dur="1.5s" fill="freeze" begin="25s"/>
-        deploy_payload B-01
-      </tspan>
-    </text>
-  </g>
-
-  <text x="530" y="112" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="27s"/>
-    [✓] warhead: reverse_shell_64 — loaded (4.2 KB)
-  </text>
-  <text x="530" y="140" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="28s"/>
-    [✓] warhead: keylogger_x64 — loaded (12.8 KB)
-  </text>
-  <text x="530" y="168" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="29s"/>
-    [✓] warhead: Mimikatz_trunk — loaded (1.2 MB)
-  </text>
-  <text x="530" y="206" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="30.5s"/>
-    [→] Deployment: 3/3 warheads delivered to B-01
-  </text>
-
-  <!-- ============================================================ -->
-  <!-- CMD 5: exfil -->
-  <!-- ============================================================ -->
-  <g font-family="monospace" font-size="14">
-    <text x="530" y="250" fill="#ff4444" visibility="hidden">
-      <set attributeName="visibility" to="visible" begin="32s"/>
-      root@abadroy:~$
-    </text>
-    <text x="680" y="250" fill="#c9d1d9" visibility="hidden">
-      <tspan>
-        <set attributeName="visibility" to="visible" begin="32s"/>
-        <animate attributeName="textLength" from="0" to="190" dur="2s" fill="freeze" begin="32s"/>
-        exfil --channel tunnel --target 10.10.0.0/16
-      </tspan>
-    </text>
-  </g>
-
-  <text x="530" y="280" font-family="monospace" font-size="14" fill="#44cc44" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="34.5s"/>
-    [+] Exfil channel open — AES-256 encrypted tunnel active
-  </text>
-  <text x="530" y="308" font-family="monospace" font-size="14" fill="#c9d1d9" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="36s"/>
-    [→] 2.4 GB staged — estimated exfil time: 4m:12s
-  </text>
-
-  <!-- ============================================================ -->
-  <!-- MISSION METRICS PANEL -->
-  <!-- ============================================================ -->
-  <text x="530" y="350" font-family="monospace" font-size="14" fill="#ff4444" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="37.5s"/>
-    ─── MISSION METRICS ──────────────────────────────────
-  </text>
-
-  <g font-family="monospace" font-size="13">
-    <text x="540" y="382" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="38s"/>BEACONS:</text>
-    <text x="660" y="382" fill="#ff4444" visibility="hidden"><set attributeName="visibility" to="visible" begin="38s"/>4/9 active</text>
-
-    <text x="540" y="406" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="38.5s"/>TASKS:</text>
-    <text x="660" y="406" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="38.5s"/>8 queued / 12 done</text>
-
-    <text x="540" y="430" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="39s"/>CREDS:</text>
-    <text x="660" y="430" fill="#ffaa00" visibility="hidden"><set attributeName="visibility" to="visible" begin="39s"/>89 / 142 cracked (62%)</text>
-
-    <text x="540" y="454" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="39.5s"/>EXFIL:</text>
-    <text x="660" y="454" fill="#c9d1d9" visibility="hidden"><set attributeName="visibility" to="visible" begin="39.5s"/>2.4 GB · tunnel active</text>
-
-    <text x="540" y="478" fill="#8b949e" visibility="hidden"><set attributeName="visibility" to="visible" begin="40s"/>OPSEC:</text>
-    <text x="660" y="478" fill="#44cc44" visibility="hidden"><set attributeName="visibility" to="visible" begin="40s"/>ENABLED · 3 tunnels</text>
-  </g>
-
-  <text x="530" y="490" font-family="monospace" font-size="13" fill="#ff4444" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="40.5s"/>
-    ─────────────────────────────────────────────────────────
+    <tspan fill="#44cc44">[✓]</tspan> Persistence established
   </text>
 
   <!-- ============================================================ -->
   <!-- FINAL PROMPT + BLINKING CURSOR -->
   <!-- ============================================================ -->
-  <text x="45" y="540" font-family="monospace" font-size="14" fill="#ff4444" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="42s"/>
-    root@abadroy:~$
+  <text x="40" y="640" font-family="monospace" font-size="14" fill="#ff4444" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="25s"/>
+    root@abadroy:~#
   </text>
 
-  <rect x="195" y="528" width="9" height="18" fill="#ff0000" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="42s"/>
+  <rect x="190" y="626" width="9" height="18" fill="#ff0000" visibility="hidden">
+    <set attributeName="visibility" to="visible" begin="25s"/>
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </rect>
-
-  <!-- Bottom status bar -->
-  <rect x="530" y="490" width="390" height="18" rx="2" fill="#ff0000" fill-opacity="0" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="42s"/>
-    <animate attributeName="fill-opacity" values="0;0.05;0" dur="3s" repeatCount="indefinite"/>
-  </rect>
-  <text x="725" y="504" font-family="monospace" font-size="10" fill="#636d83" text-anchor="middle" visibility="hidden">
-    <set attributeName="visibility" to="visible" begin="42s"/>
-    ▲ OP: ACTIVE — aBadRoy — RED TEAM OPERATION — ALL CHANNELS NOMINAL ▲
-  </text>
 </svg>
