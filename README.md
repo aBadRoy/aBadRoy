@@ -1,36 +1,6 @@
 <div align="center">
-
-[![Red Teamer](https://img.shields.io/badge/RED_TEAMER-OPERATOR-ff0000?style=for-the-badge&logo=github&labelColor=%230d1117)](https://github.com/aBadRoy)
-[![Adversary](https://img.shields.io/badge/ADVERSARY-EMULATION-ff4444?style=for-the-badge&labelColor=%230d1117)](https://github.com/aBadRoy)
-[![C2](https://img.shields.io/badge/C2-INFRASTRUCTURE-ff0000?style=for-the-badge&labelColor=%230d1117)](https://github.com/aBadRoy)
-[![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-ff4444?style=for-the-badge&labelColor=%230d1117)](https://attack.mitre.org)
-
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=5000&color=FF0000&background=0D1117&center=true&vCenter=true&width=900&repeat=false&lines=aBadRoy+%2F%2F+RED+TEAMER+%2F%2F+OFFENSIVE+SECURITY+DIVISION" alt="Identity">
 </div>
-<br>
-<br>
-
-<div align="center">
-  <a href="https://github.com/aBadRoy">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=5000&color=FF0000&background=0D1117&center=true&vCenter=true&width=800&repeat=false&lines=root%40aBadRoy%3A~%23+cat+/etc/red-team/motto" alt="Terminal">
-  </a>
-</div>
-
-```ascii
-██████╗ ███████╗██████╗     ████████╗███████╗ █████╗ ███╗   ███╗███████╗██████╗ 
-██╔══██╗██╔════╝██╔══██╗    ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██╔════╝██╔══██╗
-██████╔╝█████╗  ██║  ██║       ██║   █████╗  ███████║██╔████╔██║█████╗  ██████╔╝
-██╔══██╗██╔══╝  ██║  ██║       ██║   ██╔══╝  ██╔══██║██║╚██╔╝██║██╔══╝  ██╔══██╗
-██║  ██║███████╗██████╔╝       ██║   ███████╗██║  ██║██║ ╚═╝ ██║███████╗██║  ██║
-╚═╝  ╚═╝╚══════╝╚═════╝        ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝
-```
-
-<h1 align="center">
-  <code style="color:#ff0000">// RED TEAMER // aBadRoy // OFENSIVE SECURITY DIVISION //</code>
-</h1>
-
-<p align="center">
-  <strong><em>Adversary Emulation · C2 Infrastructure · Purple Team Orchestration · Exploit Development</em></strong>
-</p>
 
 <div align="center">
   <a href="https://github.com/aBadRoy?tab=followers"><img src="https://img.shields.io/github/followers/aBadRoy?style=flat-square&color=0d1117&labelColor=ff0000&logo=github&logoColor=white" alt="Followers"></a>
