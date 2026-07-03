@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/red-team-terminal.svg" alt="Red Team Terminal" width="100%">
+    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/profile_banner.svg" alt="aBadRoy" width="100%">
   </a>
 </div>
 
@@ -32,8 +32,8 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 | 🔴 **Status** | `ACTIVE` — C2 beacon established |
 | 🖥️ **C2 Server** | `Sliver` — 192.168.1.105:4444 |
 | 💣 **Payloads** | `1,247` warheads in active rotation |
-| 🗺️ **Coverage** | `9` repositories spanning full kill chain |
-| ⚡ **Last Op** | `2026-05-31` — Web exploitation & LFI chain |
+| 🗺️ **Coverage** | `10` repositories spanning full kill chain |
+| ⚡ **Last Op** | `2026-07-04` — NoSQLHunter automated injection framework |
 | 🛡️ **OPSEC** | `ENABLED` — All channels encrypted |
 
 </div>
@@ -150,6 +150,7 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 | **Discovery** | [T1087](https://attack.mitre.org/techniques/T1087/) | [Splunk-SIEM-Home-Lab](https://github.com/aBadRoy/Splunk-SIEM-Home-Lab) | SOC account discovery & intel |
 | **Exfiltration** | [T1641](https://attack.mitre.org/techniques/T1641/) | [nsoql-ctf](https://github.com/aBadRoy/nsoql-ctf) | NoSQL injection data exfil |
 | **Impact** | [T1499](https://attack.mitre.org/techniques/T1499/) | [owl-book-shop](https://github.com/aBadRoy/owl-book-shop) | Web exploitation CTF lab |
+| **Injection** | [T1191](https://attack.mitre.org/techniques/T1191/) | [NoSQLHunter](https://github.com/aBadRoy/NoSQLHunter) | Automated NoSQL injection exploitation framework |
 
 ---
 
@@ -157,6 +158,7 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 
 <div align="center">
 
+[![NoSQLHunter](https://img.shields.io/badge/NoSQLHunter-NoSQL_Injection_Framework-ff0000?style=for-the-badge&logo=mongodb&labelColor=0d1117)](https://github.com/aBadRoy/NoSQLHunter)
 [![Nessus-project](https://img.shields.io/badge/Nessus--project-Vulnerability_Scanner-ff0000?style=for-the-badge&logo=kalilinux&labelColor=0d1117)](https://github.com/aBadRoy/Nessus-project)
 [![SilentStrike-XSS](https://img.shields.io/badge/SilentStrike--XSS-XSS_Detection-ff4444?style=for-the-badge&logo=python&labelColor=0d1117)](https://github.com/aBadRoy/SilentStrike-XSS)
 [![Web_Exploitation_CTF](https://img.shields.io/badge/Web_CTF-LFI_Exploit_Chain-ff0000?style=for-the-badge&logo=hackthebox&labelColor=0d1117)](https://github.com/aBadRoy/Web_exploitation_CTF)
@@ -190,6 +192,14 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 
 ---
 
+## 🏆 Trophy Case — Adversary Achievements
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=aBadRoy&theme=radical&no-frame=true&no-bg=true&row=2&column=4&title_color=ff0000&icon_color=ff4444&text_color=c9d1d9" width="100%"/>
+</div>
+
+---
+
 ## 🐍 Contribution Heatmap — Kill Chain Coverage
 
 [![Snake](https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/dist/github-contribution-grid-snake-dark.svg)](https://github.com/aBadRoy)
@@ -215,8 +225,8 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 
 | Metric | Count |
 |--------|-------|
-| 🔴 Repositories | 9 |
-| 🟡 Custom Tools Built | 8 |
+| 🔴 Repositories | 10 |
+| 🟡 Custom Tools Built | 9 |
 | 🟢 Vulnerabilities Found | 100+ |
 | 🔵 CTFs Solved | 15 |
 | 🟣 C2 Frameworks Deployed | 6 |

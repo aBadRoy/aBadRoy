@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" font-family="'JetBrains Mono', 'Fira Code', monospace">
+  <defs>
+    <radialGradient id="bgRadial" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" style="stop-color:#1a0000"/>
+      <stop offset="60%" style="stop-color:#0d0000"/>
+      <stop offset="100%" style="stop-color:#000000"/>
+    </radialGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0000"/>
+      <stop offset="50%" style="stop-color:#ff4444"/>
+      <stop offset="100%" style="stop-color:#ff0000"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:0"/>
+      <stop offset="15%" style="stop-color:#ff0000;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#ff0000;stop-opacity:0.8"/>
+      <stop offset="85%" style="stop-color:#ff0000;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:0"/>
+      <stop offset="40%" style="stop-color:#ff0000;stop-opacity:0.06"/>
+      <stop offset="60%" style="stop-color:#ff0000;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="neonRed">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glitch1">
+      <feOffset dx="-2" dy="0" in="SourceGraphic" result="offset1"/>
+      <feColorMatrix in="offset1" type="matrix" values="0 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 0.4 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="hexGrid" width="30" height="52" patternUnits="userSpaceOnUse">
+      <path d="M15 0 L30 8.6 L30 25.9 L15 34.5 L0 25.9 L0 8.6 Z" fill="none" stroke="#ff0000" stroke-width="0.3" opacity="0.04"/>
+    </pattern>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="4" y2="0" stroke="#000" stroke-width="1" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgRadial)"/>
+  <rect width="1200" height="300" fill="url(#hexGrid)"/>
+  <rect width="1200" height="300" fill="url(#scanlines)"/>
+  <rect width="1200" height="300" fill="url(#scanGrad)"/>
+
+  <!-- Top scan line -->
+  <rect x="0" y="0" width="1200" height="1" fill="url(#redLine)" opacity="0.5"/>
+  <rect x="0" y="299" width="1200" height="1" fill="url(#redLine)" opacity="0.5"/>
+
+  <!-- Glitch horizontal lines -->
+  <rect x="100" y="48" width="400" height="1" fill="#ff0000" opacity="0.15"/>
+  <rect x="700" y="120" width="350" height="1" fill="#ff0000" opacity="0.1"/>
+  <rect x="50" y="200" width="500" height="1" fill="#ff0000" opacity="0.12"/>
+  <rect x="600" y="260" width="450" height="1" fill="#ff0000" opacity="0.08"/>
+
+  <!-- Top-right corner brackets -->
+  <path d="M1080,20 L1180,20 L1180,80" fill="none" stroke="#ff0000" stroke-width="1.5" opacity="0.4"/>
+  <path d="M1080,20 L1080,18" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.6"/>
+  <path d="M1180,20 L1182,20" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.6"/>
+
+  <!-- Left vertical scan line -->
+  <line x1="60" y1="0" x2="60" y2="300" stroke="#ff0000" stroke-width="0.5" opacity="0.06"/>
+
+  <!-- Decorative circles -->
+  <circle cx="80" cy="40" r="2" fill="#ff0000" opacity="0.3"/>
+  <circle cx="1120" cy="270" r="1.5" fill="#ff0000" opacity="0.25"/>
+
+  <!-- Matrix rain characters -->
+  <text x="25" y="180" fill="#ff0000" font-size="8" opacity="0.04" font-family="monospace">101100101001</text>
+  <text x="1150" y="90" fill="#ff0000" font-size="8" opacity="0.04" font-family="monospace">011010010110</text>
+
+  <!-- Main handle with glitch effect -->
+  <text x="600" y="95" text-anchor="middle" fill="#ff0000" font-size="72" font-weight="900" letter-spacing="8" filter="url(#neonRed)">aBadRoy</text>
+  
+  <!-- Glitch duplicate effects -->
+  <text x="598" y="93" text-anchor="middle" fill="#00ffff" font-size="72" font-weight="900" letter-spacing="8" opacity="0.15">aBadRoy</text>
+  <text x="602" y="97" text-anchor="middle" fill="#ff00ff" font-size="72" font-weight="900" letter-spacing="8" opacity="0.1">aBadRoy</text>
+
+  <!-- Subtitle line -->
+  <text x="600" y="138" text-anchor="middle" fill="#ff4444" font-size="14" font-weight="600" letter-spacing="6" filter="url(#neonRed)">RED TEAMER // OFFENSIVE SECURITY</text>
+
+  <!-- Tagline -->
+  <text x="600" y="168" text-anchor="middle" fill="#8b0000" font-size="11" letter-spacing="3">"Trust none. Verify everything. Pivot everywhere."</text>
+
+  <!-- Terminal-style info bar -->
+  <rect x="300" y="195" width="600" height="35" rx="4" fill="#1a0000" stroke="#ff0000" stroke-width="0.5" opacity="0.8"/>
+  <rect x="300" y="195" width="600" height="35" rx="4" fill="url(#scanGrad)"/>
+  
+  <text x="320" y="209" fill="#8b0000" font-size="10" font-weight="700">STATUS</text>
+  <text x="370" y="209" fill="#ff4444" font-size="10">[ACTIVE]</text>
+  <text x="440" y="209" fill="#8b0000" font-size="10" font-weight="700">C2</text>
+  <text x="465" y="209" fill="#ff4444" font-size="10">9 beacons</text>
+  <text x="540" y="209" fill="#8b0000" font-size="10" font-weight="700">OPSEC</text>
+  <text x="585" y="209" fill="#ff4444" font-size="10">ENABLED</text>
+  <text x="660" y="209" fill="#8b0000" font-size="10" font-weight="700">PAYLOADS</text>
+  <text x="725" y="209" fill="#ff4444" font-size="10">1,247</text>
+  <text x="790" y="209" fill="#8b0000" font-size="10" font-weight="700">METHODOLOGY</text>
+  <text x="870" y="209" fill="#ff4444" font-size="10">MITRE ATT&CK v14</text>
+
+  <!-- Bottom blink cursor -->
+  <rect x="600" y="245" width="8" height="14" fill="#ff0000" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Animated scan line -->
+  <rect x="0" y="0" width="1200" height="2" fill="#ff0000" opacity="0.08">
+    <animate attributeName="y" values="0;300;0" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom divider -->
+  <rect x="200" y="280" width="800" height="1" fill="url(#redLine)" opacity="0.3"/>
+  
+  <!-- Version / footnotes -->
+  <text x="600" y="293" text-anchor="middle" fill="#3d0000" font-size="9" font-family="monospace">[RED TEAM OPERATOR // aBadRoy // OFFENSIVE SECURITY DIVISION]</text>
+</svg>
