@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/nexus_terminal.svg" alt="aBadRoy" width="100%">
+    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/dash_terminal.svg" alt="aBadRoy" width="100%">
   </a>
 </div>
 
