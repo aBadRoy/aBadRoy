@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/profile_banner.svg" alt="aBadRoy" width="100%">
+    <img src="https://cdn.jsdelivr.net/gh/aBadRoy/aBadRoy@main/assets/profile_banner.svg" alt="aBadRoy" width="100%">
   </a>
 </div>
 
@@ -46,14 +46,12 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
   <table>
     <tr>
       <td align="center" width="50%">
-        <img src="https://raw.githubusercontent.com/aBadRoy/NoSQLHunter/main/screenshots/terminal_output.svg" alt="NoSQLHunter Demo" width="100%">
+        <img src="https://cdn.jsdelivr.net/gh/aBadRoy/NoSQLHunter@main/screenshots/terminal_output.svg" alt="NoSQLHunter Demo" width="100%">
         <br>
         <sub><b>Scan Output</b> — Auth bypass detected on /api/login (Score: 10/10)</sub>
       </td>
       <td align="center" width="50%">
-        <img src="https://raw.githubusercontent.com/aBadRoy/NoSQLHunter/main/screenshots/architecture.svg" alt="NoSQLHunter Architecture" width="100%">
-        <br>
-        <sub><b>Framework Architecture</b> — Modular pipeline: Spider → Attack → Dataset → Analysis</sub>
+        <img src="https://cdn.jsdelivr.net/gh/aBadRoy/NoSQLHunter@main/screenshots/architecture.svg" alt="NoSQLHunter Architecture" width="100%">
       </td>
     </tr>
   </table>
@@ -214,14 +212,6 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 ## 📡 Activity — Real-Time Telemetry
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=aBadRoy&bg_color=0d1117&color=ff0000&line=ff4444&point=ff0000&area=true&area_color=ff000020&hide_border=true&custom_title=RED%20TEAMER%20%20OPERATOR%20%20ACTIVITY%20TELEMETRY&radius=8&title_color=ff0000)]()
-
----
-
-## 🏆 Trophy Case — Adversary Achievements
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/trophy_case.svg" alt="Achievements" width="100%"/>
-</div>
 
 ---
 

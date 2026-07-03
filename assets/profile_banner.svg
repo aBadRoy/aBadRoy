@@ -1,38 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" font-family="'JetBrains Mono', 'Fira Code', monospace">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" font-family="'JetBrains Mono', 'Fira Code', monospace">
   <defs>
     <radialGradient id="bgRadial" cx="50%" cy="30%" r="70%">
-      <stop offset="0%" style="stop-color:#2a0000"/>
-      <stop offset="40%" style="stop-color:#0d0000"/>
-      <stop offset="100%" style="stop-color:#000000"/>
+      <stop offset="0%" stop-color="#2a0000"/>
+      <stop offset="40%" stop-color="#0d0000"/>
+      <stop offset="100%" stop-color="#000000"/>
     </radialGradient>
     <linearGradient id="lineRed" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:0"/>
-      <stop offset="10%" style="stop-color:#ff0000;stop-opacity:0.4"/>
-      <stop offset="50%" style="stop-color:#ff0000;stop-opacity:0.9"/>
-      <stop offset="90%" style="stop-color:#ff0000;stop-opacity:0.4"/>
-      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0"/>
+      <stop offset="0%" stop-color="#ff0000" stop-opacity="0"/>
+      <stop offset="10%" stop-color="#ff0000" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#ff0000" stop-opacity="0.9"/>
+      <stop offset="90%" stop-color="#ff0000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff0000" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="scanOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:0"/>
-      <stop offset="45%" style="stop-color:#ff0000;stop-opacity:0.04"/>
-      <stop offset="55%" style="stop-color:#ff0000;stop-opacity:0.04"/>
-      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0"/>
+      <stop offset="0%" stop-color="#ff0000" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ff0000" stop-opacity="0.04"/>
+      <stop offset="55%" stop-color="#ff0000" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ff0000" stop-opacity="0"/>
     </linearGradient>
-    <filter id="neonRedStrong" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="neonRedStrong">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="neonRedSoft" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <filter id="neonRedSoft">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-
-  <!-- Background layers -->
   <rect width="1200" height="340" fill="url(#bgRadial)"/>
   <rect width="1200" height="340" fill="url(#scanOverlay)"/>
-
-  <!-- Scan lines -->
   <g opacity="0.04">
     <line x1="0" y1="4" x2="1200" y2="4" stroke="#000" stroke-width="1"/>
     <line x1="0" y1="8" x2="1200" y2="8" stroke="#000" stroke-width="1"/>
@@ -40,59 +36,34 @@
     <line x1="0" y1="16" x2="1200" y2="16" stroke="#000" stroke-width="1"/>
     <line x1="0" y1="20" x2="1200" y2="20" stroke="#000" stroke-width="1"/>
   </g>
-
-  <!-- Animated scanning beam -->
-  <rect x="0" y="0" width="1200" height="3" fill="#ff0000" opacity="0.15">
-    <animate attributeName="y" values="0;337;0" dur="3.5s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="0" y="0" width="1200" height="40" fill="url(#lineRed)" opacity="0.06">
-    <animate attributeName="y" values="-40;340;-40" dur="3.5s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Corner brackets -->
+  <rect x="0" y="0" width="1200" height="3" fill="#ff0000" opacity="0.15"/>
   <path d="M30,25 L30,20 L25,20" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.6"/>
   <path d="M1175,20 L1170,20 L1170,25" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.6"/>
   <path d="M30,320 L30,315 L25,315" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.6"/>
   <path d="M1175,320 L1170,320 L1170,315" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.6"/>
-
-  <!-- Top/bottom accent lines -->
   <rect x="60" y="18" width="1080" height="1" fill="url(#lineRed)" opacity="0.5"/>
   <rect x="60" y="320" width="1080" height="1" fill="url(#lineRed)" opacity="0.5"/>
-
-  <!-- Main handle with glitch effect -->
   <text x="600" y="110" text-anchor="middle" fill="#ff0000" font-size="80" font-weight="900" letter-spacing="10" filter="url(#neonRedStrong)">aBadRoy</text>
-  <!-- Glitch color offsets -->
-  <text x="597" y="108" text-anchor="middle" fill="#00ffff" font-size="80" font-weight="900" letter-spacing="10" opacity="0.2">aBadRoy</text>
-  <text x="603" y="112" text-anchor="middle" fill="#ff00ff" font-size="80" font-weight="900" letter-spacing="10" opacity="0.15">aBadRoy</text>
-
-  <!-- Subtitle -->
-  <text x="600" y="152" text-anchor="middle" fill="#ff4444" font-size="16" font-weight="700" letter-spacing="8" filter="url(#neonRedSoft)">◆  RED TEAM OPERATOR  ◆</text>
+  <text x="598" y="108" text-anchor="middle" fill="#00ffff" font-size="80" font-weight="900" letter-spacing="10" opacity="0.25">aBadRoy</text>
+  <text x="602" y="112" text-anchor="middle" fill="#ff00ff" font-size="80" font-weight="900" letter-spacing="10" opacity="0.2">aBadRoy</text>
+  <text x="600" y="152" text-anchor="middle" fill="#ff4444" font-size="16" font-weight="700" letter-spacing="8" filter="url(#neonRedSoft)">RED TEAM OPERATOR</text>
   <text x="600" y="172" text-anchor="middle" fill="#8b0000" font-size="10" letter-spacing="4">OFFENSIVE SECURITY  ·  ADVERSARY EMULATION  ·  C2 INFRASTRUCTURE</text>
-
-  <!-- Terminal-style info panel -->
   <rect x="200" y="195" width="800" height="48" rx="3" fill="#0d0000" stroke="#ff0000" stroke-width="0.5" opacity="0.9"/>
   <rect x="200" y="195" width="800" height="48" rx="3" fill="url(#scanOverlay)"/>
   <line x1="400" y1="195" x2="400" y2="243" stroke="#ff0000" stroke-width="0.3" opacity="0.3"/>
   <line x1="600" y1="195" x2="600" y2="243" stroke="#ff0000" stroke-width="0.3" opacity="0.3"/>
   <line x1="800" y1="195" x2="800" y2="243" stroke="#ff0000" stroke-width="0.3" opacity="0.3"/>
-
   <text x="300" y="214" text-anchor="middle" fill="#660000" font-size="9" font-weight="700">STATUS</text>
-  <text x="300" y="232" text-anchor="middle" fill="#ff4444" font-size="11">● ACTIVE</text>
+  <text x="300" y="232" text-anchor="middle" fill="#ff4444" font-size="11">ACTIVE</text>
   <text x="500" y="214" text-anchor="middle" fill="#660000" font-size="9" font-weight="700">C2 BEACONS</text>
   <text x="500" y="232" text-anchor="middle" fill="#ff6666" font-size="11">9 online</text>
   <text x="700" y="214" text-anchor="middle" fill="#660000" font-size="9" font-weight="700">OPSEC</text>
   <text x="700" y="232" text-anchor="middle" fill="#ff4444" font-size="11">ENABLED</text>
   <text x="900" y="214" text-anchor="middle" fill="#660000" font-size="9" font-weight="700">METHODOLOGY</text>
   <text x="900" y="232" text-anchor="middle" fill="#ff6666" font-size="11">MITRE ATT&CK v14</text>
-
-  <!-- Bottom status bar -->
   <rect x="200" y="255" width="800" height="22" rx="3" fill="#0d0000" stroke="#ff0000" stroke-width="0.3" opacity="0.7"/>
   <text x="215" y="270" fill="#660000" font-size="9" font-weight="700">ROOT@ABADROY</text>
   <text x="340" y="270" fill="#8b0000" font-size="9">~/red-team/operations</text>
   <text x="600" y="270" text-anchor="middle" fill="#3d0000" font-size="9">10 REPOS  ·  50+ TOOLS  ·  100+ VULNS FOUND</text>
-
-  <!-- Blinking cursor -->
-  <rect x="975" y="258" width="7" height="16" fill="#ff0000" opacity="0.8">
-    <animate attributeName="opacity" values="0.8;0.05;0.8" dur="1s" repeatCount="indefinite"/>
-  </rect>
+  <rect x="975" y="258" width="7" height="16" fill="#ff0000" opacity="0.8"/>
 </svg>
