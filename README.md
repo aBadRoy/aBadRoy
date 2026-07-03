@@ -220,7 +220,7 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 ## 🏆 Trophy Case — Adversary Achievements
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=aBadRoy&theme=radical&no-frame=true&no-bg=true&row=2&column=4&title_color=ff0000&icon_color=ff4444&text_color=c9d1d9" width="100%"/>
+  <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/trophy_case.svg" alt="Achievements" width="100%"/>
 </div>
 
 ---
