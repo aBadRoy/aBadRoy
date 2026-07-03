@@ -1,69 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" font-family="'JetBrains Mono', 'Fira Code', monospace">
-  <defs>
-    <radialGradient id="bgRadial" cx="50%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#2a0000"/>
-      <stop offset="40%" stop-color="#0d0000"/>
-      <stop offset="100%" stop-color="#000000"/>
-    </radialGradient>
-    <linearGradient id="lineRed" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff0000" stop-opacity="0"/>
-      <stop offset="10%" stop-color="#ff0000" stop-opacity="0.4"/>
-      <stop offset="50%" stop-color="#ff0000" stop-opacity="0.9"/>
-      <stop offset="90%" stop-color="#ff0000" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ff0000" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="scanOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ff0000" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#ff0000" stop-opacity="0.04"/>
-      <stop offset="55%" stop-color="#ff0000" stop-opacity="0.04"/>
-      <stop offset="100%" stop-color="#ff0000" stop-opacity="0"/>
-    </linearGradient>
-    <filter id="neonRedStrong">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="neonRedSoft">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-  <rect width="1200" height="340" fill="url(#bgRadial)"/>
-  <rect width="1200" height="340" fill="url(#scanOverlay)"/>
-  <g opacity="0.04">
-    <line x1="0" y1="4" x2="1200" y2="4" stroke="#000" stroke-width="1"/>
-    <line x1="0" y1="8" x2="1200" y2="8" stroke="#000" stroke-width="1"/>
-    <line x1="0" y1="12" x2="1200" y2="12" stroke="#000" stroke-width="1"/>
-    <line x1="0" y1="16" x2="1200" y2="16" stroke="#000" stroke-width="1"/>
-    <line x1="0" y1="20" x2="1200" y2="20" stroke="#000" stroke-width="1"/>
-  </g>
-  <rect x="0" y="0" width="1200" height="3" fill="#ff0000" opacity="0.15"/>
-  <path d="M30,25 L30,20 L25,20" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.6"/>
-  <path d="M1175,20 L1170,20 L1170,25" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.6"/>
-  <path d="M30,320 L30,315 L25,315" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.6"/>
-  <path d="M1175,320 L1170,320 L1170,315" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.6"/>
-  <rect x="60" y="18" width="1080" height="1" fill="url(#lineRed)" opacity="0.5"/>
-  <rect x="60" y="320" width="1080" height="1" fill="url(#lineRed)" opacity="0.5"/>
-  <text x="600" y="110" text-anchor="middle" fill="#ff0000" font-size="80" font-weight="900" letter-spacing="10" filter="url(#neonRedStrong)">aBadRoy</text>
-  <text x="598" y="108" text-anchor="middle" fill="#00ffff" font-size="80" font-weight="900" letter-spacing="10" opacity="0.25">aBadRoy</text>
-  <text x="602" y="112" text-anchor="middle" fill="#ff00ff" font-size="80" font-weight="900" letter-spacing="10" opacity="0.2">aBadRoy</text>
-  <text x="600" y="152" text-anchor="middle" fill="#ff4444" font-size="16" font-weight="700" letter-spacing="8" filter="url(#neonRedSoft)">RED TEAM OPERATOR</text>
-  <text x="600" y="172" text-anchor="middle" fill="#8b0000" font-size="10" letter-spacing="4">OFFENSIVE SECURITY  ·  ADVERSARY EMULATION  ·  C2 INFRASTRUCTURE</text>
-  <rect x="200" y="195" width="800" height="48" rx="3" fill="#0d0000" stroke="#ff0000" stroke-width="0.5" opacity="0.9"/>
-  <rect x="200" y="195" width="800" height="48" rx="3" fill="url(#scanOverlay)"/>
-  <line x1="400" y1="195" x2="400" y2="243" stroke="#ff0000" stroke-width="0.3" opacity="0.3"/>
-  <line x1="600" y1="195" x2="600" y2="243" stroke="#ff0000" stroke-width="0.3" opacity="0.3"/>
-  <line x1="800" y1="195" x2="800" y2="243" stroke="#ff0000" stroke-width="0.3" opacity="0.3"/>
-  <text x="300" y="214" text-anchor="middle" fill="#660000" font-size="9" font-weight="700">STATUS</text>
-  <text x="300" y="232" text-anchor="middle" fill="#ff4444" font-size="11">ACTIVE</text>
-  <text x="500" y="214" text-anchor="middle" fill="#660000" font-size="9" font-weight="700">C2 BEACONS</text>
-  <text x="500" y="232" text-anchor="middle" fill="#ff6666" font-size="11">9 online</text>
-  <text x="700" y="214" text-anchor="middle" fill="#660000" font-size="9" font-weight="700">OPSEC</text>
-  <text x="700" y="232" text-anchor="middle" fill="#ff4444" font-size="11">ENABLED</text>
-  <text x="900" y="214" text-anchor="middle" fill="#660000" font-size="9" font-weight="700">METHODOLOGY</text>
-  <text x="900" y="232" text-anchor="middle" fill="#ff6666" font-size="11">MITRE ATT&CK v14</text>
-  <rect x="200" y="255" width="800" height="22" rx="3" fill="#0d0000" stroke="#ff0000" stroke-width="0.3" opacity="0.7"/>
-  <text x="215" y="270" fill="#660000" font-size="9" font-weight="700">ROOT@ABADROY</text>
-  <text x="340" y="270" fill="#8b0000" font-size="9">~/red-team/operations</text>
-  <text x="600" y="270" text-anchor="middle" fill="#3d0000" font-size="9">10 REPOS  ·  50+ TOOLS  ·  100+ VULNS FOUND</text>
-  <rect x="975" y="258" width="7" height="16" fill="#ff0000" opacity="0.8"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340">
+  <rect width="1200" height="340" fill="#0a0a0a"/>
+  <rect x="40" y="20" width="1120" height="300" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  <rect x="40" y="20" width="1120" height="36" rx="8" fill="#2a2a2a"/>
+  <rect x="40" y="48" width="1120" height="8" fill="#2a2a2a"/>
+  <circle cx="62" cy="38" r="5" fill="#ff5f56"/>
+  <circle cx="80" cy="38" r="5" fill="#ffbd2e"/>
+  <circle cx="98" cy="38" r="5" fill="#27c93f"/>
+  <text x="600" y="43" text-anchor="middle" fill="#888" font-size="12" font-family="monospace">aBadRoy@red-team:~$ — bash — 120×30</text>
+  <text x="60" y="85" fill="#00ff41" font-size="13" font-family="monospace">aBadRoy@red-team:~$ ./deploy_profile.sh</text>
+  <text x="60" y="110" fill="#ccc" font-size="13" font-family="monospace">Initializing red team operator profile...</text>
+  <text x="60" y="135" fill="#ccc" font-size="13" font-family="monospace">Loading credentials... OK</text>
+  <text x="60" y="160" fill="#ccc" font-size="13" font-family="monospace">Establishing C2 channels...</text>
+  <text x="60" y="185" fill="#00ff41" font-size="13" font-family="monospace">9 beacons online — secure channels active</text>
+  <text x="60" y="215" fill="#00ff41" font-size="13" font-family="monospace">aBadRoy@red-team:~$ cat /etc/operator/motd</text>
+  <text x="60" y="245" fill="#ff4444" font-size="14" font-family="monospace" font-weight="bold">  🔴  aBadRoy  //  RED TEAM OPERATOR  //  Offensive Security  🔴</text>
+  <text x="60" y="270" fill="#666" font-size="11" font-family="monospace">  "Access is the only law. Everything else is just a firewall."</text>
+  <rect x="60" y="290" width="8" height="16" fill="#00ff41"/>
 </svg>
