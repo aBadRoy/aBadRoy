@@ -1,41 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0a0a0a"/>
-      <stop offset="100%" stop-color="#000"/>
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#000005"/>
+    </linearGradient>
+    <linearGradient id="glowRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff000033"/>
+      <stop offset="50%" stop-color="#ff000066"/>
+      <stop offset="100%" stop-color="#ff000033"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="560" fill="url(#bg)"/>
-  <rect x="20" y="15" width="1160" height="530" rx="12" fill="#111" stroke="#333" stroke-width="1"/>
-  <rect x="20" y="15" width="1160" height="46" rx="12" fill="#222"/>
-  <rect x="20" y="51" width="1160" height="10" fill="#222"/>
-  <circle cx="48" cy="38" r="6" fill="#ff5f56"/>
-  <circle cx="70" cy="38" r="6" fill="#ffbd2e"/>
-  <circle cx="92" cy="38" r="6" fill="#27c93f"/>
-  <text x="600" y="44" text-anchor="middle" fill="#666" font-size="13" font-family="monospace">aBadRoy@red-team:~
-$ — bash — 140×35</text>
 
-  <text x="40" y="100" fill="#00ff41" font-size="16" font-family="monospace">aBadRoy@red-team:~$ ./deploy_profile.sh --full --stealth</text>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect x="15" y="12" width="1170" height="576" rx="10" fill="#111115" stroke="#222" stroke-width="1"/>
+  <rect x="15" y="12" width="1170" height="40" rx="10" fill="#1a1a1e"/>
+  <rect x="15" y="42" width="1170" height="10" fill="#1a1a1e"/>
+  <circle cx="42" cy="32" r="5" fill="#ff5f56"/>
+  <circle cx="62" cy="32" r="5" fill="#ffbd2e"/>
+  <circle cx="82" cy="32" r="5" fill="#27c93f"/>
+  <text x="600" y="37" text-anchor="middle" fill="#555" font-size="12" font-family="monospace">aBadRoy@red-team:~
+$ — zsh — 150×38 — Red Team Operator Profile</text>
 
-  <text x="40" y="130" fill="#888" font-size="14" font-family="monospace">Initializing red team operator profile...</text>
-  <text x="55" y="155" fill="#00ff41" font-size="14" font-family="monospace">[OK] Loading credentials</text>
-  <text x="55" y="175" fill="#00ff41" font-size="14" font-family="monospace">[OK] Decrypting identity tokens</text>
-  <text x="55" y="195" fill="#00ff41" font-size="14" font-family="monospace">[OK] Establishing C2 channels</text>
-  <text x="55" y="215" fill="#ffbd2e" font-size="14" font-family="monospace">[!] 9 beacons online — secure channels active</text>
+  <text x="30" y="85" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">╔══════════════════════════════════════════════════════════════════════════════╗</text>
+  <text x="30" y="100" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">║</text>
+  <text x="590" y="100" text-anchor="middle" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">OPERATOR IDENTIFICATION</text>
+  <text x="1150" y="100" text-anchor="end" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">║</text>
+  <text x="30" y="115" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">╚══════════════════════════════════════════════════════════════════════════════╝</text>
 
-  <text x="40" y="248" fill="#00ff41" font-size="16" font-family="monospace">aBadRoy@red-team:~$ cat /etc/operator/motd</text>
+  <text x="30" y="140" fill="#00ff41" font-size="11" font-family="monospace">aBadRoy@red-team:~$ </text>
+  <text x="160" y="140" fill="#fff" font-size="11" font-family="monospace">cat</text>
+  <text x="185" y="140" fill="#ffbd2e" font-size="11" font-family="monospace"> /etc/red-team/badge.conf</text>
 
-  <text x="40" y="280" fill="#ff4444" font-size="22" font-family="monospace" font-weight="bold">  █████  ██████   █████  ██████  ██████  ██████</text>
-  <text x="40" y="305" fill="#ff4444" font-size="22" font-family="monospace" font-weight="bold">  ██   ██ ██   ██ ██   ██ ██   ██ ██   ██ ██   ██</text>
-  <text x="40" y="330" fill="#ff4444" font-size="22" font-family="monospace" font-weight="bold">  ███████ ██████  ███████ ██████  ██████  ██   ██</text>
-  <text x="40" y="355" fill="#ff4444" font-size="22" font-family="monospace" font-weight="bold">  ██   ██ ██   ██ ██   ██ ██   ██ ██   ██ ██   ██</text>
-  <text x="40" y="380" fill="#ff4444" font-size="22" font-family="monospace" font-weight="bold">  ██   ██ ██████  ██   ██ ██   ██ ██████  ██████</text>
+  <text x="30" y="168" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">┌──────────────────────────────────────────┐</text>
+  <text x="30" y="183" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="35" y="183" fill="#ff6666" font-size="10" font-family="monospace">  █████╗ ██████╗  █████╗ ██████╗ ██████╗  ██████╗ ██╗   ██╗</text>
+  <text x="480" y="183" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="30" y="198" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="35" y="198" fill="#ff8888" font-size="10" font-family="monospace">  ██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔═══██╗╚██╗ ██╔╝</text>
+  <text x="480" y="198" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="30" y="213" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="35" y="213" fill="#ffaaaa" font-size="10" font-family="monospace">  ██████╔╝██████╔╝███████║██████╔╝██████╔╝██║   ██║ ╚████╔╝</text>
+  <text x="480" y="213" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="30" y="228" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="35" y="228" fill="#ffcccc" font-size="10" font-family="monospace">  ██╔══██╗██╔══██╗██╔══██║██╔══██╗██╔══██╗██║   ██║  ╚██╔╝</text>
+  <text x="480" y="228" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="30" y="243" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="35" y="243" fill="#ffeeee" font-size="10" font-family="monospace">  ██║  ██║██████╔╝██║  ██║██║  ██║██████╔╝╚██████╔╝   ██║</text>
+  <text x="480" y="243" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="30" y="258" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="35" y="258" fill="#fff" font-size="10" font-family="monospace">  ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝    ╚═╝</text>
+  <text x="480" y="258" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="30" y="273" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="35" y="273" fill="#ff4444" font-size="10" font-family="monospace">  ─── RED TEAM OPERATOR  //  OFFENSIVE SECURITY DIVISION ───</text>
+  <text x="480" y="273" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">│</text>
+  <text x="30" y="288" fill="#ff4444" font-size="10" font-family="monospace" font-weight="bold">└──────────────────────────────────────────┘</text>
 
-  <text x="40" y="415" fill="#ff4444" font-size="13" font-family="monospace">  STATUS  : ACTIVE — Simulating sophisticated adversary campaigns</text>
-  <text x="40" y="435" fill="#ff6666" font-size="13" font-family="monospace">  ROLE    : Red Teamer  //  DIVISION: Offensive Security</text>
-  <text x="40" y="455" fill="#ff8888" font-size="13" font-family="monospace">  TOOLSET : 50+ offensive security tools in active rotation</text>
-  <text x="40" y="475" fill="#ffaaaa" font-size="13" font-family="monospace">  SECTOR  : VAPT / Purple Team / Threat Intel / Red Teaming</text>
+  <text x="30" y="315" fill="#00ff41" font-size="11" font-family="monospace">aBadRoy@red-team:~$ </text>
+  <text x="160" y="315" fill="#fff" font-size="11" font-family="monospace">./deploy_operator.sh</text>
+  <text x="290" y="315" fill="#555" font-size="11" font-family="monospace">--full --stealth --c2=sliver</text>
 
-  <rect x="40" y="500" width="8" height="18" fill="#00ff41"/>
-  <text x="55" y="515" fill="#555" font-size="12" font-family="monospace">root@aBadRoy:~# █</text>
+  <text x="30" y="340" fill="#888" font-size="11" font-family="monospace">Initializing red team engagement profile...</text>
+  <text x="45" y="358" fill="#00ff41" font-size="11" font-family="monospace">[✓] Credentials loaded and verified</text>
+  <text x="45" y="376" fill="#00ff41" font-size="11" font-family="monospace">[✓] Identity tokens decrypted</text>
+  <text x="45" y="394" fill="#00ff41" font-size="11" font-family="monospace">[✓] C2 channels established (Sliver)</text>
+  <text x="45" y="412" fill="#ffbd2e" font-size="11" font-family="monospace">[!] 9 beacons online — all channels encrypted</text>
+  <text x="45" y="430" fill="#00ff41" font-size="11" font-family="monospace">[✓] OPSEC protocols enabled</text>
+  <text x="45" y="448" fill="#ffbd2e" font-size="11" font-family="monospace">[!] Payload bay: 1,247 warheads in rotation</text>
+  <text x="45" y="466" fill="#ff4444" font-size="12" font-family="monospace" font-weight="bold">[+] DEPLOYMENT COMPLETE — OPERATOR ACTIVE</text>
+
+  <rect x="30" y="500" width="1140" height="1" fill="#ff000033"/>
+  <text x="40" y="520" fill="#ff4444" font-size="9" font-family="monospace" font-weight="bold">STATUS:</text>
+  <text x="90" y="520" fill="#00ff41" font-size="9" font-family="monospace">ACTIVE</text>
+  <text x="160" y="520" fill="#ff4444" font-size="9" font-family="monospace" font-weight="bold">C2:</text>
+  <text x="185" y="520" fill="#ff6666" font-size="9" font-family="monospace">Sliver :4444</text>
+  <text x="290" y="520" fill="#ff4444" font-size="9" font-family="monospace" font-weight="bold">OPSEC:</text>
+  <text x="335" y="520" fill="#00ff41" font-size="9" font-family="monospace">ENABLED</text>
+  <text x="410" y="520" fill="#ff4444" font-size="9" font-family="monospace" font-weight="bold">METHOD:</text>
+  <text x="465" y="520" fill="#ff6666" font-size="9" font-family="monospace">MITRE ATT&CK v14</text>
+  <text x="600" y="520" fill="#ff4444" font-size="9" font-family="monospace" font-weight="bold">UPTIME:</text>
+  <text x="655" y="520" fill="#ff8888" font-size="9" font-family="monospace">7,502 hours</text>
+  <text x="760" y="520" fill="#ff4444" font-size="9" font-family="monospace" font-weight="bold">TOOLS:</text>
+  <text x="800" y="520" fill="#ffaaaa" font-size="9" font-family="monospace">50+ in rotation</text>
+
+  <rect x="40" y="540" width="8" height="16" fill="#00ff41"/>
+  <text x="55" y="554" fill="#555" font-size="11" font-family="monospace">root@aBadRoy:~# </text>
+  <text x="155" y="554" fill="#00ff41" font-size="11" font-family="monospace">█</text>
 </svg>
