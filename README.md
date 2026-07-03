@@ -40,6 +40,31 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 
 ---
 
+## 🎯 Latest Operation — NoSQLHunter
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="https://raw.githubusercontent.com/aBadRoy/NoSQLHunter/main/screenshots/terminal_output.svg" alt="NoSQLHunter Demo" width="100%">
+        <br>
+        <sub><b>Scan Output</b> — Auth bypass detected on /api/login (Score: 10/10)</sub>
+      </td>
+      <td align="center" width="50%">
+        <img src="https://raw.githubusercontent.com/aBadRoy/NoSQLHunter/main/screenshots/architecture.svg" alt="NoSQLHunter Architecture" width="100%">
+        <br>
+        <sub><b>Framework Architecture</b> — Modular pipeline: Spider → Attack → Dataset → Analysis</sub>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <a href="https://github.com/aBadRoy/NoSQLHunter">
+    <img src="https://img.shields.io/badge/VIEW_OPERATION-NoSQLHunter-ff0000?style=for-the-badge&logo=mongodb&labelColor=0d1117&logoColor=ff0000" alt="NoSQLHunter">
+  </a>
+</div>
+
+---
+
 ## 🔴 C2 Payload Bay
 
 <details>
@@ -206,7 +231,23 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 
 ---
 
-## ⚡ Operator Badges
+## 🧠 Technical Proficiency — Operator Skills
+
+<div align="center">
+
+| Skill | Proficiency |
+|-------|------------|
+| <img src="https://img.shields.io/badge/-Web_Exploitation-ff0000?style=flat-square&labelColor=0d1117" alt="Web Exploitation"> | `██████████████████████████████░░░░` 92% |
+| <img src="https://img.shields.io/badge/-Python_Development-ff4444?style=flat-square&labelColor=0d1117" alt="Python"> | `█████████████████████████████░░░░░` 88% |
+| <img src="https://img.shields.io/badge/-C2_Infrastructure-ff0000?style=flat-square&labelColor=0d1117" alt="C2"> | `████████████████████████████░░░░░░` 85% |
+| <img src="https://img.shields.io/badge/-Adversary_Emulation-ff4444?style=flat-square&labelColor=0d1117" alt="Adversary Emulation"> | `███████████████████████████░░░░░░` 82% |
+| <img src="https://img.shields.io/badge/-Network_Pentesting-ff0000?style=flat-square&labelColor=0d1117" alt="Network Pentesting"> | `██████████████████████████░░░░░░░` 78% |
+| <img src="https://img.shields.io/badge/-Reverse_Engineering-ff4444?style=flat-square&labelColor=0d1117" alt="Reverse Engineering"> | `████████████████████████░░░░░░░░░` 72% |
+| <img src="https://img.shields.io/badge/-Exploit_Development-ff0000?style=flat-square&labelColor=0d1117" alt="Exploit Dev"> | `█████████████████████░░░░░░░░░░░░` 65% |
+
+</div>
+
+---
 
 <div align="center">
 
@@ -227,6 +268,7 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
 |--------|-------|
 | 🔴 Repositories | 10 |
 | 🟡 Custom Tools Built | 9 |
+| 🔥 NoSQL Payloads | 6,432 |
 | 🟢 Vulnerabilities Found | 100+ |
 | 🔵 CTFs Solved | 15 |
 | 🟣 C2 Frameworks Deployed | 6 |
@@ -283,6 +325,7 @@ root@aBadRoy:~# cat /etc/red-team/motd
 ║   Role         : Red Teamer                                                  ║
 ║   C2 Status    : [ACTIVE] — 9 beacons online                                 ║
 ║   Payloads     : 1,247 warheads                                              ║
+║   Latest Op    : NoSQLHunter — Injection Framework                           ║
 ║   Methodology  : MITRE ATT&CK v14 / Kill Chain / OWASP                       ║
 ║   Uptime       : 7,502 hours of continuous operations                        ║
 ║                                                                              ║
