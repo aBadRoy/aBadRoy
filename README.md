@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/profile_banner.svg" alt="aBadRoy" width="100%">
+    <img src="https://raw.githubusercontent.com/aBadRoy/aBadRoy/main/assets/terminal_banner.svg" alt="aBadRoy" width="100%">
   </a>
 </div>
 
@@ -51,7 +51,7 @@ MOTTO       : "Access is the only law. Everything else is just a firewall."
         <sub><b>Scan Output</b> — Auth bypass detected on /api/login (Score: 10/10)</sub>
       </td>
       <td align="center" width="50%">
-        <img src="https://raw.githubusercontent.com/aBadRoy/NoSQLHunter/main/screenshots/architecture.svg" alt="NoSQLHunter Architecture" width="100%">
+        <img src="https://raw.githubusercontent.com/aBadRoy/NoSQLHunter/main/screenshots/arch_diagram.svg" alt="NoSQLHunter Architecture" width="100%">
       </td>
     </tr>
   </table>
