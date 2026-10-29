@@ -1,95 +1,103 @@
-<h1 align="center">🔐 aBadRoy | Cybersecurity Professional</h1>
+# <div align="center">🔴 SYSTEM:// aBadRoy // ONLINE</div>
 
 <p align="center">
-  <b>Red Teaming • Blue Teaming • Threat Hunting • Security Research • Bug Bounty</b>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=5000&pause=800&color=00FF00&center=true&vCenter=true&width=800&lines=ACCESS+GRANTED:+aBadRoy;OFFENSIVE+SECURITY+ENGINEER;RED+TEAM+∙+BLUE+TEAM+∙+THREAT+HUNT;BREAK+THINGS.+FIX+THEM.;ROOT+MODE+ACTIVATED." alt="Typing SVG" />
 </p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00FF00&center=true&vCenter=true&width=600&lines=Offensive+Security+Engineer;Break+Things.+Fix+Them.;Protect+the+Perimeter.;Always+Learning.+Always+Hacking." alt="Typing SVG" />
-</p>
-
----
 
 <p align="center">
   <img src="https://img.shields.io/badge/OS-Linux-black?style=for-the-badge&logo=linux&logoColor=white" />
   <img src="https://img.shields.io/badge/Kali-Linux-268BEE?style=for-the-badge&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Parrot-4A1C5B?style=for-the-badge&logo=parrotsecurity&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-  <img src="https://img.shields.io/badge/SIEM-Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white" />
+  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" />
+  <img src="https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white" />
+  <img src="https://img.shields.io/badge/ELK-005571?style=for-the-badge&logo=elasticsearch&logoColor=white" />
   <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
   <img src="https://img.shields.io/badge/Nmap-123456?style=for-the-badge&logo=nmap&logoColor=white" />
   <img src="https://img.shields.io/badge/Burp_Suite-4E2A84?style=for-the-badge&logo=burpsuite&logoColor=white" />
   <img src="https://img.shields.io/badge/Metasploit-8B0000?style=for-the-badge&logo=metasploit&logoColor=white" />
+  <img src="https://img.shields.io/badge/IDA-FF6600?style=for-the-badge&logo=ida&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ghidra-000000?style=for-the-badge&logo=ghidra&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 </p>
 
 ---
 
-## 👋 About Me
+## <div align="center">💻 TERMINAL PROFILE</div>
 
-```bash
+```text
 $ whoami
-  -> aBadRoy (Cybersecurity Professional)
+  -> aBadRoy | Cybersecurity Professional
 
-$ cat ~/about.txt
-  -> Passionate about offensive and defensive security.
-  -> I enjoy breaking things, finding vulnerabilities, and hardening defenses.
-  -> CTF player | Bug bounty hunter | Security researcher
+$ cat /etc/motd
+  -> Red Teaming | Blue Teaming | Threat Hunting | Malware Analysis | Bug Bounty
 
 $ sudo service curiosity start
   -> [ OK ] Curiosity service is running...
+
+$ ls -la ~/sectools/
+  -> nmap  metasploit  burpsuite  wireshark  bloodhound  mimikatz  hashcat  sqlmap  ghidra  volatility
+
+$ ping -c 4 github.com/aBadRoy
+  -> 64 bytes from profile.aBadRoy [127.0.0.1]: icmp_seq=1 ttl=64 time=0.042 ms
 ```
 
-I'm a cybersecurity enthusiast dedicated to securing systems, networks, and applications. I have hands-on experience in **penetration testing, vulnerability assessment, security monitoring, incident response, and threat intelligence**. I believe in learning by doing — building labs, solving CTF challenges, and contributing to open-source security tools.
+---
+
+## <div align="center">🛡️ SECURITY DOMAINS</div>
+
+<table align="center">
+  <tr>
+    <td><b>🔴 RED TEAM</b></td>
+    <td>Penetration Testing • Web App Exploitation • Network Pentesting • AD Attacks • Social Engineering • Physical Security</td>
+  </tr>
+  <tr>
+    <td><b>🔵 BLUE TEAM</b></td>
+    <td>SIEM Monitoring • Log Analysis • Incident Response • Threat Hunting • Endpoint Protection • Hardening</td>
+  </tr>
+  <tr>
+    <td><b>🟣 PURPLE TEAM</b></td>
+    <td>Adversary Emulation • Detection Engineering • Control Validation • Threat Intelligence</td>
+  </tr>
+  <tr>
+    <td><b>🏁 CTF / BUG BOUNTY</b></td>
+    <td>Web Exploitation • Pwn • Reverse Engineering • Cryptography • Recon • XSS / SQLi / IDOR / SSRF</td>
+  </tr>
+</table>
 
 ---
 
-## 🛡️ What I Do
-
-| Domain | Focus Areas |
-|--------|-------------|
-| 🔴 **Red Team** | Penetration Testing, Web App Security, Network Pentesting, Social Engineering, AD Attacks |
-| 🔵 **Blue Team** | SIEM Monitoring, Log Analysis, Incident Response, Threat Hunting, Hardening |
-| 🟣 **Purple Team** | Adversary Emulation, Detection Engineering, Control Validation |
-| 🏁 **CTF / Bug Bounty** | Web Exploitation, Pwn, Reverse Engineering, Crypto, Recon, XSS/SQLi/IDOR |
-
----
-
-## 🛠️ Toolbox
+## <div align="center">🛠️ TOOL ARSENAL</div>
 
 <details>
 <summary><b>🔴 Offensive Security</b></summary>
 
-**Recon & OSINT:** Nmap, Masscan, Amass, Subfinder, theHarvester, Shodan, Censys, Google Dorking  
-**Web App:** Burp Suite, OWASP ZAP, sqlmap, dirsearch, ffuf, Cobalt Strike (trial), Commix  
-**Network:** Wireshark, tcpdump, Bettercap, Responder, Mimikatz, BloodHound  
-**Wireless:** Aircrack-ng, Wifite, Fern Wifi Cracker  
-**Post-Exploitation:** Metasploit, Empire, Covenant, SharpHound, Impacket, PowerSploit  
-**Password:** Hashcat, John the Ripper, Hydra, Medusa  
+| Recon / OSINT | Web App | Network | Wireless | Post-Exploitation | Password Attacks |
+|---------------|---------|---------|----------|-------------------|------------------|
+| Nmap • Masscan • Amass • Subfinder • theHarvester • Shodan • Censys | Burp Suite • OWASP ZAP • sqlmap • dirsearch • ffuf • Commix • XSStrike | Wireshark • tcpdump • Bettercap • Responder • Mimikatz • BloodHound | Aircrack-ng • Wifite • Fern Wifi Cracker • Kismet | Metasploit • Cobalt Strike • Empire • Covenant • Impacket • PowerSploit | Hashcat • John the Ripper • Hydra • Medusa • CeWL |
 
 </details>
 
 <details>
 <summary><b>🔵 Defensive Security</b></summary>
 
-**SIEM / Logging:** Splunk, ELK Stack, Graylog, Wazuh  
-**EDR / Endpoint:** Windows Defender, SentinelOne, CrowdStrike concepts  
-**Network Defense:** pfSense, iptables, Snort, Suricata, Zeek  
-**Vuln Mgmt:** Nessus, OpenVAS, Qualys concepts, Nuclei  
-**Forensics:** Autopsy, Volatility, FTK Imager, Binwalk  
-**Hardening:** CIS Benchmarks, STIGs, Group Policy, AppLocker  
+| SIEM / Logging | EDR / Endpoint | Network Defense | Vuln Mgmt | Forensics | Hardening |
+|----------------|----------------|-----------------|-----------|-----------|-----------|
+| Splunk • ELK Stack • Graylog • Wazuh • Logstash | Windows Defender • SentinelOne • CrowdStrike • Carbon Black | pfSense • iptables • Snort • Suricata • Zeek • Fail2Ban | Nessus • OpenVAS • Qualys • Nuclei • Nikto | Autopsy • Volatility • FTK Imager • Binwalk • Plaso | CIS Benchmarks • STIGs • Group Policy • AppLocker • SELinux |
 
 </details>
 
 <details>
 <summary><b>💻 Languages & Scripting</b></summary>
 
-Python, Bash, PowerShell, SQL, JavaScript (for XSS/bug bounty), C, x86 Assembly, YARA, Sigma  
+Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C • x86 Assembly • YARA • Sigma • Ruby
 
 </details>
 
 ---
 
-## 🏆 CTF & Rankings
+## <div align="center">🏁 CTF PLATFORMS</div>
 
 <p align="center">
   <a href="https://tryhackme.com/p/aBadRoy">
@@ -106,82 +114,112 @@ Python, Bash, PowerShell, SQL, JavaScript (for XSS/bug bounty), C, x86 Assembly,
   </a>
 </p>
 
-> 💡 Replace `USER_ID` above with your actual profile IDs once you have accounts set up.
+> 💡 Replace `USER_ID` with your actual platform profile IDs.
 
 ---
 
-## 📜 Certifications (In Progress / Completed)
+## <div align="center">📜 CERTIFICATIONS</div>
 
-<details>
-<summary><b>📄 View Certifications</b></summary>
-
-| Certification | Issuer | Status |
-|---------------|--------|--------|
-| CompTIA Security+ | CompTIA | 🔄 In Progress |
-| eJPT (eLearnSecurity Junior Penetration Tester) | INE | 📋 Planned |
-| OSCP (Offensive Security Certified Professional) | OffSec | 📋 Planned |
-| TryHackMe Jr Penetration Tester | TryHackMe | ✅ Completed |
-| TryHackMe Pre-Security | TryHackMe | ✅ Completed |
-
-</details>
-
-> Update this table as you earn new certs.
+<table align="center">
+  <tr>
+    <th>Certification</th>
+    <th>Issuer</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>TryHackMe Jr Penetration Tester</td>
+    <td>TryHackMe</td>
+    <td>✅ Completed</td>
+  </tr>
+  <tr>
+    <td>TryHackMe Pre-Security</td>
+    <td>TryHackMe</td>
+    <td>✅ Completed</td>
+  </tr>
+  <tr>
+    <td>CompTIA Security+</td>
+    <td>CompTIA</td>
+    <td>🔄 In Progress</td>
+  </tr>
+  <tr>
+    <td>eJPT - Junior Penetration Tester</td>
+    <td>INE / eLearnSecurity</td>
+    <td>📋 Planned</td>
+  </tr>
+  <tr>
+    <td>OSCP - Offensive Security Certified Professional</td>
+    <td>OffSec</td>
+    <td>📋 Planned</td>
+  </tr>
+</table>
 
 ---
 
-## 📝 Featured Writeups & Blogs
+## <div align="center">🚀 FEATURED PROJECTS</div>
 
-<details>
-<summary><b>📖 Recent Writeups</b></summary>
+<table align="center">
+  <tr>
+    <td><b>🏠 Home SOC Lab</b></td>
+    <td>Full SOC stack: SIEM + ELK + Sysmon + Atomic Red Team detections on Windows endpoints.</td>
+    <td><i>Splunk • Elastic • Windows • Sigma</i></td>
+  </tr>
+  <tr>
+    <td><b>🌐 VulnWeb Lab</b></td>
+    <td>Intentionally vulnerable web application for penetration testing practice (OWASP Top 10).</td>
+    <td><i>Python • Flask • MySQL • Docker</i></td>
+  </tr>
+  <tr>
+    <td><b>🎣 PhishSim</b></td>
+    <td>Safe phishing simulation & awareness training platform with click tracking and reporting.</td>
+    <td><i>Go • PostgreSQL • React</i></td>
+  </tr>
+  <tr>
+    <td><b>📊 LogHunter</b></td>
+    <td>Python CLI tool to parse firewall and web server logs, flagging anomalies and IOCs.</td>
+    <td><i>Python • Regex • JSON</i></td>
+  </tr>
+</table>
 
-- [TryHackMe] Web Fundamentals – XSS & SQL Injection deep dive
-- [TryHackMe] Active Directory – Kerberoasting & BloodHound
-- [HackTheBox] retired machine writeup: Buffer Overflow
+> View all projects in pinned repositories below 👇
+
+---
+
+## <div align="center">📝 RECENT WRITEUPS</div>
+
+- [TryHackMe] Web Fundamentals — XSS & SQL Injection deep dive
+- [TryHackMe] Active Directory — Kerberoasting & BloodHound attack paths
+- [HackTheBox] Retired machine writeup — Stack Buffer Overflow
 - [Writeup] Bypassing client-side validation for stored XSS
 - [Writeup] Privilege escalation via sudo misconfiguration
 
-</details>
-
-> Publish your writeups on Medium, Dev.to, GitHub Pages, or a personal blog and link them here.
+> Publish your writeups on Medium, Dev.to, or GitHub Pages and link them here.
 
 ---
 
-## 🚀 Featured Projects
-
-<details>
-<summary><b>🔧 Security Projects</b></summary>
-
-| Project | Description | Tech |
-|---------|-------------|------|
-| **Home SOC Lab** | SIEM + ELK + Sysmon + Atomic Red Team detections | Splunk, Elastic, Windows |
-| **Vulnerable Web App Lab** | Intentionally vulnerable app for pentest practice | Python, Flask, MySQL |
-| **Phishing Awareness Simulator** | Safe phishing simulation & training platform | Go, PostgreSQL |
-| **Log Analyzer** | Python CLI tool to parse firewall/web logs for anomalies | Python, Regex |
-
-</details>
-
----
-
-## 📊 GitHub Stats
+## <div align="center">📊 GITHUB STATS</div>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aBadRoy&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=00ff00&icon_color=00ff00&text_color=ffffff" alt="aBadRoy's GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=aBadRoy&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=00ff00&icon_color=00ff00&text_color=ffffff" alt="aBadRoy GitHub Stats" />
 </p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=aBadRoy&theme=dark&background=0d1117&stroke=00ff00&fire=00ff00&ring=00ff00&currStreakNum=00ff00&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" alt="GitHub Streak" />
 </p>
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aBadRoy&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=00ff00&text_color=ffffff" alt="Top Languages" />
+</p>
+
 ---
 
-## 🔗 Connect With Me
+## <div align="center">🔗 CONNECT</div>
 
 <p align="center">
   <a href="https://linkedin.com/in/aBadRoy">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="https://twitter.com/aBadRoy">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=x&logoColor=white" />
+    <img src="https://img.shields.io/badge/X-1DA1F2?style=for-the-badge&logo=x&logoColor=white" />
   </a>
   <a href="mailto:youremail@example.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
@@ -194,15 +232,13 @@ Python, Bash, PowerShell, SQL, JavaScript (for XSS/bug bounty), C, x86 Assembly,
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=aBadRoy&label=Profile%20views&color=00ff00&style=for-the-badge" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=aBadRoy&label=Profile%20views&color=00ff00&style=for-the-badge" alt="Profile Views" />
+</p>
+
+<p align="center" style="color:#00ff00;">
+  <i>"The only truly secure system is one that is powered off, cast in a block of concrete,<br>and sealed in a lead-lined room with armed guards — and even then I have my doubts."</i>
 </p>
 
 <p align="center">
-  <b>"The only secure system is one that is turned off — but even then, I'd still test it."</b>
-</p>
-
----
-
-<p align="center">
-  <i>Thanks for visiting my profile. Feel free to connect or collaborate on security research!</i>
+  <i>Thanks for visiting. Feel free to connect or collaborate on security research.</i>
 </p>
