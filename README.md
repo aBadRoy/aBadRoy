@@ -1,42 +1,51 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=6000&pause=600&color=00FF00&center=true&vCenter=true&width=900&lines=SYSTEM://aBadRoy+ONLINE;ACCESS+LEVEL:+ROOT;REDACTED:+CYBERSECURITY+OPERATIVE;INITIALIZING+PAYLOAD...;STATUS:+ACTIVE" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=36&duration=9000&pause=300&color=00FF00&center=true&vCenter=true&width=1300&lines=█▀█ █░█ █▀▀ █▀▀ █▀█ █▀▀ █▀█ █▄░█ ▄▀█ █▀▄▀█ █▀█ █▀█ █░█\n█▀▀ █▀█ ██▄ ██▄ █▀▄ ██▄ █▀▀ █░▀█ █▀█ █░▀░█ █▀▀ █▀▄ █▄█\n═════════════════════════════════════════════════════════════════════════════\nSYSTEM://aBadRoy+ONLINE∙ACCESS+LEVEL:+TOP+SECRET∙REDACTED:+CYBERSECURITY+OPERATIVE∙STATUS:+ACTIVE+∙+ROOT+MODE+∙+SYSTEM:+ONLINE" />
 </p>
 
 <p align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=00ff00&height=120&section=header&text=aBadRoy&fontSize=50&fontColor=000000&animation=twinkling" width="100%" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=00ff00&height=180&section=header&text=aBadRoy&fontSize=80&fontColor=000000&animation=twinkling" width="100%" />
   </a>
 </p>
 
 ---
 
 <p align="center">
-  <b style="color:#00ff00;">OFFENSIVE SECURITY</b> • 
-  <b style="color:#00ffff;">DEFENSIVE ENGINEERING</b> • 
-  <b style="color:#ff00ff;">THREAT RESEARCH</b> • 
-  <b style="color:#ffaa00;">BUG BOUNTY</b>
+  <img src="https://img.shields.io/badge/🔴_RED_TEAM-ff0000?style=for-the-badge&logo=metasploit&logoColor=white" />
+  <img src="https://img.shields.io/badge/🔵_BLUE_TEAM-00ffff?style=for-the-badge&logo=splunk&logoColor=black" />
+  <img src="https://img.shields.io/badge/🟣_PURPLE_TEAM-ff00ff?style=for-the-badge&logo=wireshark&logoColor=white" />
+  <img src="https://img.shields.io/badge/🏁_BUG_BOUNTY-ffaa00?style=for-the-badge&logo=burpsuite&logoColor=white" />
+  <img src="https://img.shields.io/badge/🎯_THREAT_HUNT-00ff00?style=for-the-badge&logo=kali-linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/🦠_MALWARE_ANALYSIS-ff0000?style=for-the-badge&logo=ghidra&logoColor=white" />
+  <img src="https://img.shields.io/badge/💥_EXPLOIT_DEV-ff0000?style=for-the-badge&logo=ida&logoColor=white" />
 </p>
 
 ---
 
 <details>
-<summary><h2 style="display:inline; color:#00ff00;">💻 SYSTEM://PROFILE</h2></summary>
+<summary><h2 style="display:inline; color:#00ff00; margin:0;">💻 SYSTEM://PROFILE_DUMP</h2></summary>
 
-```bash
+```text
 $ whoami
   -> aBadRoy | Cybersecurity Operative
 
 $ cat /etc/motd
-  -> RED_TEAM  BLUE_TEAM  PURPLE_TEAM  THREAT_HUNT  BUG_BOUNTY
+  -> RED_TEAM  BLUE_TEAM  PURPLE_TEAM  THREAT_HUNT  BUG_BOUNTY  MALWARE_ANALYSIS  EXPLOIT_DEV
 
 $ sudo service curiosity start
-  -> [ OK ] Curiosity daemon is running...
+  -> [ OK ] Curiosity daemon is running on port 443...
 
 $ ls -la ~/arsenal/
-  -> nmap  metasploit  burpsuite  wireshark  bloodhound  mimikatz  hashcat  sqlmap  ghidra  volatility
+  drwxr-xr-x  nmap         metasploit  burpsuite  wireshark
+  drwxr-xr-x  bloodhound   mimikatz    hashcat    sqlmap
+  drwxr-xr-x  ghidra       volatility  frida      radare2
+  drwxr-xr-x  cobaltstrike empire       impacket   powersploit
 
 $ ping -c 4 github.com/aBadRoy
   -> 64 bytes from profile.aBadRoy [127.0.0.1]: icmp_seq=1 ttl=64 time=0.042 ms
+  -> 64 bytes from profile.aBadRoy [127.0.0.1]: icmp_seq=2 ttl=64 time=0.038 ms
+  -> 64 bytes from profile.aBadRoy [127.0.0.1]: icmp_seq=3 ttl=64 time=0.041 ms
+  -> 64 bytes from profile.aBadRoy [127.0.0.1]: icmp_seq=4 ttl=64 time=0.039 ms
 ```
 
 </details>
@@ -47,20 +56,29 @@ $ ping -c 4 github.com/aBadRoy
 
 <table align="center">
   <tr>
-    <td><b>🔴 RED TEAM</b></td>
-    <td>Penetration Testing • Web Exploitation • Network Pentesting • AD Attacks • Social Engineering • Physical Security</td>
+    <td width="18%"><b>🔴 RED TEAM</b></td>
+    <td width="64%">Penetration Testing • Web Exploitation • Network Pentesting • AD Attacks • Social Engineering • Physical Security • Exploit Development • Red Team Operations</td>
+    <td width="18%"><i>Offensive</i></td>
   </tr>
   <tr>
     <td><b>🔵 BLUE TEAM</b></td>
-    <td>SIEM Monitoring • Log Analysis • Incident Response • Threat Hunting • Endpoint Protection • Hardening</td>
+    <td>SIEM Monitoring • Log Analysis • Incident Response • Threat Hunting • Endpoint Protection • Hardening • Digital Forensics • Security Operations</td>
+    <td><i>Defensive</i></td>
   </tr>
   <tr>
     <td><b>🟣 PURPLE TEAM</b></td>
-    <td>Adversary Emulation • Detection Engineering • Control Validation • Threat Intelligence</td>
+    <td>Adversary Emulation • Detection Engineering • Control Validation • Threat Intelligence • Purple Teaming Exercises • Attack Simulation</td>
+    <td><i>Hybrid</i></td>
   </tr>
   <tr>
-    <td><b>🏁 CTF / BUG BOUNTY</b></td>
-    <td>Web Exploitation • Pwn • Reverse Engineering • Cryptography • Recon • XSS / SQLi / IDOR / SSRF</td>
+    <td><b>🏁 CTF / BOUNTY</b></td>
+    <td>Web Exploitation • Pwn • Reverse Engineering • Cryptography • Recon • XSS / SQLi / IDOR / SSRF / RCE • Bug Bounty Programs</td>
+    <td><i>Competitive</i></td>
+  </tr>
+  <tr>
+    <td><b>🦠 MALWARE</b></td>
+    <td>Static Analysis • Dynamic Analysis • Sandbox Evasion • YARA Rules • Reverse Engineering • Threat Intelligence • Malware Development</td>
+    <td><i>Analysis</i></td>
   </tr>
 </table>
 
@@ -71,27 +89,99 @@ $ ping -c 4 github.com/aBadRoy
 <details>
 <summary><b>🔴 Offensive Security</b></summary>
 
-| Recon / OSINT | Web App | Network | Wireless | Post-Exploitation | Password Attacks |
-|---------------|---------|---------|----------|-------------------|------------------|
-| Nmap • Masscan • Amass • Subfinder • theHarvester • Shodan • Censys | Burp Suite • OWASP ZAP • sqlmap • dirsearch • ffuf • Commix • XSStrike | Wireshark • tcpdump • Bettercap • Responder • Mimikatz • BloodHound | Aircrack-ng • Wifite • Fern Wifi Cracker • Kismet | Metasploit • Cobalt Strike • Empire • Covenant • Impacket • PowerSploit | Hashcat • John the Ripper • Hydra • Medusa • CeWL |
+<table>
+  <tr>
+    <td><b>🔎 Recon / OSINT</b></td>
+    <td>Nmap • Masscan • Amass • Subfinder • theHarvester • Shodan • Censys • Google Dorking • Recon-ng • SpiderFoot</td>
+  </tr>
+  <tr>
+    <td><b>🌐 Web App</b></td>
+    <td>Burp Suite Pro • OWASP ZAP • sqlmap • dirsearch • ffuf • Commix • XSStrike • SQLiX • Corsy • Arjun</td>
+  </tr>
+  <tr>
+    <td><b>🌐 Network</b></td>
+    <td>Wireshark • tcpdump • Bettercap • Responder • Mimikatz • BloodHound • SharpHound • Ettercap • Responder</td>
+  </tr>
+  <tr>
+    <td><b>📶 Wireless</b></td>
+    <td>Aircrack-ng • Wifite • Fern Wifi Cracker • Kismet • Wireshark • Airgeddon • Wifi-Pumpkin</td>
+  </tr>
+  <tr>
+    <td><b>💥 Post-Exploitation</b></td>
+    <td>Metasploit • Cobalt Strike • Empire • Covenant • Impacket • PowerSploit • SharpStage • SharpHound • BloodHound.py</td>
+  </tr>
+  <tr>
+    <td><b>🔑 Password Attacks</b></td>
+    <td>Hashcat • John the Ripper • Hydra • Medusa • CeWL • Patator • Maskprocessor • Hash-identifier</td>
+  </tr>
+</table>
 
 </details>
 
 <details>
 <summary><b>🔵 Defensive Security</b></summary>
 
-| SIEM / Logging | EDR / Endpoint | Network Defense | Vuln Mgmt | Forensics | Hardening |
-|----------------|----------------|-----------------|-----------|-----------|-----------|
-| Splunk • ELK Stack • Graylog • Wazuh • Logstash | Windows Defender • SentinelOne • CrowdStrike • Carbon Black | pfSense • iptables • Snort • Suricata • Zeek • Fail2Ban | Nessus • OpenVAS • Qualys • Nuclei • Nikto | Autopsy • Volatility • FTK Imager • Binwalk • Plaso | CIS Benchmarks • STIGs • Group Policy • AppLocker • SELinux |
+<table>
+  <tr>
+    <td><b>📊 SIEM / Logging</b></td>
+    <td>Splunk • ELK Stack • Graylog • Wazuh • Logstash • Kibana • Elasticsearch • OSSEC • Security Onion</td>
+  </tr>
+  <tr>
+    <td><b>🖥️ EDR / Endpoint</b></td>
+    <td>Windows Defender • SentinelOne • CrowdStrike • Carbon Black • CrowdStrike Falcon • Microsoft Defender for Endpoint</td>
+  </tr>
+  <tr>
+    <td><b>🛡️ Network Defense</b></td>
+    <td>pfSense • iptables • Snort • Suricata • Zeek • Fail2Ban • OPNsense • Untangle • Sophos</td>
+  </tr>
+  <tr>
+    <td><b>🔍 Vuln Mgmt</b></td>
+    <td>Nessus • OpenVAS • Qualys • Nuclei • Nikto • Nexpose • Rapid7 • Tenable</td>
+  </tr>
+  <tr>
+    <td><b>🕵️ Forensics</b></td>
+    <td>Autopsy • Volatility • FTK Imager • Binwalk • Plaso • Sleuth Kit • X-Ways Forensics • Rekall</td>
+  </tr>
+  <tr>
+    <td><b>🔒 Hardening</b></td>
+    <td>CIS Benchmarks • STIGs • Group Policy • AppLocker • SELinux • AppArmor • NIST Framework</td>
+  </tr>
+</table>
 
 </details>
 
 <details>
-<summary><b>💻 Exploit Development</b></summary>
+<summary><b>💻 Exploit Development & Scripting</b></summary>
 
-Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C • x86 Assembly • YARA • Sigma • Ruby
+<table>
+  <tr>
+    <td><b>📝 Languages</b></td>
+    <td>Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C • x86 Assembly • Ruby • Go • Rust</td>
+  </tr>
+  <tr>
+    <td><b>⚙️ Frameworks</b></td>
+    <td>Flask • Django • Scapy • Impacket • Pwntools • ROPgadget • Ghidra Scripting • Angr • Triton</td>
+  </tr>
+  <tr>
+    <td><b>🔄 Reverse Eng</b></td>
+    <td>IDA Pro • Ghidra • Radare2 • Binary Ninja • Hopper • x64dbg • OllyDbg • Cutter • Ghidra</td>
+  </tr>
+</table>
 
 </details>
+
+---
+
+<h2 align="center" style="color:#00ff00;">📊 SKILL PROFICIENCY</h2>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aBadRoy&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=00ff00&text_color=ffffff" alt="Top Languages" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=aBadRoy&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=00ff00&icon_color=00ff00&text_color=ffffff" alt="GitHub Stats" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aBadRoy&theme=dark&background=0d1117&stroke=00ff00&fire=00ff00&ring=00ff00&currStreakNum=00ff00&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" alt="GitHub Streak" width="100%" />
+</p>
 
 ---
 
@@ -110,6 +200,9 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
   <a href="https://ctftime.org/user/USER_ID">
     <img src="https://img.shields.io/badge/CTFtime-aBadRoy-blue?style=for-the-badge" />
   </a>
+  <a href="https://app.hackthebox.com/profile/USER_ID/badges">
+    <img src="https://img.shields.io/badge/HTB_Badges-Unlocked-brightgreen?style=for-the-badge" />
+  </a>
 </p>
 
 > 🔑 Replace `USER_ID` with your actual platform profile IDs.
@@ -120,9 +213,9 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
 
 <table align="center">
   <tr>
-    <th>Certification</th>
-    <th>Issuer</th>
-    <th>Status</th>
+    <th width="40%">Certification</th>
+    <th width="30%">Issuer</th>
+    <th width="30%">Status</th>
   </tr>
   <tr>
     <td>TryHackMe Jr Penetration Tester</td>
@@ -157,23 +250,23 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
 
 <table align="center">
   <tr>
-    <td><b>🏠 Home SOC Lab</b></td>
-    <td>Full SOC stack: SIEM + ELK + Sysmon + Atomic Red Team detections on Windows endpoints.</td>
-    <td><i>Splunk • Elastic • Windows • Sigma</i></td>
+    <td width="22%"><b>🏠 Home SOC Lab</b></td>
+    <td width="58%">Full SOC stack: SIEM + ELK + Sysmon + Atomic Red Team detections on Windows endpoints. Detect, analyze, and respond to real-world threats.</td>
+    <td width="20%"><i>Splunk • Elastic • Windows • Sigma</i></td>
   </tr>
   <tr>
     <td><b>🌐 VulnWeb Lab</b></td>
-    <td>Intentionally vulnerable web application for penetration testing practice (OWASP Top 10).</td>
+    <td>Intentionally vulnerable web application for penetration testing practice (OWASP Top 10). Built from the ground up for hands-on training.</td>
     <td><i>Python • Flask • MySQL • Docker</i></td>
   </tr>
   <tr>
     <td><b>🎣 PhishSim</b></td>
-    <td>Safe phishing simulation & awareness training platform with click tracking and reporting.</td>
+    <td>Safe phishing simulation & awareness training platform with click tracking, reporting, and phishing campaign management.</td>
     <td><i>Go • PostgreSQL • React</i></td>
   </tr>
   <tr>
     <td><b>📊 LogHunter</b></td>
-    <td>Python CLI tool to parse firewall and web server logs, flagging anomalies and IOCs.</td>
+    <td>Python CLI tool to parse firewall and web server logs, flagging anomalies, IOCs, and potential intrusion attempts in real-time.</td>
     <td><i>Python • Regex • JSON</i></td>
   </tr>
 </table>
@@ -191,22 +284,6 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
 - [Writeup] Privilege escalation via sudo misconfiguration
 
 > 📡 Publish your writeups on Medium, Dev.to, or GitHub Pages and link them here.
-
----
-
-<h2 align="center" style="color:#00ff00;">📊 SYSTEM TELEMETRY</h2>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aBadRoy&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=00ff00&icon_color=00ff00&text_color=ffffff" alt="aBadRoy GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aBadRoy&theme=dark&background=0d1117&stroke=00ff00&fire=00ff00&ring=00ff00&currStreakNum=00ff00&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aBadRoy&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=00ff00&text_color=ffffff" alt="Top Languages" />
-</p>
 
 ---
 
@@ -239,4 +316,8 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
 
 <p align="center">
   <i>Thanks for visiting. Feel free to connect or collaborate on security research.</i>
+</p>
+
+<p align="center">
+  <img src="https://visitor-badge.glitch.me/badge?page_id=aBadRoy.aBadRoy" alt="visitor badge" />
 </p>
