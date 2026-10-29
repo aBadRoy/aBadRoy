@@ -1,56 +1,54 @@
-# <div align="center">🔴 SYSTEM:// aBadRoy // ONLINE</div>
-
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=5000&pause=800&color=00FF00&center=true&vCenter=true&width=800&lines=ACCESS+GRANTED:+aBadRoy;OFFENSIVE+SECURITY+ENGINEER;RED+TEAM+∙+BLUE+TEAM+∙+THREAT+HUNT;BREAK+THINGS.+FIX+THEM.;ROOT+MODE+ACTIVATED." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=6000&pause=600&color=00FF00&center=true&vCenter=true&width=900&lines=SYSTEM://aBadRoy+ONLINE;ACCESS+LEVEL:+ROOT;REDACTED:+CYBERSECURITY+OPERATIVE;INITIALIZING+PAYLOAD...;STATUS:+ACTIVE" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/OS-Linux-black?style=for-the-badge&logo=linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kali-Linux-268BEE?style=for-the-badge&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Parrot-4A1C5B?style=for-the-badge&logo=parrotsecurity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" />
-  <img src="https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white" />
-  <img src="https://img.shields.io/badge/ELK-005571?style=for-the-badge&logo=elasticsearch&logoColor=white" />
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nmap-123456?style=for-the-badge&logo=nmap&logoColor=white" />
-  <img src="https://img.shields.io/badge/Burp_Suite-4E2A84?style=for-the-badge&logo=burpsuite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Metasploit-8B0000?style=for-the-badge&logo=metasploit&logoColor=white" />
-  <img src="https://img.shields.io/badge/IDA-FF6600?style=for-the-badge&logo=ida&logoColor=white" />
-  <img src="https://img.shields.io/badge/Ghidra-000000?style=for-the-badge&logo=ghidra&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <a href="https://github.com/aBadRoy">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=00ff00&height=120&section=header&text=aBadRoy&fontSize=50&fontColor=000000&animation=twinkling" width="100%" />
+  </a>
 </p>
 
 ---
 
-## <div align="center">💻 TERMINAL PROFILE</div>
+<p align="center">
+  <b style="color:#00ff00;">OFFENSIVE SECURITY</b> • 
+  <b style="color:#00ffff;">DEFENSIVE ENGINEERING</b> • 
+  <b style="color:#ff00ff;">THREAT RESEARCH</b> • 
+  <b style="color:#ffaa00;">BUG BOUNTY</b>
+</p>
 
-```text
+---
+
+<details>
+<summary><h2 style="display:inline; color:#00ff00;">💻 SYSTEM://PROFILE</h2></summary>
+
+```bash
 $ whoami
-  -> aBadRoy | Cybersecurity Professional
+  -> aBadRoy | Cybersecurity Operative
 
 $ cat /etc/motd
-  -> Red Teaming | Blue Teaming | Threat Hunting | Malware Analysis | Bug Bounty
+  -> RED_TEAM  BLUE_TEAM  PURPLE_TEAM  THREAT_HUNT  BUG_BOUNTY
 
 $ sudo service curiosity start
-  -> [ OK ] Curiosity service is running...
+  -> [ OK ] Curiosity daemon is running...
 
-$ ls -la ~/sectools/
+$ ls -la ~/arsenal/
   -> nmap  metasploit  burpsuite  wireshark  bloodhound  mimikatz  hashcat  sqlmap  ghidra  volatility
 
 $ ping -c 4 github.com/aBadRoy
   -> 64 bytes from profile.aBadRoy [127.0.0.1]: icmp_seq=1 ttl=64 time=0.042 ms
 ```
 
+</details>
+
 ---
 
-## <div align="center">🛡️ SECURITY DOMAINS</div>
+<h2 align="center" style="color:#00ff00;">🛡️ OPERATIONAL DOMAINS</h2>
 
 <table align="center">
   <tr>
     <td><b>🔴 RED TEAM</b></td>
-    <td>Penetration Testing • Web App Exploitation • Network Pentesting • AD Attacks • Social Engineering • Physical Security</td>
+    <td>Penetration Testing • Web Exploitation • Network Pentesting • AD Attacks • Social Engineering • Physical Security</td>
   </tr>
   <tr>
     <td><b>🔵 BLUE TEAM</b></td>
@@ -68,7 +66,7 @@ $ ping -c 4 github.com/aBadRoy
 
 ---
 
-## <div align="center">🛠️ TOOL ARSENAL</div>
+<h2 align="center" style="color:#00ff00;">🛠️ PAYLOAD ARSENAL</h2>
 
 <details>
 <summary><b>🔴 Offensive Security</b></summary>
@@ -89,7 +87,7 @@ $ ping -c 4 github.com/aBadRoy
 </details>
 
 <details>
-<summary><b>💻 Languages & Scripting</b></summary>
+<summary><b>💻 Exploit Development</b></summary>
 
 Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C • x86 Assembly • YARA • Sigma • Ruby
 
@@ -97,7 +95,7 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
 
 ---
 
-## <div align="center">🏁 CTF PLATFORMS</div>
+<h2 align="center" style="color:#00ff00;">🏁 CTF & RANKINGS</h2>
 
 <p align="center">
   <a href="https://tryhackme.com/p/aBadRoy">
@@ -114,11 +112,11 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
   </a>
 </p>
 
-> 💡 Replace `USER_ID` with your actual platform profile IDs.
+> 🔑 Replace `USER_ID` with your actual platform profile IDs.
 
 ---
 
-## <div align="center">📜 CERTIFICATIONS</div>
+<h2 align="center" style="color:#00ff00;">📜 CLEARANCE LEVELS</h2>
 
 <table align="center">
   <tr>
@@ -129,12 +127,12 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
   <tr>
     <td>TryHackMe Jr Penetration Tester</td>
     <td>TryHackMe</td>
-    <td>✅ Completed</td>
+    <td>✅ Cleared</td>
   </tr>
   <tr>
     <td>TryHackMe Pre-Security</td>
     <td>TryHackMe</td>
-    <td>✅ Completed</td>
+    <td>✅ Cleared</td>
   </tr>
   <tr>
     <td>CompTIA Security+</td>
@@ -144,18 +142,18 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
   <tr>
     <td>eJPT - Junior Penetration Tester</td>
     <td>INE / eLearnSecurity</td>
-    <td>📋 Planned</td>
+    <td>📋 Queued</td>
   </tr>
   <tr>
     <td>OSCP - Offensive Security Certified Professional</td>
     <td>OffSec</td>
-    <td>📋 Planned</td>
+    <td>📋 Queued</td>
   </tr>
 </table>
 
 ---
 
-## <div align="center">🚀 FEATURED PROJECTS</div>
+<h2 align="center" style="color:#00ff00;">🚀 CLASSIFIED OPERATIONS</h2>
 
 <table align="center">
   <tr>
@@ -180,11 +178,11 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
   </tr>
 </table>
 
-> View all projects in pinned repositories below 👇
+> 📂 Full dossier in pinned repositories below.
 
 ---
 
-## <div align="center">📝 RECENT WRITEUPS</div>
+<h2 align="center" style="color:#00ff00;">📝 INTEL REPORTS</h2>
 
 - [TryHackMe] Web Fundamentals — XSS & SQL Injection deep dive
 - [TryHackMe] Active Directory — Kerberoasting & BloodHound attack paths
@@ -192,11 +190,11 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
 - [Writeup] Bypassing client-side validation for stored XSS
 - [Writeup] Privilege escalation via sudo misconfiguration
 
-> Publish your writeups on Medium, Dev.to, or GitHub Pages and link them here.
+> 📡 Publish your writeups on Medium, Dev.to, or GitHub Pages and link them here.
 
 ---
 
-## <div align="center">📊 GITHUB STATS</div>
+<h2 align="center" style="color:#00ff00;">📊 SYSTEM TELEMETRY</h2>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aBadRoy&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=00ff00&icon_color=00ff00&text_color=ffffff" alt="aBadRoy GitHub Stats" />
@@ -212,7 +210,7 @@ Python • Bash • PowerShell • SQL • JavaScript (XSS / Bug Bounty) • C �
 
 ---
 
-## <div align="center">🔗 CONNECT</div>
+<h2 align="center" style="color:#00ff00;">🔗 SECURE CHANNELS</h2>
 
 <p align="center">
   <a href="https://linkedin.com/in/aBadRoy">
