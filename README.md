@@ -1,14 +1,21 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=38&duration=10000&pause=200&color=FF0000&center=true&vCenter=true&width=1400&lines=█▀█ █░█ █▀▀ █▀▀ █▀█ █▀▀ █▀█ █▄░█ ▄▀█ █▀▄▀█ █▀█ █▀█ █░█\n█▀▀ █▀█ ██▄ ██▄ █▀▄ ██▄ █▀▀ █░▀█ █▀█ █░▀░█ █▀▀ █▀▄ █▄█\n═══════════════════════════════════════════════════════════════════════════════\nSYSTEM://aBadRoy+ONLINE∙ACCESS+LEVEL:+TOP+SECRET∙REDACTED:+CYBERSECURITY+OPERATIVE∙STATUS:+ACTIVE+∙+ROOT+MODE+∙+SYSTEM:+ONLINE+∙+CLEARANCE:+OMEGA" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=36&duration=10000&pause=200&color=FF0000&center=true&vCenter=true&width=1400&lines=╔═════════════════════════════════════════════════════════════════════════════╗\n║  █▀█ █░█ █▀▀ █▀▀ █▀█ █▀▀ █▀█ █▄░█ ▄▀█ █▀▄▀█ █▀█ █▀█ █░█  ║\n║  █▀▀ █▀█ ██▄ ██▄ █▀▄ ██▄ █▀▀ █░▀█ █▀█ █░▀░█ █▀▀ █▀▄ █▄█  ║\n╚══════════════════════════════════════════════════════════════════════════════╝\nSYSTEM://aBadRoy+ONLINE∙ACCESS+LEVEL:+TOP+SECRET∙REDACTED:+CYBERSECURITY+OPERATIVE∙STATUS:+ACTIVE+∙+ROOT+MODE+∙+SYSTEM:+ONLINE+∙+CLEARANCE:+OMEGA∙THREAT+LEVEL:+CRITICAL" />
 </p>
 
 <p align="center">
   <a href="https://github.com/aBadRoy">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=ff0000&height=200&section=header&text=aBadRoy&fontSize=90&fontColor=000000&animation=twinkling" width="100%" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=ff0000&height=220&section=header&text=aBadRoy&fontSize=100&fontColor=000000&animation=twinkling" width="100%" />
   </a>
 </p>
 
 ---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/THREAT_LEVEL-CRITICAL-ff0000?style=for-the-badge&labelColor=000000" />
+  <img src="https://img.shields.io/badge/CLEARANCE-OMEGA-ffffff?style=for-the-badge&labelColor=000000" />
+  <img src="https://img.shields.io/badge/STATUS-ACTIVE-ff0000?style=for-the-badge&labelColor=000000" />
+  <img src="https://img.shields.io/badge/ROOT_MODE-ENABLED-ffffff?style=for-the-badge&labelColor=000000" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/🔴_RED_TEAM-ff0000?style=for-the-badge&logo=metasploit&logoColor=white" />
@@ -98,7 +105,7 @@ $ ping -c 4 github.com/aBadRoy
 <table>
   <tr>
     <td><b>🔎 Recon / OSINT</b></td>
-    <td>Nmap • Masscan • Amass • Subfinder • theHarvester • Shodan • Censys • Google Dorking • Recon-ng • SpiderFoot • theHarvester</td>
+    <td>Nmap • Masscan • Amass • Subfinder • theHarvester • Shodan • Censys • Google Dorking • Recon-ng • SpiderFoot</td>
   </tr>
   <tr>
     <td><b>🌐 Web App</b></td>
@@ -106,7 +113,7 @@ $ ping -c 4 github.com/aBadRoy
   </tr>
   <tr>
     <td><b>🌐 Network</b></td>
-    <td>Wireshark • tcpdump • Bettercap • Responder • Mimikatz • BloodHound • SharpHound • Ettercap • Responder • Bettercap</td>
+    <td>Wireshark • tcpdump • Bettercap • Responder • Mimikatz • BloodHound • SharpHound • Ettercap</td>
   </tr>
   <tr>
     <td><b>📶 Wireless</b></td>
@@ -118,7 +125,7 @@ $ ping -c 4 github.com/aBadRoy
   </tr>
   <tr>
     <td><b>🔑 Password Attacks</b></td>
-    <td>Hashcat • John the Ripper • Hydra • Medusa • CeWL • Patator • Maskprocessor • Hash-identifier • Hashcat-utils</td>
+    <td>Hashcat • John the Ripper • Hydra • Medusa • CeWL • Patator • Maskprocessor • Hash-identifier</td>
   </tr>
 </table>
 
@@ -175,6 +182,33 @@ $ ping -c 4 github.com/aBadRoy
 </table>
 
 </details>
+
+---
+
+<h2 align="center" style="color:#ff0000;">🖥️ MY SETUP</h2>
+
+<table align="center">
+  <tr>
+    <td width="33%"><b style="color:#ff0000;">💻 OS</b></td>
+    <td width="33%">Kali Linux • Arch Linux • Windows 11 • macOS</td>
+    <td width="33%"><i>Dual-boot + VMs</i></td>
+  </tr>
+  <tr>
+    <td><b style="color:#000000; background:#ffffff;">🖥️ Editor</b></td>
+    <td>VS Code • Vim • Sublime Text • Nano</td>
+    <td><i>Terminal-first workflow</i></td>
+  </tr>
+  <tr>
+    <td><b style="color:#ff0000;">🌐 Browser</b></td>
+    <td>Firefox • Tor • Brave • Chrome (DevTools)</td>
+    <td><i>Privacy + testing</i></td>
+  </tr>
+  <tr>
+    <td><b style="color:#ffffff; background:#000000;">📱 Mobile</b></td>
+    <td>Android (Rooted) • iOS • Termux • NetHunter</td>
+    <td><i>On-the-go pentesting</i></td>
+  </tr>
+</table>
 
 ---
 
@@ -296,12 +330,38 @@ $ ping -c 4 github.com/aBadRoy
 
 <h2 align="center" style="color:#ff0000;">📝 INTEL REPORTS</h2>
 
-- [TryHackMe] Web Fundamentals — XSS & SQL Injection deep dive
-- [TryHackMe] Active Directory — Kerberoasting & BloodHound attack paths
-- [HackTheBox] Retired machine writeup — Stack Buffer Overflow
-- [Writeup] Bypassing client-side validation for stored XSS
-- [Writeup] Privilege escalation via sudo misconfiguration
-- [Writeup] Cryptanalysis of classical ciphers — Vigenère & Playfair
+<table align="center">
+  <tr>
+    <td width="30%"><b style="color:#ff0000;">[TryHackMe]</b> Web Fundamentals</td>
+    <td width="50%">XSS & SQL Injection deep dive</td>
+    <td width="20%"><i>Web Exploitation</i></td>
+  </tr>
+  <tr>
+    <td><b style="color:#ff0000;">[TryHackMe]</b> Active Directory</td>
+    <td>Kerberoasting & BloodHound attack paths</td>
+    <td><i>AD Security</i></td>
+  </tr>
+  <tr>
+    <td><b style="color:#ff0000;">[HackTheBox]</b> Retired Machine</td>
+    <td>Stack Buffer Overflow writeup</td>
+    <td><i>Binary Exploitation</i></td>
+  </tr>
+  <tr>
+    <td><b style="color:#ff0000;">[Writeup]</b> Stored XSS Bypass</td>
+    <td>Bypassing client-side validation</td>
+    <td><i>Web App Security</i></td>
+  </tr>
+  <tr>
+    <td><b style="color:#ff0000;">[Writeup]</b> Sudo Privilege Esc</td>
+    <td>Privilege escalation via sudo misconfiguration</td>
+    <td><i>Linux Security</i></td>
+  </tr>
+  <tr>
+    <td><b style="color:#ff0000;">[Writeup]</b> Classical Crypto</td>
+    <td>Vigenère & Playfair cryptanalysis</td>
+    <td><i>Cryptography</i></td>
+  </tr>
+</table>
 
 > 📡 Publish your writeups on Medium, Dev.to, or GitHub Pages and link them here.
 
@@ -340,4 +400,10 @@ $ ping -c 4 github.com/aBadRoy
 
 <p align="center">
   <img src="https://visitor-badge.glitch.me/badge?page_id=aBadRoy.aBadRoy" alt="visitor badge" />
+</p>
+
+<hr align="center" width="80%" />
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=14&duration=5000&pause=100&color=ff0000&center=true&vCenter=true&width=500&lines=END+OF+TRANSMISSION∙SYSTEM:+SECURE+∙+DISCONNECTING..." />
 </p>
