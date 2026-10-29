@@ -205,7 +205,7 @@ $ ping -c 4 github.com/aBadRoy
   </a>
 </p>
 
-> 🔑 Replace `USER_ID` with your actual platform profile IDs.
+> 🔑 Replace `aBadRoy` with your actual platform profile IDs.
 
 ---
 
